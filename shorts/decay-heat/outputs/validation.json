@@ -1,0 +1,13 @@
+{
+  "file": "decay-heat-short-ja.mp4",
+  "duration_seconds": 65.164063,
+  "width": 1080,
+  "height": 1920,
+  "fps": "30/1",
+  "frames": 1955,
+  "audio_max_dbfs": -1.5,
+  "full_decode": "passed",
+  "size_bytes": 5305420,
+  "sha256": "2b42db3a7de74c7d597bcc0a33d24e51415151a71adb71c10d7bc6875c288815",
+  "voice": "VOICEVOX:青山龍星"
+}

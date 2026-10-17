@@ -1,0 +1,134 @@
+[
+  {
+    "id": "stop",
+    "say": "原子炉の停止ボタンを押します。",
+    "caption": "原子炉を、停止。",
+    "index": 0,
+    "audio": "audio/00-stop.wav",
+    "start": 0,
+    "speech_duration": 2.08,
+    "duration": 2.933333333333333,
+    "end": 2.933333333333333
+  },
+  {
+    "id": "still_hot",
+    "say": "連鎖反応は止まる。でも、熱はすぐにはゼロになりません。",
+    "caption": "停止しても、発熱は残る。",
+    "index": 1,
+    "audio": "audio/01-still_hot.wav",
+    "start": 2.933333333333333,
+    "speech_duration": 4.490666666666667,
+    "duration": 5.366666666666666,
+    "end": 8.299999999999999
+  },
+  {
+    "id": "fission",
+    "say": "原子炉の中では、ウランの核分裂から、熱が生まれます。",
+    "caption": "核分裂 → エネルギー → 熱",
+    "index": 2,
+    "audio": "audio/02-fission.wav",
+    "start": 8.299999999999999,
+    "speech_duration": 4.213333333333333,
+    "duration": 5.066666666666666,
+    "end": 13.366666666666665
+  },
+  {
+    "id": "rods",
+    "say": "制御棒を入れると、中性子が吸収され、連鎖反応が止まります。",
+    "caption": "制御棒で、連鎖反応を止める。",
+    "index": 3,
+    "audio": "audio/03-rods.wav",
+    "start": 13.366666666666665,
+    "speech_duration": 4.970666666666666,
+    "duration": 5.833333333333333,
+    "end": 19.2
+  },
+  {
+    "id": "fragments",
+    "say": "それでも、燃料の中には、核分裂でできた、不安定な原子核が残ります。",
+    "caption": "燃料には、不安定な原子核が残る。",
+    "index": 4,
+    "audio": "audio/04-fragments.wav",
+    "start": 19.2,
+    "speech_duration": 5.834666666666666,
+    "duration": 6.7,
+    "end": 25.9
+  },
+  {
+    "id": "decay",
+    "say": "これらは、別の原子核へ変わりながら、放射線を出します。",
+    "caption": "放射性崩壊で、エネルギーを放出。",
+    "index": 5,
+    "audio": "audio/05-decay.wav",
+    "start": 25.9,
+    "speech_duration": 4.266666666666667,
+    "duration": 5.133333333333334,
+    "end": 31.03333333333333
+  },
+  {
+    "id": "heat",
+    "say": "そのエネルギーが、燃料や周囲を温める。これが、崩壊熱です。",
+    "caption": "停止後も発生する「崩壊熱」。",
+    "index": 6,
+    "audio": "audio/06-heat.wav",
+    "start": 31.03333333333333,
+    "speech_duration": 5.226666666666667,
+    "duration": 6.1,
+    "end": 37.13333333333333
+  },
+  {
+    "id": "decline",
+    "say": "時間とともに減りますが、すぐには消えません。",
+    "caption": "減っていく。でも、すぐゼロにはならない。",
+    "index": 7,
+    "audio": "audio/07-decline.wav",
+    "start": 37.13333333333333,
+    "speech_duration": 3.1573333333333333,
+    "duration": 4.033333333333333,
+    "end": 41.166666666666664
+  },
+  {
+    "id": "cooling",
+    "say": "冷却水は、この熱を燃料から運び出します。",
+    "caption": "冷却水が、熱を運び出す。",
+    "index": 8,
+    "audio": "audio/08-cooling.wav",
+    "start": 41.166666666666664,
+    "speech_duration": 3.52,
+    "duration": 4.4,
+    "end": 45.56666666666666
+  },
+  {
+    "id": "loss",
+    "say": "冷却が失われると、停止した後でも、燃料が過熱するおそれがあります。",
+    "caption": "冷却を失えば、停止後も過熱のおそれ。",
+    "index": 9,
+    "audio": "audio/09-loss.wav",
+    "start": 45.56666666666666,
+    "speech_duration": 5.290666666666667,
+    "duration": 6.166666666666667,
+    "end": 51.73333333333333
+  },
+  {
+    "id": "both",
+    "say": "だから必要なのは、連鎖反応を止めることと、熱を運び出し続けること。",
+    "caption": "止める ＋ 冷やし続ける",
+    "index": 10,
+    "audio": "audio/10-both.wav",
+    "start": 51.73333333333333,
+    "speech_duration": 5.013333333333334,
+    "duration": 5.866666666666666,
+    "end": 57.599999999999994
+  },
+  {
+    "id": "ending",
+    "say": "止まるのは連鎖反応。冷やすのは、残り続ける熱です。",
+    "caption": "止まるのは連鎖反応。\n冷やすのは、残り続ける熱。",
+    "index": 11,
+    "audio": "audio/11-ending.wav",
+    "start": 57.599999999999994,
+    "speech_duration": 4.192,
+    "duration": 5.066666666666666,
+    "end": 62.66666666666666
+  }
+]
