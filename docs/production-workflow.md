@@ -16,7 +16,7 @@ python3 scripts/verify_knowledge.py
 
 ## 1. 出典と企画
 
-- 新作は [science-explainer v2.0.0の動作契約](../.agents/skills/science-explainer/references/motion-contract.md) を適用する。`motion-plan.json` に対象の状態変化と、その変化が伝える関係を記述する。
+- 新作は [science-explainerの動作契約](../.agents/skills/science-explainer/references/motion-contract.md) を適用する。`motion-plan.json` に対象の状態変化と、その変化が伝える関係を記述する。
 - 中心部分の5〜10秒を実際に描画し、中間状態と意味の対応を確認してから全編へ展開する。
 - [科学的確認](fact-check.md)と[テーマ選び](shorts-topic-research.md)を読む。
 - 対象、中心の理解、視聴者の関心の根拠を一文ずつ決める。
@@ -28,7 +28,11 @@ python3 scripts/verify_knowledge.py
 `story.json` の `say` は全文の読み上げ、`caption` は画面上の短い要約。
 専門語、英字、数値の読みを確認。改行や字幕の省略で科学的な条件を落とさない。
 
-VOICEVOXを使う場合：
+日本語ナレーションはVOICEVOXで合成する。標準話者は青山龍星・ノーマル。
+ユーザーが別の音声構成を指定した場合はその指定を優先する。
+詳細は [VOICEVOXの制作条件](../.agents/skills/science-explainer/references/voicevox.md)。
+
+エンジンの起動：
 
 ```bash
 cd shorts/decay-heat

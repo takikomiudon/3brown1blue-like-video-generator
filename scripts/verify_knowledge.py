@@ -31,7 +31,8 @@ def main():
                  ROOT / 'shorts/decay-heat/README.md',
                  ROOT / 'shorts/decay-heat/plan.md',
                  ROOT / '.agents/skills/science-explainer/SKILL.md',
-                 ROOT / '.agents/skills/science-explainer/references/motion-contract.md']
+                 ROOT / '.agents/skills/science-explainer/references/motion-contract.md',
+                 ROOT / '.agents/skills/science-explainer/references/voicevox.md']
     own_files += [ROOT / 'docs' / (name + '.md') for name in required_docs]
     for path in own_files:
         require(path.is_file(), f'Missing document: {path.relative_to(ROOT)}')
@@ -50,8 +51,8 @@ def main():
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
     custom = ROOT / '.agents/skills/science-explainer'
-    require('version: "2.0.0"' in (custom / 'SKILL.md').read_text(),
-            'Expected science-explainer v2.0.0')
+    require('version: "2.0.1"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.1')
     for name in ['audit_motion.py', 'test_audit_motion.py']:
         require((custom / 'scripts' / name).is_file(), f'Missing motion check: {name}')
     require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')
