@@ -11,7 +11,8 @@ if [[ ! -f scripts/verify_knowledge.py || ! -f docs/KNOWLEDGE.md ]]; then
   if git show-ref --verify --quiet refs/heads/video/decay-heat-delivery; then
     git switch video/decay-heat-delivery
   else
-    git switch --track -c video/decay-heat-delivery origin/video/decay-heat-delivery
+    # --single-branch clones do not map this remote branch for tracking.
+    git switch --no-track -c video/decay-heat-delivery origin/video/decay-heat-delivery
   fi
   git merge --ff-only origin/video/decay-heat-delivery
 fi
