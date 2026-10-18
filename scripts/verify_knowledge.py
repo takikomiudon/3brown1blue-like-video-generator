@@ -51,8 +51,8 @@ def main():
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
     custom = ROOT / '.agents/skills/science-explainer'
-    require('version: "2.0.1"' in (custom / 'SKILL.md').read_text(),
-            'Expected science-explainer v2.0.1')
+    require('version: "2.0.2"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.2')
     for name in ['audit_motion.py', 'test_audit_motion.py']:
         require((custom / 'scripts' / name).is_file(), f'Missing motion check: {name}')
     require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')

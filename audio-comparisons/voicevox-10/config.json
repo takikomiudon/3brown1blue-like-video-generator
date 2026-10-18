@@ -1,0 +1,28 @@
+{
+  "created_on": "2026-10-19",
+  "selection": "Comparison candidates; popularity order was not verified. Numbers identify samples, not ranks.",
+  "text": "ページインデックスは、資料を章や節のツリーに整理します。AIが読む場所を選び、根拠のページを確認して回答します。",
+  "synthesis_text": "ページインデックスは、資料をしょうやせつのツリーに整理します。AIが読む場所を選び、根拠のページを確認して回答します。",
+  "settings": {
+    "speedScale": 1.0,
+    "pitchScale": 0.0,
+    "intonationScale": 1.0,
+    "volumeScale": 1.0,
+    "prePhonemeLength": 0.15,
+    "postPhonemeLength": 0.25,
+    "outputSamplingRate": 48000,
+    "outputStereo": false
+  },
+  "speakers": [
+    {"name": "ずんだもん", "reading": "ずんだもん", "slug": "zundamon", "style": "ノーマル"},
+    {"name": "四国めたん", "reading": "しこくめたん", "slug": "shikoku-metan", "style": "ノーマル"},
+    {"name": "春日部つむぎ", "reading": "かすかべつむぎ", "slug": "kasukabe-tsumugi", "style": "ノーマル"},
+    {"name": "WhiteCUL", "reading": "ホワイトカル", "slug": "whitecul", "style": "ノーマル"},
+    {"name": "冥鳴ひまり", "reading": "めいめいひまり", "slug": "meimei-himari", "style": "ノーマル"},
+    {"name": "ナースロボ＿タイプＴ", "reading": "ナースロボタイプティー", "slug": "nurse-robot-type-t", "style": "ノーマル"},
+    {"name": "中国うさぎ", "reading": "ちゅうごくうさぎ", "slug": "chugoku-usagi", "style": "ノーマル"},
+    {"name": "雨晴はう", "reading": "あめはれはう", "slug": "amehare-hau", "style": "ノーマル"},
+    {"name": "波音リツ", "reading": "なみねりつ", "slug": "namine-ritsu", "style": "ノーマル"},
+    {"name": "青山龍星", "reading": "あおやまりゅうせい", "slug": "aoyama-ryusei", "style": "ノーマル"}
+  ]
+}

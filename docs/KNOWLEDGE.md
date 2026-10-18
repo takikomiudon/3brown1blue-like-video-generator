@@ -19,6 +19,7 @@
 |Docker、音声、文字、尺、リンク切れの対処|[troubleshooting.md](troubleshooting.md)|
 |説明対象の動作を設計し、完成映像で確認する|[動作契約](../.agents/skills/science-explainer/references/motion-contract.md)|
 |VOICEVOXで日本語音声を生成・同期・検証する|[音声の制作条件](../.agents/skills/science-explainer/references/voicevox.md)|
+|同じ原稿で10話者を聴き比べる|[音声比較と個別MP3](../audio-comparisons/voicevox-10/README.md)|
 |制作スキルv2.0.0の変更と検証|[改訂記録](animation-contract-v2.md)、[検証結果](animation-contract-v2-validation.json)|
 |Gitへの保存・ユーザーへの受け渡し|[preservation-and-delivery.md](preservation-and-delivery.md)|
 |何をどの根拠で復元したか|[restoration.md](restoration.md)|

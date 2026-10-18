@@ -5,3 +5,4 @@ shorts/*/audio/*.sha256
 shorts/*/review-frames/
 shorts/*/outputs/*.log
 shorts/*/assets/speakers.json
+audio-comparisons/*/work/

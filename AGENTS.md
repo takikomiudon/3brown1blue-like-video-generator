@@ -27,8 +27,8 @@
 
 ## 実装・検証
 
-- 新作は `science-explainer` v2.0.1の制作条件を適用する。説明対象の状態変化と、その変化が伝える意味を設計し、5〜10秒の試作が合格してから全編へ進む。
-- 日本語ナレーションはVOICEVOXで生成する。標準は青山龍星・ノーマル。合成設定・クエリ・実測尺・クレジットを保存し、完成MP4の音声を確認する。音声構成の変更はユーザーの明示的な指定に従う。
+- 新作は `science-explainer` v2.0.2の制作条件を適用する。説明対象の状態変化と、その変化が伝える意味を設計し、5〜10秒の試作が合格してから全編へ進む。
+- 日本語ナレーションはVOICEVOXで生成する。話者は制作物ごとに選定し、ユーザー指定や比較結果を優先する。合成設定・クエリ・実測尺・クレジットを保存し、完成MP4の音声を確認する。音声構成の変更はユーザーの明示的な指定に従う。
 - 完成判定には、最終MP4の主図に対する `audit_motion.py` の検査と、同じSHA-256に結びつく意味のレビューの両方を必須とする。コマンドと書式は [.agents/skills/science-explainer/references/motion-contract.md](.agents/skills/science-explainer/references/motion-contract.md)。
 - 現行ショートはManim Community、VOICEVOX。RemotionとManimGLのAPIを混在させない。
 - 台本の編集元は各動画の `story.json`。音声の尺を測ってタイムラインを作る。
