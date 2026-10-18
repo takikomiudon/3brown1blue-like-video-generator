@@ -1,0 +1,101 @@
+[
+  {
+    "id": "problem",
+    "say": "AIが資料から、見当違いの答えを拾う。探し方を変えるのが、ページインデックス。",
+    "caption": "AIの資料探し、\nそのページで答えられる？",
+    "index": 0,
+    "audio": "audio/00-problem.wav",
+    "start": 0,
+    "speech_duration": 6.570666666666667,
+    "duration": 7.433333333333334,
+    "end": 7.433333333333334
+  },
+  {
+    "id": "chunks",
+    "say": "よくあるラグは、文章を分けて、質問と意味が近い断片を探します。",
+    "caption": "よくあるRAG：\n意味が近い断片を探す",
+    "index": 1,
+    "audio": "audio/01-chunks.wav",
+    "start": 7.433333333333334,
+    "speech_duration": 5.141333333333334,
+    "duration": 6.0,
+    "end": 13.433333333333334
+  },
+  {
+    "id": "mismatch",
+    "say": "でも、利益が減った理由を聞いて、利益を増やす目標が出ても、答えにはなりません。",
+    "caption": "「利益を増やす目標」では\n「減った理由」は分からない",
+    "index": 2,
+    "audio": "audio/02-mismatch.wav",
+    "start": 13.433333333333334,
+    "speech_duration": 6.165333333333334,
+    "duration": 7.033333333333333,
+    "end": 20.46666666666667
+  },
+  {
+    "id": "structure",
+    "say": "ページインデックスは、資料をしょうやせつのツリーに整理。",
+    "caption": "PageIndex：\n資料の構造をツリーにする",
+    "index": 3,
+    "audio": "audio/03-structure.wav",
+    "start": 20.46666666666667,
+    "speech_duration": 3.6693333333333333,
+    "duration": 4.533333333333333,
+    "end": 25.0
+  },
+  {
+    "id": "traverse",
+    "say": "決算資料から、業績、費用の分析へ。しょうの説明を手がかりに、AIが読む場所を選びます。",
+    "caption": "章の説明を手がかりに\nAIが読む場所を選ぶ",
+    "index": 4,
+    "audio": "audio/04-traverse.wav",
+    "start": 25.0,
+    "speech_duration": 7.584,
+    "duration": 8.466666666666667,
+    "end": 33.46666666666667
+  },
+  {
+    "id": "evidence",
+    "say": "本文に、物流費の増加で利益が減った、とあれば、そのページを根拠に回答します。",
+    "caption": "本文を読む\n根拠ページとともに答える",
+    "index": 5,
+    "audio": "audio/05-evidence.wav",
+    "start": 33.46666666666667,
+    "speech_duration": 6.368,
+    "duration": 7.233333333333333,
+    "end": 40.7
+  },
+  {
+    "id": "principle",
+    "say": "似た文章を探すだけでなく、構造をたどって探す。ベクトルデータベースを使わないのが特徴です。",
+    "caption": "構造をたどる検索\nベクトルDBを使わない",
+    "index": 6,
+    "audio": "audio/06-principle.wav",
+    "start": 40.7,
+    "speech_duration": 6.698666666666667,
+    "duration": 7.566666666666666,
+    "end": 48.266666666666666
+  },
+  {
+    "id": "limits",
+    "say": "ただし、万能ではありません。精度も、待ち時間も、AIの利用コストも、検証が必要です。",
+    "caption": "精度・待ち時間・AIの費用\n使う資料で検証が必要",
+    "index": 7,
+    "audio": "audio/07-limits.wav",
+    "start": 48.266666666666666,
+    "speech_duration": 7.872,
+    "duration": 8.733333333333333,
+    "end": 57.0
+  },
+  {
+    "id": "payoff",
+    "say": "長い資料を、目次から読み解く。ページインデックスです。",
+    "caption": "目次をたどって、根拠に届く。",
+    "index": 8,
+    "audio": "audio/08-payoff.wav",
+    "start": 57.0,
+    "speech_duration": 4.2026666666666666,
+    "duration": 5.066666666666666,
+    "end": 62.06666666666666
+  }
+]

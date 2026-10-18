@@ -15,6 +15,7 @@
 |教養ショートのテーマ選びと、その提案への指摘|[shorts-topic-research.md](shorts-topic-research.md)|
 |尺と収益化についての回答の範囲|[platform-duration-notes.md](platform-duration-notes.md)|
 |実際に制作した65秒ショート|[README](../shorts/decay-heat/README.md)、[演出計画](../shorts/decay-heat/plan.md)|
+|PageIndexのショート：ツリーによる資料探索|[README](../shorts/pageindex/README.md)、[演出計画](../shorts/pageindex/plan.md)、[出典](../shorts/pageindex/sources.md)|
 |Docker、音声、文字、尺、リンク切れの対処|[troubleshooting.md](troubleshooting.md)|
 |Gitへの保存・ユーザーへの受け渡し|[preservation-and-delivery.md](preservation-and-delivery.md)|
 |何をどの根拠で復元したか|[restoration.md](restoration.md)|

@@ -1,0 +1,28 @@
+{
+  "file": "pageindex-short-ja.mp4",
+  "duration_seconds": 64.566016,
+  "width": 1080,
+  "height": 1920,
+  "fps": "30/1",
+  "frames": 1937,
+  "audio_max_dbfs": -1.5,
+  "full_decode": "passed",
+  "size_bytes": 6931785,
+  "sha256": "5cde9bc44d130a4392a9c57ec3a115894e33bd7158c7bce609504427ca8bc212",
+  "voice": "VOICEVOX:青山龍星",
+  "cue_count": 9,
+  "speech_within_cues": "passed",
+  "story_sha256": "7a328f77aaea8062425fbef411c490c33d1369a98fe880bc91e9a0b947a2894b",
+  "script_sha256": "56ef3cf13f56443a0bb3a384b62a6f84933367077b6a8800336dfe276283d179",
+  "source_commit": "e7d1cc67e4dd5bfe4cac63b161b313ef41328705",
+  "fallback": {
+    "file": "pageindex-short-ja-720p.mp4",
+    "size_bytes": 2613558,
+    "sha256": "958ad5ded73d674ed35633ff32dde24af4146d70365218e23b9209d3fb21e464",
+    "full_decode": "passed",
+    "width": 720,
+    "height": 1280,
+    "profile": "Main",
+    "level": 31
+  }
+}

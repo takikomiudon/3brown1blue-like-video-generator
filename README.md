@@ -9,6 +9,14 @@
 このブランチを取得してください。`main` は初期READMEだけの場合があります。
 取得後は `python3 scripts/verify_knowledge.py` で整合性を確認できます。
 
+## PageIndex：目次をたどって、根拠に届く
+
+日本語ナレーション・字幕付きの約65秒の縦型動画。
+
+- [完成動画（1080p）](shorts/pageindex/outputs/pageindex-short-ja.mp4)
+- [軽量版（720p）](shorts/pageindex/outputs/pageindex-short-ja-720p.mp4)
+- [台本・出典・再生成手順](shorts/pageindex/README.md)
+
 ## 原子炉を止めても、なぜ冷却が必要？
 
 日本語ナレーション・字幕付きの約65秒の縦型動画。
