@@ -9,6 +9,7 @@ PageIndexの公式資料を確認し、架空の決算資料で検索の仕組�
 - [台本](story.json) / [演出計画](plan.md) / [出典と主張の範囲](sources.md)
 - [機械的な検証結果](outputs/validation.json)
 - [画面・発音・形式の確認記録](review.md)
+- [ダウンロードと再取得の検証記録](outputs/delivery.json)
 
 GitHubで再生されない場合は、MP4のファイルページの **Download raw file** から保存してください。
 
