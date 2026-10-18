@@ -6,8 +6,8 @@
 環境が切り替わると初期READMEのチェックアウトになり、未コミットの文書・コード・動画を回収できなかった。
 そのため「導入済み」という説明だけでは継続利用を保証できなかった。
 
-現在の完成動画は `video/decay-heat-delivery` に保存済み。今回のスキル・調査文書も同じブランチへ保存する。
-`main` にマージ済みとは主張しない。環境の公開スナップショットとGitHub保存も別。
+2026-10-19に完成動画・スキル・調査文書を `main` へ統合した。現在の保存先と作業先はmain。
+以前の作業ブランチは履歴として残る。環境の公開スナップショットとGitHub保存は別。
 
 ## 保存の最低条件
 
@@ -42,11 +42,11 @@ raw配信はapplication/octet-streamになる場合があるため、インラ�
 
 ## 復元前に確認すること
 
-`main` にファイルがないだけなら、まず成果のブランチを取得する。利用者の作業を上書きしない。
+ファイルがない場合は、まずリモートのmainを確認する。利用者の作業を上書きしない。
 
 ```bash
-git ls-remote origin refs/heads/video/decay-heat-delivery
-git fetch origin video/decay-heat-delivery
+git ls-remote origin refs/heads/main
+git fetch origin main
 # 作業ツリーとローカルコミットを確認してから、必要に応じてブランチを切り替える。
 ```
 

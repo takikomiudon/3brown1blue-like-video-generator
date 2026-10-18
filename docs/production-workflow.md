@@ -11,7 +11,7 @@ git log -3 --oneline
 python3 scripts/verify_knowledge.py
 ```
 
-成果のブランチは `video/decay-heat-delivery`。`main` の初期READMEだけを見て、成果が存在しないと判断しない。
+成果・ノウハウ・スキルは `main` に統合済み。既存チェックアウトのmainで作業する。
 利用者の変更を残したまま進め、checkoutやresetで消さない。
 
 ## 1. 出典と企画

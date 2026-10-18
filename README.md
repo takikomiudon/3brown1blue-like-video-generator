@@ -5,8 +5,7 @@
 5つの[エージェント用スキル](.agents/skills)を保存しています。
 復元の根拠と範囲は [復元記録](docs/restoration.md) を参照してください。
 
-成果とノウハウの保存ブランチは `video/decay-heat-delivery` です。新しい環境では
-このブランチを取得してください。`main` は初期READMEだけの場合があります。
+成果・ノウハウ・スキルは `main` に統合済みです。新しい環境でも `main` を使ってください。
 取得後は `python3 scripts/verify_knowledge.py` で整合性を確認できます。
 
 ## 制作スキルの呼び出し

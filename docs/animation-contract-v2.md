@@ -33,7 +33,7 @@
 ## 別セッションへの反映
 
 呼び出し名は `$science-explainer` のまま。
-`video/decay-heat-delivery` ブランチから `.agents/skills/science-explainer/` フォルダ全体を取得する。
+`main` ブランチから `.agents/skills/science-explainer/` フォルダ全体を取得する。
 既存のローカル変更は保存し、参照する兄弟スキルと描画環境をそろえる。
 読み込んだSKILL.mdの `metadata.version` が `2.0.0` であることを確認する。
 以前のコピーや固定コミットへのリンクは、リポジトリを更新しても自動では差し替わらない。

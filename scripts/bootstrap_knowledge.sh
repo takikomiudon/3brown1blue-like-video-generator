@@ -7,13 +7,13 @@ if [[ ! -f scripts/verify_knowledge.py || ! -f docs/KNOWLEDGE.md ]]; then
     echo 'Local changes exist; preserved without switching branches.' >&2
     exit 1
   fi
-  git fetch origin refs/heads/video/decay-heat-delivery:refs/remotes/origin/video/decay-heat-delivery
-  if git show-ref --verify --quiet refs/heads/video/decay-heat-delivery; then
-    git switch video/decay-heat-delivery
+  git fetch origin refs/heads/main:refs/remotes/origin/main
+  if git show-ref --verify --quiet refs/heads/main; then
+    git switch main
   else
     # --single-branch clones do not map this remote branch for tracking.
-    git switch --no-track -c video/decay-heat-delivery origin/video/decay-heat-delivery
+    git switch --no-track -c main origin/main
   fi
-  git merge --ff-only origin/video/decay-heat-delivery
+  git merge --ff-only origin/main
 fi
 python3 scripts/verify_knowledge.py
