@@ -27,6 +27,8 @@
 
 ## 実装・検証
 
+- 新作は `science-explainer` v2.0.0の動作契約を適用する。説明対象の状態変化と、その変化が伝える意味を設計し、5〜10秒の試作が合格してから全編へ進む。
+- 完成判定には、最終MP4の主図に対する `audit_motion.py` の検査と、同じSHA-256に結びつく意味のレビューの両方を必須とする。コマンドと書式は [.agents/skills/science-explainer/references/motion-contract.md](.agents/skills/science-explainer/references/motion-contract.md)。
 - 現行ショートはManim Community、VOICEVOX。RemotionとManimGLのAPIを混在させない。
 - 台本の編集元は各動画の `story.json`。音声の尺を測ってタイムラインを作る。
 - 既存成果物を渡すだけなら再レンダーは不要。リポジトリ内のMP4と検証記録を先に使う。

@@ -16,6 +16,8 @@ python3 scripts/verify_knowledge.py
 
 ## 1. 出典と企画
 
+- 新作は [science-explainer v2.0.0の動作契約](../.agents/skills/science-explainer/references/motion-contract.md) を適用する。`motion-plan.json` に対象の状態変化と、その変化が伝える関係を記述する。
+- 中心部分の5〜10秒を実際に描画し、中間状態と意味の対応を確認してから全編へ展開する。
 - [科学的確認](fact-check.md)と[テーマ選び](shorts-topic-research.md)を読む。
 - 対象、中心の理解、視聴者の関心の根拠を一文ずつ決める。
 - Manim Video Lab等の既存手順を使い、図・対象・色・注目・台詞・動き・保持時間を `plan.md` に書く。
@@ -94,6 +96,10 @@ bash run.sh python finalize.py
 静止画の見直しを、人による全編の動画・音声の視聴と表現しない。
 
 ## 6. 保存して渡す
+
+新作の完成判定には、最終MP4の主図に対する動作検査と、そのSHA-256に結びついた意味のレビューが必要。
+動作契約のコマンドで `status: PASS` を確認し、計画・レビュー・検査結果をコードとともに保存する。
+この手順の追加により、過去の出力が新しい検査を実施済みになるわけではない。
 
 [保存と受け渡し](preservation-and-delivery.md)の手順で、GitHubへ保存してからURLを再取得する。
 既存の出力が有効なら新たにレンダリングしない。ライブプロセスの存続や、未コミットのファイルの残存に依存しない。

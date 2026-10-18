@@ -1,0 +1,17 @@
+{
+  "roi": null,
+  "beats": [
+    {
+      "id": "mechanism",
+      "start": 0,
+      "end": 8,
+      "kind": "mechanism",
+      "object": "main_object",
+      "before": "説明対象の変化前の状態を題材に即して記述する",
+      "action": "対象自身がどのように動くか具体的に記述する",
+      "after": "動作後の状態を記述する",
+      "meaning": "その変化によって何が分かるかを記述する"
+    }
+  ],
+  "holds": []
+}

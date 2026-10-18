@@ -17,6 +17,8 @@
 |実際に制作した65秒ショート|[README](../shorts/decay-heat/README.md)、[演出計画](../shorts/decay-heat/plan.md)|
 |PageIndexのショート：ツリーによる資料探索|[README](../shorts/pageindex/README.md)、[演出計画](../shorts/pageindex/plan.md)、[出典](../shorts/pageindex/sources.md)|
 |Docker、音声、文字、尺、リンク切れの対処|[troubleshooting.md](troubleshooting.md)|
+|説明対象の動作を設計し、完成映像で確認する|[動作契約](../.agents/skills/science-explainer/references/motion-contract.md)|
+|制作スキルv2.0.0の変更と検証|[改訂記録](animation-contract-v2.md)、[検証結果](animation-contract-v2-validation.json)|
 |Gitへの保存・ユーザーへの受け渡し|[preservation-and-delivery.md](preservation-and-delivery.md)|
 |何をどの根拠で復元したか|[restoration.md](restoration.md)|
 |スキルの固定コミット・ライセンス・ハッシュ|[vendor-skills.json](vendor-skills.json)|

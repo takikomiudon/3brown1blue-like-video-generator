@@ -1,0 +1,24 @@
+{
+  "checked_on": "2026-10-19",
+  "skill_version": "2.0.0",
+  "regression_tests": {
+    "count": 14,
+    "result": "passed",
+    "command": "python3 .agents/skills/science-explainer/scripts/test_audit_motion.py"
+  },
+  "portable_bundle_check": {
+    "result": "passed",
+    "working_directory": "outside_repository",
+    "normal_cli_status": "PASS"
+  },
+  "scope": "Checker regressions and portable CLI execution; not an independent agent generation experiment",
+  "python_version": "3.12.14",
+  "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "files_sha256": {
+    ".agents/skills/science-explainer/SKILL.md": "aef24eae5c37775dfbc43b40177efbc3b1e967092d5de468b539a3c565d7628d",
+    ".agents/skills/science-explainer/references/motion-contract.md": "72c3e234dd660ca100a9c9c19ae0d9e96fd57fb4926678e863a75ec69107eee7",
+    ".agents/skills/science-explainer/scripts/audit_motion.py": "4ad77d4d4a5ef6683da2e534848691ba1d19542298ed2434aa934778f11b97bb",
+    ".agents/skills/science-explainer/scripts/test_audit_motion.py": "866fce852628fd1ef99f100074aa3f82a027903ebadaf17f062a2ea1f01006a2",
+    ".agents/skills/science-explainer/templates/motion-plan.example.json": "5b948b5b9995684fcfcb9a6c5320472a8ad6a066a548aa4da5f4d77d93e7e995"
+  }
+}

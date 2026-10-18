@@ -25,12 +25,13 @@ def main():
         'KNOWLEDGE research fact-check credits production-workflow storyboard '
         'validation quality-upgrade quality-upgrade-pilot quality-upgrade-source-links '
         'shorts-topic-research platform-duration-notes troubleshooting '
-        'preservation-and-delivery restoration'
+        'preservation-and-delivery restoration animation-contract-v2'
     ).split()
     own_files = [ROOT / 'README.md', ROOT / 'AGENTS.md',
                  ROOT / 'shorts/decay-heat/README.md',
                  ROOT / 'shorts/decay-heat/plan.md',
-                 ROOT / '.agents/skills/science-explainer/SKILL.md']
+                 ROOT / '.agents/skills/science-explainer/SKILL.md',
+                 ROOT / '.agents/skills/science-explainer/references/motion-contract.md']
     own_files += [ROOT / 'docs' / (name + '.md') for name in required_docs]
     for path in own_files:
         require(path.is_file(), f'Missing document: {path.relative_to(ROOT)}')
@@ -48,6 +49,12 @@ def main():
 
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
+    custom = ROOT / '.agents/skills/science-explainer'
+    require('version: "2.0.0"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.0')
+    for name in ['audit_motion.py', 'test_audit_motion.py']:
+        require((custom / 'scripts' / name).is_file(), f'Missing motion check: {name}')
+    require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')
     for name in skills:
         path = ROOT / '.agents/skills' / name / 'SKILL.md'
         require(path.is_file(), f'Missing skill: {name}')
