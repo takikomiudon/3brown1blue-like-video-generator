@@ -1,0 +1,1377 @@
+{
+  "restored_on": "2026-10-18",
+  "sources": [
+    {
+      "skill": "remotion-best-practices",
+      "repository": "https://github.com/remotion-dev/skills",
+      "commit": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
+      "source_path": "skills/remotion-best-practices",
+      "restore_basis": "original commit recorded in conversation",
+      "license": "no root LICENSE observed; no license inferred"
+    },
+    {
+      "skill": "manim-composer",
+      "repository": "https://github.com/adithya-s-k/manim_skill",
+      "commit": "cef045011722d285692e3381d12d4d637da56e18",
+      "source_path": "skills/manim-composer",
+      "restore_basis": "upstream history at original research date; original local manifest unavailable",
+      "license": "MIT"
+    },
+    {
+      "skill": "manimce-best-practices",
+      "repository": "https://github.com/adithya-s-k/manim_skill",
+      "commit": "cef045011722d285692e3381d12d4d637da56e18",
+      "source_path": "skills/manimce-best-practices",
+      "restore_basis": "upstream history at original research date; original local manifest unavailable",
+      "license": "MIT"
+    },
+    {
+      "skill": "manim-video",
+      "repository": "https://github.com/ApliroAI/manim-video-lab",
+      "commit": "6219393c53105d85d8b40b16de48751ac71749da",
+      "source_path": ".",
+      "restore_basis": "upstream history at original research date; original local manifest unavailable",
+      "license": "MIT"
+    }
+  ],
+  "files": [
+    {
+      "path": ".agents/skills/remotion-best-practices/SKILL.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/SKILL.md",
+      "sha256": "22948fb13615aee79d02187ce1fb8ab79be296fb029d28f872466eeb8d0fc86b"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/agents/openai.yaml",
+      "sha256": "752b402c013ba6f02bd827a7cc56d19e8facb159b52e2e3cecaf2d0229fdefb3"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/REFERENCE.md",
+      "sha256": "c30df75235772cd8e17f820fa25b344ab8c1cce1aaf7031ed0a2c00dad7c1449"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/agents/openai.yaml",
+      "sha256": "3b39a48bd00251cf124e80090fe1b792b73020bee858c5d48b5629256cc5f045"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/display-captions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/display-captions.md",
+      "sha256": "0272634884dedf236b6f9b27fafc8aab54794b70eb1608019d115b69bea59bc2"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/import-srt-captions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/import-srt-captions.md",
+      "sha256": "e328b6845babd08ed2a747f82c59796fd1d7b85140c8eb4d36e41639779473ad"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-captions/transcribe-captions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-captions/transcribe-captions.md",
+      "sha256": "0830184ed1f634a6912536768a3aabc0092313db22796c4455e8b46dad874803"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-create/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-create/REFERENCE.md",
+      "sha256": "5561610d4bb280b09c6a6f6c513a04d049005d9a4fe45ebc78a8813e74f67604"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-create/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-create/agents/openai.yaml",
+      "sha256": "ff3b357b492da1791c672e18ae401a23c31bd1e6f1fa6f98c5efabbb3124bd9c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-create/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-create/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-create/tailwind.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-create/tailwind.md",
+      "sha256": "3ef07d3225d212af6a5076e62797a04d22d394434dcdbe2c050dab0d92806f36"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-create/video-layout.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-create/video-layout.md",
+      "sha256": "7ad94c22e3ad87671292ebb9b22f234c544d6c7fed13f8cb112b84b0f7077d4c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-docs/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-docs/REFERENCE.md",
+      "sha256": "4c6c3c610c48434d8607644deb74483240dc77b6ff9d8044f7f09bcddeabdf12"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-docs/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-docs/agents/openai.yaml",
+      "sha256": "ab02cb3008e6fc0702d7a601bfdd2f332e1224fda3c37de0265c24311c00d456"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-docs/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-docs/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-interactivity/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-interactivity/REFERENCE.md",
+      "sha256": "afee9001bbde58fbc336cfc052da79980d87faa9685fec6c5341b2c380502354"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-interactivity/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-interactivity/agents/openai.yaml",
+      "sha256": "84cd86b0b10e1f8b5be97bbd46677d5f618304303d922f1016ce0ea6a015d4b9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-interactivity/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-interactivity/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-interactivity/inline-effects.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-interactivity/inline-effects.md",
+      "sha256": "e2204691164855f195ffefc88706785089153a1e97dae06781841575892a30a6"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/REFERENCE.md",
+      "sha256": "5237237d87917300905049ad2d20eb13d54d0a93d264e5cb4439947305cae279"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/agents/openai.yaml",
+      "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/TECHNIQUE.md",
+      "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+      "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/cesium-path.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/cesium-path.json",
+      "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/city-path.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/city-path.json",
+      "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+      "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/flight-path.ts",
+      "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+      "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+      "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+      "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+      "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+      "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+      "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/mapbox/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/mapbox/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+      "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maplibre/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maplibre/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+      "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+      "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+      "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+      "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+      "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/tokens.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/assets/tokens.ts",
+      "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+      "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+      "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+      "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+      "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-maps/techniques/static-map/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-maps/techniques/static-map/TECHNIQUE.md",
+      "sha256": "1d2b15f2e09cbb2b2ba0d5a6ec54ecf619b6696acced0b7bec7e010fbe1f1f03"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/3d.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/3d.md",
+      "sha256": "42cef6d68fb4a266ab495d35df0c60e03672b0d85c043f9b567f6aa7ff00dd0d"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/REFERENCE.md",
+      "sha256": "b873a8d4f8d18f7d344c59598fc5b3f66eaa571b57ae530682d8f1940eb68107"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/agents/openai.yaml",
+      "sha256": "79e440561b613adf930f61b9f2ececc3284dfd92d06c4c282b73b461ffd16cb6"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/audio-visualization.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/audio-visualization.md",
+      "sha256": "0f4043de86639b6390e5ab888eaa66a24a10a8bd540f1443327cb88107eae1e9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/audio.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/audio.md",
+      "sha256": "4fc2fb35c21b2da76f912c49a3e726eaf68d7b19180bea98370c22be16949f1a"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/calculate-metadata.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/calculate-metadata.md",
+      "sha256": "711743642a475970dcadddb71805939dd6ee8f348825818cc8897b6a01e1eef0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/compositions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/compositions.md",
+      "sha256": "2b09427165c8708510153c83add50c0f03992bf968962bfd5e3c373860d3853c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/connected-compositions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/connected-compositions.md",
+      "sha256": "aa9a912e649bc773e0110cd496b17e0174395d533e4ffb26fecbc5707f641810"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/cropping.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/cropping.md",
+      "sha256": "510ae5b6a7ce357aca99f3dfde5eff76812a84ca10a833dea7ce039611d4a4f2"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/effects.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/effects.md",
+      "sha256": "9745f709501a3fb4593266aa4a8d98a8b0b5479cbca804fdcb51e7b9f0fe38bb"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/embedding-videos.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/embedding-videos.md",
+      "sha256": "3b0484bc92cd1d54fd6c9a54bc75c4f837054c90bb35e5e8959701d320c6a551"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/ffmpeg.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/ffmpeg.md",
+      "sha256": "1d83085dfb63724f374acc5f01967f6c18f3aa7df62146438262a4061a839770"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/gifs.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/gifs.md",
+      "sha256": "91e17126f7f0d57efdbdbaf34e0c234f874bd6aa66ec7854b80f17b0e32c3b22"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/google-fonts.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/google-fonts.md",
+      "sha256": "fff29cf692ccab0cda263cd85255cf634dbb4d1d2d99e8372b01d9fedbd6cbfd"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/html-in-canvas.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/html-in-canvas.md",
+      "sha256": "9b896dab368f8d9aec41114f8d0b96c1fbee981419b7077d6fd61621a0a54be4"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/images.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/images.md",
+      "sha256": "0e6c2af8ad73483ebbc761237f230c8c0db1bd9db6b60d01d48a24b8a4059284"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/light-leaks.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/light-leaks.md",
+      "sha256": "531514d4740c5a1a3798782300db69ebfe8f61191fc7852960bc5bdf5b82200b"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/local-fonts.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/local-fonts.md",
+      "sha256": "fcad2a2e3a05419d4555c59a75454c4891455dbea91ad596c1095e2887d26a11"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/lottie.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/lottie.md",
+      "sha256": "666268c8151d91042162f9efe3f02fe8c62b4c45053614eb1a9325c169428826"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/measuring-dom-nodes.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/measuring-dom-nodes.md",
+      "sha256": "a677b976eaf1cbc3cdd29cf29a3fd546c557b9a31e6b1fd70e473fde7e828733"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/measuring-text.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/measuring-text.md",
+      "sha256": "4bed81d1ea818db3975f878152dc24ecbc17e163117dcab10761dc8690c33f0c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/motion-blur.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/motion-blur.md",
+      "sha256": "bc7559c9d0e56dffef72dcc4fb2d89d42c587ec2204ac21d33ae0c583d59632d"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/multi-scene-video.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/multi-scene-video.md",
+      "sha256": "246939d876ab2a0ba509435e960fefd63b3a9943363352ecded4afad799aa03f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/parameters.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/parameters.md",
+      "sha256": "b002ac9959105b2b91da5786bcb20aa6ff4c6632ed37074b32711f248867dff0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/REFERENCE.md",
+      "sha256": "5237237d87917300905049ad2d20eb13d54d0a93d264e5cb4439947305cae279"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/agents/openai.yaml",
+      "sha256": "9c6c75daec6eabd78cf6fbc7169be3f7dde934df1316e41df6658052056b29ee"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/TECHNIQUE.md",
+      "sha256": "09057e77b67dcda23eed8ddbf1b5bd44541a952f380913a00b3bfddaa39ab675"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/CesiumFlythrough.tsx",
+      "sha256": "4d4a90e373176e840ae76ae91533fcd9dc445407693b17091c376bb597dbcb10"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/cesium-path.json",
+      "sha256": "329621928df19d115f93c472a0b7ddbd2463cad502a10722d3c23579a7441d44"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/city-path.json",
+      "sha256": "3bb420736d196f726b856420b319e21a8d7fc24bca7e626d67e8b00b0544e630"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/example-Root.tsx",
+      "sha256": "51c2df109015adc992b66b62f1ffc9801ad13f3dc47e4290de40cbe1b8e7809e"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/flight-path.ts",
+      "sha256": "fab65d2d9cc0c4ca56f8a1422494d178c0e57f92a048a4720358d236ced980f0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/assets/sample-river.geojson",
+      "sha256": "2c9f6dd35ac4aed56580078046941235ed7e1a5d432a6549dbf7fea4e8d1e9be"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-data-sources.md",
+      "sha256": "23ac1acc576d49d599b33c812dc697b264ebe28849088c04e9827cb47b95275f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-flyover-architecture.md",
+      "sha256": "09e1891cec991a246eec60dbcf76c4ea84c52e0bee14321471197703395d0a91"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/references/3d-troubleshooting.md",
+      "sha256": "c803fe443f5bab1a50408f1f6aa6aded7913577eaefcb586b320c5a96c391bf2"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/cesium/scripts/prep-cesium-path.mjs",
+      "sha256": "6dbb4d1ae3f5fef9f3f6eb23e2a6d58622750714bb847b088ff58a3533839463"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/TECHNIQUE.md",
+      "sha256": "8c434f680988a7212a9443ef9be0f62ef734f3d92af4dc47c11dad184677eec9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/mapbox/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/TECHNIQUE.md",
+      "sha256": "8a13debcd2abfce415b5c8b7f323420ec77092d81ceb935853171ca9697b902c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maplibre/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/TECHNIQUE.md",
+      "sha256": "72896873e63d675caaab765941dbb8d668f2790090a63b94e165f254b77ef887"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/CountryLabel.tsx",
+      "sha256": "6be8c7d5b3435c8d933f05394ce5e807da5fc9fe0565db94ccaee6ac049df137"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/MapTilerVectorElement.ts",
+      "sha256": "c8137792824323b9db997a88c3b923e8072cf2886cd90c38d84fdbbaad8258ed"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/RiverReveal.tsx",
+      "sha256": "c3091e23dfd80178788d05c0bc43b17aee12aa4236d658f1a97c5acfb29a0f92"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/example-Root.tsx",
+      "sha256": "e53677a7a207e37cbc04693eca8ccbab5f5f040efdc67a8b5c030c3913895e83"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/country-meta.json",
+      "sha256": "470a76cc5a45e58e7e1702cd80f74fcacf9d6e8b1ef7b05011f69853a999ba7b"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/sample-data/yarlung-flow.json",
+      "sha256": "73a99e77a2ce31cb3ac39be8fe4775d53ecf127a56137b587fca090067dfbb96"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/assets/tokens.ts",
+      "sha256": "29ae05eedb4988b5b8f2eb44d241b9c472533fb6ed05d4b33df3e71e0eabc71c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-data-sources.md",
+      "sha256": "b99680cbda8e7d70dc2cb1a8823f66247a21fc59d10c6dae0dd9ba24d2f15b80"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-explainer-architecture.md",
+      "sha256": "e09de8a4d00ea9a82b992918ec4d0302ee18979b73e6c777d584a9743092344f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/map-geo-prep.md",
+      "sha256": "a97b1913f06195601889d4e090ad056db2fffb7b83918924c8cd92847b3829ef"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/references/render-stability.md",
+      "sha256": "96650329df3a870743b6255123e93dba866a37eb1ab1d07c8275efff0d4dead9"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/maptiler/scripts/prep-geo.mjs",
+      "sha256": "8265f56bd7c27a7d1a5fa528a77bbe1b29c6acc0e6730233583ca53e2632d490"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/remotion-maps/techniques/static-map/TECHNIQUE.md",
+      "sha256": "6fcb61a66084f4037a2fa0deb988500dd18e4ae7fa3c6923fb1142c1e521e9be"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/sequencing.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/sequencing.md",
+      "sha256": "6c607eef126c024deeb56596d1d409a120d03df41da7f62a581c4ce5dbec4409"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/sfx.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/sfx.md",
+      "sha256": "1f72e2d8858505ae2d31fa89231432714f8bc34c36164d3c0cc43a290b3f826a"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/silence-detection.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/silence-detection.md",
+      "sha256": "7e777b141e339ade03bbdc1d002390e849781ebd3059183f60e1b24a91210f14"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/text-highlights.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/text-highlights.md",
+      "sha256": "70773952286e1aec2ba02f2f54d2d776dad7799d87744df03b0c75637ebfb21f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/timing-props.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/timing-props.md",
+      "sha256": "2046b3c50c022317046f6f796783ee025004a6e6258f06fbf51d3e81c6291146"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/timing.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/timing.md",
+      "sha256": "48047e758b96aea519916479ede62b832bf51f982924978e091c37f569ab4bac"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/transitions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/transitions.md",
+      "sha256": "198534edd0f7744a9e6fd37a149f1b2b294c770880e383af5d81a69f9939a2cb"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/video-editing.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/video-editing.md",
+      "sha256": "1552ec758effb15a3fe428985a1461618f9033620acbcc328d464c9c57359de3"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-markup/voiceover.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-markup/voiceover.md",
+      "sha256": "c310b9425559fac09c4ac660ae18243621565a00fb2aa052fd6e73ef34c57c7f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/REFERENCE.md",
+      "sha256": "e29aa045943cdad6cc71dc2c7c2b0df7f27b92402e6709f177ebe1afc36fb3b5"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/agents/openai.yaml",
+      "sha256": "74e07a383bbf02808320ede199873d00a5fc976cb99d407056456b9abdfb0cb7"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/get-audio-duration.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/get-audio-duration.md",
+      "sha256": "53b2e2ff232cae14ff9c0f7bb3ddf95c6137f7f1804cdaf50f7fe742befe0fd0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/get-video-dimensions.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/get-video-dimensions.md",
+      "sha256": "9d4cd07f11ce8fabda258b4d826e7c9b3d6827e87ee036a2c4c8a7a5aca7db76"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-multimedia/get-video-duration.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-multimedia/get-video-duration.md",
+      "sha256": "6df955602cf7fb591ecb3f529fa9740d26ec1a4893a816aa08ea9b780379a8a0"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-render/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-render/REFERENCE.md",
+      "sha256": "4f7e905682d2b4ca4b33629ad7c3fcb406618b1d1df05aecc1b0519e0eefb8d1"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-render/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-render/agents/openai.yaml",
+      "sha256": "386699c32fdc63840ce7ff7412953831095dc4cdf60368648378c32895281290"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-render/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-render/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-render/transparent-videos.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-render/transparent-videos.md",
+      "sha256": "394ccda476e084522d544471fee92d7c65672e2cbaf2201a785c3dd5c74f31a4"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/REFERENCE.md",
+      "sha256": "42eaef12be7de128d01d394540eaf72f1c7c35abfda605eb50dbcf611bbdea0c"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/agents/openai.yaml",
+      "sha256": "66be5403b3d10194c99e886372bbc1f4bdb2994fe560278bc7a39b4fbe7753a2"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/framework.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/framework.md",
+      "sha256": "5e35ca3306ac15ad1df189789642cefbc62c59f4929372ffc10a67165d7b04b5"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/player.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/player.md",
+      "sha256": "cc2f2944f1158d6ff1ddfc421a6a790f99ae86f54bbe0f0b18ef8bc7485e1b05"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-saas/rendering.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-saas/rendering.md",
+      "sha256": "b2f30b53e0191ef9e7f2da7360b36c0c5448ab5bdcf55575e1f7e55c5bbd257f"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-studio/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-studio/REFERENCE.md",
+      "sha256": "c3f91d99d1467241dadabf3832b706d0265e9c3b3c86e33b95deb80667860093"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-studio/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-studio/agents/openai.yaml",
+      "sha256": "43afba3c8088614ece62949e33a7c8350092e76436bad87ad41e1a1ccaebea5d"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-studio/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-studio/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-upgrade/REFERENCE.md",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-upgrade/REFERENCE.md",
+      "sha256": "409e6767abeb56b440e2e711942ac86e12d5249bc8a266af0f4eb4f57635f0c8"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-upgrade/agents/openai.yaml",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-upgrade/agents/openai.yaml",
+      "sha256": "3f3bc995d3531cfb5a714fd8f951954e118909b749217cc8418a235326d003cb"
+    },
+    {
+      "path": ".agents/skills/remotion-best-practices/remotion-upgrade/assets/remotion-icon.svg",
+      "source_skill": "remotion-best-practices",
+      "source_path": "skills/remotion-best-practices/remotion-upgrade/assets/remotion-icon.svg",
+      "sha256": "5007669bd0555b0f4565b4e7176fa191310ab0039b2ed09d867a9270f5b0ce58"
+    },
+    {
+      "path": ".agents/skills/manim-composer/SKILL.md",
+      "source_skill": "manim-composer",
+      "source_path": "skills/manim-composer/SKILL.md",
+      "sha256": "79e7c224fa8912f3e26897aa91252ab30996eddd1208c1128238057a7b89b176"
+    },
+    {
+      "path": ".agents/skills/manim-composer/UPSTREAM-LICENSE",
+      "source_skill": "manim-composer",
+      "source_path": "LICENSE",
+      "sha256": "c02371d11efe3579c38db2bb73258f939cc74ecd729d69128ad3c65c4138b009"
+    },
+    {
+      "path": ".agents/skills/manim-composer/references/narrative-patterns.md",
+      "source_skill": "manim-composer",
+      "source_path": "skills/manim-composer/references/narrative-patterns.md",
+      "sha256": "fc77ac5b0224fd79adc5b6dab889a8ab4719ea99c419634bc66759ec49543656"
+    },
+    {
+      "path": ".agents/skills/manim-composer/references/scene-examples.md",
+      "source_skill": "manim-composer",
+      "source_path": "skills/manim-composer/references/scene-examples.md",
+      "sha256": "f147c92b48c6fffac71245f65baa00e92ece2d337d3a56382a8a60e9405d98fe"
+    },
+    {
+      "path": ".agents/skills/manim-composer/references/visual-techniques.md",
+      "source_skill": "manim-composer",
+      "source_path": "skills/manim-composer/references/visual-techniques.md",
+      "sha256": "98a493bced91a4aa821b72a059b4d9c3cdde62babccd9de27d50e176caabb052"
+    },
+    {
+      "path": ".agents/skills/manim-composer/templates/scenes-template.md",
+      "source_skill": "manim-composer",
+      "source_path": "skills/manim-composer/templates/scenes-template.md",
+      "sha256": "562da30cce06b37061aa0f83e19d7dfe96561bd0011ca90c8248d8b15d1ac7b9"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/LICENSE.txt",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/LICENSE.txt",
+      "sha256": "c02371d11efe3579c38db2bb73258f939cc74ecd729d69128ad3c65c4138b009"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/SKILL.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/SKILL.md",
+      "sha256": "ae09751ec9e3e9389b85f923f4e34b706a32e01b18e378759163d1d855f90d4e"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/UPSTREAM-LICENSE",
+      "source_skill": "manimce-best-practices",
+      "source_path": "LICENSE",
+      "sha256": "c02371d11efe3579c38db2bb73258f939cc74ecd729d69128ad3c65c4138b009"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/3d_visualization.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/3d_visualization.py",
+      "sha256": "214dcd11b09b83025405050bc618cfa7d8749691e39f136a0b987de82e47ff95"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/attention/__init__.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/attention/__init__.py",
+      "sha256": "6c13b542eb4c66701cb349a4c95606a8d9767711eb3155032136e75babe46f7f"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/attention/helpers.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/attention/helpers.py",
+      "sha256": "82014263adf85db640774467ac6dae00798347b995b02d34d6664e6e917c1409"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/attention/scenes.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/attention/scenes.py",
+      "sha256": "10aef8fc1d8c65d2043a95215f3b310ff1591f5aaab92139aa48969f50991533"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/basic_animations.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/basic_animations.py",
+      "sha256": "d95f075d90d5cb4114923d99a1b7ad167acfaf8343ae808b682adc3c830c7506"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/graph_plotting.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/graph_plotting.py",
+      "sha256": "32f9c68313daf3b2a42e5e75e85d24b46628ef77872615eef798036840b52b83"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/lorenz_attractor.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/lorenz_attractor.py",
+      "sha256": "eee8b2d5d5e6b10c61978c46921e1189c3d7a43b94cb6706f2505724f7e03392"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/math_visualization.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/math_visualization.py",
+      "sha256": "e890b6be5fd8322631f708b71ac8da7d9201d639d5676977313a659a1cb87ded"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/examples/updater_patterns.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/examples/updater_patterns.py",
+      "sha256": "f372ad2991835320a2a2243dae5efb4ad7ddbcf8a82cebfd0f85760220ced635"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/3d.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/3d.md",
+      "sha256": "00857a259d770b43877c02aecc276e44adc1a8c69ae6f8a067a30ee9cc35223c"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/animation-groups.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/animation-groups.md",
+      "sha256": "9eb1ebfc7bd91690a77b5626de309d4f9d49ba38d21938add04a9787a05db211"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/animations.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/animations.md",
+      "sha256": "6ad3596f9d4aa176f25847d97cad073a3cbefb078e28ae998047a8e873a17620"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/axes.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/axes.md",
+      "sha256": "5a0acdb55f332f9a7e31821078d088e987754bc252f5faa28bca31a53173f7dd"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/camera.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/camera.md",
+      "sha256": "cfa876df13e9b2d26e0bb40e8b210c7bc91359c6d6c1e4036d5eb3c90b6f3b48"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/cli.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/cli.md",
+      "sha256": "faee09f0f37f6aa41b94f762a9cdb8ef5536a1e6b1e9e3ac05de1680e576ba6b"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/colors.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/colors.md",
+      "sha256": "b8e63c042ab6d652bb3d42a3309e11cc4c62a7e06f3b9811a4bf2f822eda3020"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/config.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/config.md",
+      "sha256": "9ef880d55b7c4d8c4b7aeabd6f095c42164f05cfb770e9a8ba25a184034c0c2a"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/creation-animations.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/creation-animations.md",
+      "sha256": "0bdbf8cacf5137e4acd60bb29ae1bb03bf3e059aa08b7cc2faa43f81491d354f"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/graphing.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/graphing.md",
+      "sha256": "8996cca86e2d3c6d032ddceb119724312ac29a1e462f835b040f931422187354"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/grouping.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/grouping.md",
+      "sha256": "05330699f1b935eb9dd6cd5237592bd04ef56dbe9a50444983379b81d6e26dce"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/latex.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/latex.md",
+      "sha256": "9d244fe31662d734e182fd0d19ce147d9c93b3ee25cb5df137d29c4b186abee1"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/lines.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/lines.md",
+      "sha256": "d13858e8a4016a5bd0dca3b121c5679a8350541dc9d0779562d40fba1abe5443"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/mobjects.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/mobjects.md",
+      "sha256": "a96c8eef4c0e2830cbcbb32f3a25cf9eb30c2788cc593be5a8ca1a60b8fc4449"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/positioning.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/positioning.md",
+      "sha256": "83230968eaf354cc5993c5c6736fb053cbda48cc7bdd110faf8a04dbb71f7106"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/scenes.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/scenes.md",
+      "sha256": "7dc32c7c8bfd50d9266351f90cbfc59b2b71f610a37ea6a836af9946dc64b3ba"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/shapes.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/shapes.md",
+      "sha256": "3054d04c9b8d9cb79cb4f8554a39be46e5a6c78d29a24109c7ab367ff6640133"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/styling.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/styling.md",
+      "sha256": "740e0bb7dc428db866cefeb0a7272f2c5e16f816e84a87976d146577bf94424e"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/text-animations.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/text-animations.md",
+      "sha256": "4c8478c1921f56e05b17802abe0666dde1c80ef75e66447d1c8a145fc33159c8"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/text.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/text.md",
+      "sha256": "a4caeb70c295ef879ac718f7e722c4dd2b99805d887233bc217a6b91ae7b5c22"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/timing.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/timing.md",
+      "sha256": "0534df4e9b694da16a4993a22689e2dab4b7857df008248ee9fe655b97b2ec4e"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/transform-animations.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/transform-animations.md",
+      "sha256": "3565293834394ecdcbf080504d8a015b44f85b5d3fc2b3493fd4d1ffd1903774"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/rules/updaters.md",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/rules/updaters.md",
+      "sha256": "b0520d45fc72380bd279df76b80028901a9273becfac61039f6c48e0a345c767"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/templates/basic_scene.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/templates/basic_scene.py",
+      "sha256": "fd47d30ecfd6b03a8baff4a9fb9e88c4cf023fed9b57cf405366e99cbf84c515"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/templates/camera_scene.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/templates/camera_scene.py",
+      "sha256": "51f46e59278a54415bfdf65124d3064ab58f0538716b964b381e69078d711010"
+    },
+    {
+      "path": ".agents/skills/manimce-best-practices/templates/threed_scene.py",
+      "source_skill": "manimce-best-practices",
+      "source_path": "skills/manimce-best-practices/templates/threed_scene.py",
+      "sha256": "73ef6dfb132472beb8b239d61c8538b2f1a37dd0e263682e650f9334c10ce023"
+    },
+    {
+      "path": ".agents/skills/manim-video/.dockerignore",
+      "source_skill": "manim-video",
+      "source_path": ".dockerignore",
+      "sha256": "08bb7a70af4ae5a9c15226f499f2e76055ebd521550f87eb102a1316cdb9df38"
+    },
+    {
+      "path": ".agents/skills/manim-video/Dockerfile",
+      "source_skill": "manim-video",
+      "source_path": "Dockerfile",
+      "sha256": "4c3a7cb57d2dca70d535c2169af7a69e0dbdfa6e0b94c1c9ecf8eedccc5bac03"
+    },
+    {
+      "path": ".agents/skills/manim-video/LICENSE",
+      "source_skill": "manim-video",
+      "source_path": "LICENSE",
+      "sha256": "6987e47e182ba84b35f7d65140ae4c156df22dcb3dff1f405057534e11e597dd"
+    },
+    {
+      "path": ".agents/skills/manim-video/README.md",
+      "source_skill": "manim-video",
+      "source_path": "README.md",
+      "sha256": "317e523db609fcffb74e1da135d602191ad0548d137e2f2f285b88404ca396be"
+    },
+    {
+      "path": ".agents/skills/manim-video/SKILL.md",
+      "source_skill": "manim-video",
+      "source_path": "SKILL.md",
+      "sha256": "2c9f4a9e168d7fd1f4e1e458ad48a448d3b19876b283f5fce2816b1e998a2027"
+    },
+    {
+      "path": ".agents/skills/manim-video/agents/openai.yaml",
+      "source_skill": "manim-video",
+      "source_path": "agents/openai.yaml",
+      "sha256": "ee36878a818bd0bfc3ab0ca65122b9418fd5536d578bc47548a3a7ed8256b585"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/algorithm-choreography.md",
+      "source_skill": "manim-video",
+      "source_path": "references/algorithm-choreography.md",
+      "sha256": "8e39aadcaa6ac81647432761773a1d7920ca7eb1c2ab663d2920a214c83b33eb"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/animation-design-thinking.md",
+      "source_skill": "manim-video",
+      "source_path": "references/animation-design-thinking.md",
+      "sha256": "90f04d50731553a778ce003bdd6dd676c8c5e61cc4a914a339633fad06c31be9"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/animations.md",
+      "source_skill": "manim-video",
+      "source_path": "references/animations.md",
+      "sha256": "afe5f1365e0e1abbc323ea1ab0b55fbb6e575ab67809db4597b8d90400929764"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/attention-and-retention.md",
+      "source_skill": "manim-video",
+      "source_path": "references/attention-and-retention.md",
+      "sha256": "bbbceec178f128b8289f772ad5cce8d67aacca4dd5d9abdf4f1e3059e831270c"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/camera-and-3d.md",
+      "source_skill": "manim-video",
+      "source_path": "references/camera-and-3d.md",
+      "sha256": "250a6cf47e97e7360ca3702eeb897519c88be8a3b6007a5ef7a1fafbe6b5785c"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/cinematic-directing.md",
+      "source_skill": "manim-video",
+      "source_path": "references/cinematic-directing.md",
+      "sha256": "7da1040ba8c8ef1371a54ffae1e0a42f9aec0cc7cd4bac2e0c9b7c6d6d54a8ea"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/codegen-craft.md",
+      "source_skill": "manim-video",
+      "source_path": "references/codegen-craft.md",
+      "sha256": "fab825e26bebbaa275e83f1f50b79968b1a7b1b24f91a4e74018b76a59aefcc5"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/decorations.md",
+      "source_skill": "manim-video",
+      "source_path": "references/decorations.md",
+      "sha256": "2b4cd2add0c2d02f985e20f4c3ca2fc57a036058b7e3f222b8450717fae7f025"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/director-packet.md",
+      "source_skill": "manim-video",
+      "source_path": "references/director-packet.md",
+      "sha256": "22746bcc30867133b56bc28983c4cb3d2ec9baf37e0828456b65821ae6a5a3cc"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/equations.md",
+      "source_skill": "manim-video",
+      "source_path": "references/equations.md",
+      "sha256": "24d46265e03b4a92d23848871c340048bbd70310f3873a33223923819c9b5031"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/graphs-and-data.md",
+      "source_skill": "manim-video",
+      "source_path": "references/graphs-and-data.md",
+      "sha256": "8b4b901e3c3f7e793e0a7e2cbc4764816c8489ac07944bd448fa7ce12f734740"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/mobjects.md",
+      "source_skill": "manim-video",
+      "source_path": "references/mobjects.md",
+      "sha256": "f381502a5fec53b11520915ec9cf330bf9b100e619d3411238486f2df9d85b8d"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/paper-explainer.md",
+      "source_skill": "manim-video",
+      "source_path": "references/paper-explainer.md",
+      "sha256": "6d99e24cfa9e3f017b756375fa4aadbec9851aebd5b1057b3da8e2d3252cacbc"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/preflight-gates.md",
+      "source_skill": "manim-video",
+      "source_path": "references/preflight-gates.md",
+      "sha256": "05ffbc5d641c555f0c1df02e39158e0717217fd8ead39e6fc66173c613e651d1"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/production-quality.md",
+      "source_skill": "manim-video",
+      "source_path": "references/production-quality.md",
+      "sha256": "f730da21288b909f594a341a5906f02eccb2a3db8f924d8f56e25267af6df394"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/rendering.md",
+      "source_skill": "manim-video",
+      "source_path": "references/rendering.md",
+      "sha256": "39947a00a3cb1fd77bd92a3eda90d352422a6695c30e07aa742730e8a5bffc5f"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/review-loop.md",
+      "source_skill": "manim-video",
+      "source_path": "references/review-loop.md",
+      "sha256": "0e49c239271411ebc94cdf4f929f5c57c714dfc6d9b9ebbd4f3ae4dff9023f9a"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/scene-planning.md",
+      "source_skill": "manim-video",
+      "source_path": "references/scene-planning.md",
+      "sha256": "ffbcc255a787531ec749a5df41d1e50b7b1cca7eeb1dad1092849e46348d6ec6"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/source-backed-patterns.md",
+      "source_skill": "manim-video",
+      "source_path": "references/source-backed-patterns.md",
+      "sha256": "80c892db267180a4d3db5af356c5f4ab5bbb9f57f9c98cad5fec42e7d990eee3"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/troubleshooting.md",
+      "source_skill": "manim-video",
+      "source_path": "references/troubleshooting.md",
+      "sha256": "82dee5121248f26861e4bac65433dd6762c44763ce8653894bc547b5ba381119"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/updaters-and-trackers.md",
+      "source_skill": "manim-video",
+      "source_path": "references/updaters-and-trackers.md",
+      "sha256": "87bd7efff2c1a17b95f31d6d4554fcb23c522fdcbfaf1f845282af54e4a98e3f"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/visual-design.md",
+      "source_skill": "manim-video",
+      "source_path": "references/visual-design.md",
+      "sha256": "6735fa87219525cd485c187147c3f354ed2a5f53b1fcb19a6fe08183b2df7ba8"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/visual-polish.md",
+      "source_skill": "manim-video",
+      "source_path": "references/visual-polish.md",
+      "sha256": "c88ce471a9efe058b49ed1c8dc3b5998698d6c22bd19ce84a450015f97d83e7f"
+    },
+    {
+      "path": ".agents/skills/manim-video/references/worked-example.md",
+      "source_skill": "manim-video",
+      "source_path": "references/worked-example.md",
+      "sha256": "ce9b8e65541d06bc2fc068346c92cda66095d176ec1605e9c124ebeb7c37a0f2"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/container.ps1",
+      "source_skill": "manim-video",
+      "source_path": "scripts/container.ps1",
+      "sha256": "42655d8a6edb1af543b97fceddf212e7dffed082454c1ed3689c49c5e3fef06c"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/container.sh",
+      "source_skill": "manim-video",
+      "source_path": "scripts/container.sh",
+      "sha256": "47d2396f213b763324ff68ab3254cc4d98b9f1684e2bf64025b31fbfb24051b1"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/ffmpeg.ps1",
+      "source_skill": "manim-video",
+      "source_path": "scripts/ffmpeg.ps1",
+      "sha256": "ca3db7c8b3db3f15aaf841444e586c80d15d92a42f04078a65468c97e3421bbb"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/ffmpeg.sh",
+      "source_skill": "manim-video",
+      "source_path": "scripts/ffmpeg.sh",
+      "sha256": "8260b8cc76635fafc9946edf8df571e55a1552cb2648feacfc7e75771cac3919"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/manim.ps1",
+      "source_skill": "manim-video",
+      "source_path": "scripts/manim.ps1",
+      "sha256": "f17f70137c77434f94b1eacf92b473d085ef2572ff1c2a77b96b2a7795c000d5"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/manim.sh",
+      "source_skill": "manim-video",
+      "source_path": "scripts/manim.sh",
+      "sha256": "59c0d80f96bf327aa75d11655a6ab00f1d6b0c53cba320ff6001097d928437af"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/setup.ps1",
+      "source_skill": "manim-video",
+      "source_path": "scripts/setup.ps1",
+      "sha256": "e18720b149e6b551f4af110cc506426562f532602228d289283bed6f9374119f"
+    },
+    {
+      "path": ".agents/skills/manim-video/scripts/setup.sh",
+      "source_skill": "manim-video",
+      "source_path": "scripts/setup.sh",
+      "sha256": "6ec8baa55281ad870deaccc20a5365d41072911767517e86f492a23543c74df1"
+    }
+  ]
+}

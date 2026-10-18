@@ -1,0 +1,137 @@
+[
+  {
+    "repository": "https://github.com/3b1b/manim",
+    "original_commit_recorded": "fafa083a4fb274bba9cabde0b6e2f50ba6da0622",
+    "head_verified_on_restoration": "fafa083a4fb274bba9cabde0b6e2f50ba6da0622",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Initial README and framework requirements",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/3b1b/videos",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "306a1346a356c7a7b097875ceb51c5cd67d0a56c",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README Workflow; attention.py and CLT source",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/remotion-dev/skills",
+    "original_commit_recorded": "7ba4dcf8ebe1626b00baa41e1f2478113719b60b",
+    "head_verified_on_restoration": "1441a11e95db35443bd76bb318386c0d3ca00053",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Official agent skills",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/openstax/osbooks-university-physics-bundle",
+    "original_commit_recorded": "2300d5b8ca2571dacc6ec25ebef56ba8d49000a2",
+    "head_verified_on_restoration": "2300d5b8ca2571dacc6ec25ebef56ba8d49000a2",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Vol.3 collection and m58609/10/11",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/ManimCommunity/manim-voiceover",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "3dc0d95d2f1d9d0937872b3dd68c7b38c4dfc96a",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README and examples/bookmark-example.py",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/adithya-s-k/manim_skill",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "cef045011722d285692e3381d12d4d637da56e18",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Composer and ManimCE skills",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/ApliroAI/manim-video-lab",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "6219393c53105d85d8b40b16de48751ac71749da",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Director packet, patterns, review loop",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/iart-ai/manim-skills",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "a15833c44de5108a3ee68f178a1fca126aa7c6d8",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README only; not installed",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/VOICEVOX/voicevox_engine",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "14a699f8abd5fe9f9f34e28f3deb4a3c2021503b",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README, local speaker API and voice policy",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/litagin02/Style-Bert-VITS2",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "66de777e06392c0f313600be03c43ef96658b244",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README and docs/TERMS_OF_USE.md",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/motion-canvas/motion-canvas",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "7b91435c301d530351dcf5ebb91dd139c002e405",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README; candidate only",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/TIGER-AI-Lab/TheoremExplainAgent",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "e9ece5db7756b6ded8a812eceeb936cfd02aae21",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "Scene plan and text/image/video evaluation prompts",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/HarleyCoops/Math-To-Manim",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "1d2abf3b8244f00214439727e7c4d28e21ea0704",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README and public contact sheet; not a verified theorem source",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/m-bain/whisperX",
+    "original_commit_recorded": null,
+    "head_verified_on_restoration": "771b4a14a9486f8fd5aef18ef49e35d639523dd3",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README and alignment.py; Japanese model and no-space handling",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  },
+  {
+    "repository": "https://github.com/natematias/upworthy-archive",
+    "original_commit_recorded": "822141cfa6c357763895a5ed1820132fc2adc57e",
+    "head_verified_on_restoration": "822141cfa6c357763895a5ed1820132fc2adc57e",
+    "restored_on": "2026-10-18",
+    "historical_review_scope": "README, index, about, 2024 update",
+    "original_manifest_note": "Missing original hashes are not inferred from current HEAD.",
+    "read_operation": "passed"
+  }
+]
