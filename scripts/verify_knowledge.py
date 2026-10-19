@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check durable knowledge, upstream copies and delivered video without rendering."""
 from pathlib import Path
+import ast
 import hashlib
 import json
 import re
@@ -51,15 +52,27 @@ def main():
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
     custom = ROOT / '.agents/skills/science-explainer'
-    require('version: "2.0.3"' in (custom / 'SKILL.md').read_text(),
-            'Expected science-explainer v2.0.3')
-    for name in ['audit_motion.py', 'test_audit_motion.py']:
-        require((custom / 'scripts' / name).is_file(), f'Missing motion check: {name}')
+    require('version: "2.0.4"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.4')
+    for name in ['audit_motion.py', 'test_audit_motion.py', 'voicevox_audio.py', 'test_voicevox_audio.py']:
+        require((custom / 'scripts' / name).is_file(), f'Missing skill script: {name}')
     require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')
     voice = json.loads((custom / 'voice-defaults.json').read_text())
     require(voice['engine'] == 'VOICEVOX ENGINE', 'Expected VOICEVOX voice defaults')
     require(voice['selected_by'] == 'user', 'Voice default must record the user selection')
     require(voice['credit'] == 'VOICEVOX:' + voice['speaker']['name'], 'Voice credit mismatch')
+    production_audio = {
+        'shorts/pageindex/prepare_audio.py': 'prepare_story',
+        'shorts/decay-heat/prepare_audio.py': 'prepare_story',
+        'shorts/rag-trends-2026/prepare.py': 'Voicevox',
+    }
+    for path, entry in production_audio.items():
+        tree = ast.parse((ROOT/path).read_text())
+        imported = any(isinstance(n, ast.ImportFrom) and n.module == 'voicevox_audio'
+                       and any(a.name == entry for a in n.names) for n in ast.walk(tree))
+        called = any(isinstance(n, ast.Call) and isinstance(n.func, ast.Name)
+                     and n.func.id == entry for n in ast.walk(tree))
+        require(imported and called, f'Production audio must use shared defaults: {path}')
     for name in skills:
         path = ROOT / '.agents/skills' / name / 'SKILL.md'
         require(path.is_file(), f'Missing skill: {name}')

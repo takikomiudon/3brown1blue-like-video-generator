@@ -9,6 +9,11 @@ import numpy as np
 from manim import *
 
 ROOT=Path(__file__).resolve().parent
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    (ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent / '.agents/skills/science-explainer')))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import verify_project, render_inputs, save_render
 SLUG=os.environ.get('RAG_EPISODE','01_graphrag')
 EP=next(e for e in json.loads((ROOT/'episodes.json').read_text()) if e['slug']==SLUG)
 SPECS=json.loads((ROOT/'diagrams.json').read_text())[SLUG]
@@ -283,6 +288,15 @@ class Diagrams:
 
 
 class RagShort(Scene):
+    def render(self, preview=False):
+        pilot = os.environ.get('RAG_PILOT') == '1'
+        inputs = None if pilot else render_inputs(ROOT/SLUG)
+        self.voice = None if pilot else verify_project(ROOT/SLUG)
+        result = super().render(preview=preview)
+        if not result and not pilot and not config.dry_run and config.write_to_movie and not config.save_last_frame:
+            save_render(ROOT/SLUG, self.renderer.file_writer.movie_file_path, inputs)
+        return result
+
     def construct(self):
         pilot=os.environ.get('RAG_PILOT')=='1'
         if pilot:
@@ -296,7 +310,8 @@ class RagShort(Scene):
         self.add(text(EP['tag'],18,DIM).move_to(pos(-.2,5.7)))
         self.add(Line(pos(-3.9,5.25),pos(3.5,5.25),color=BORDER,stroke_width=1))
         self.add(text('出典：付属の台本・一次資料リンク',18,DIM).move_to(pos(-.2,-6.85)))
-        self.add(text('音声：VOICEVOX:青山龍星',18,DIM).move_to(pos(-.2,-7.25)))
+        if not pilot:
+            self.add(text('音声：'+self.voice['credit'],18,DIM).move_to(pos(-.2,-7.25)))
         plan={'roi':[.065,.275,.835,.43],'beats':[],'holds':[]}
         previous=None
         for index,(cue,spec) in enumerate(zip(timeline,specs)):

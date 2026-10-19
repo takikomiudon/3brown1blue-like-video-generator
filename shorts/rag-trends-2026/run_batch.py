@@ -4,11 +4,16 @@ from concurrent.futures import ThreadPoolExecutor
 import argparse, json, os, subprocess, time
 
 ROOT=Path(__file__).resolve().parent
+SKILL=Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent/'.agents/skills/science-explainer'))
+
 def render(slug):
     folder=ROOT/slug
     while not (folder/'timeline.json').exists():time.sleep(2)
     args=['docker','run','--rm','--network','none','--cpus','2',
       '--mount',f'type=bind,src={ROOT},dst=/manim',
+      '--mount',f'type=bind,src={SKILL},dst=/opt/science-explainer,readonly',
+      '-e','SCIENCE_EXPLAINER_SKILL=/opt/science-explainer',
       '--mount','type=bind,src=/usr/share/fonts/opentype/noto,dst=/usr/local/share/fonts/noto,readonly',
       '--user',f'{os.getuid()}:{os.getgid()}','-w','/manim',
       '-e','XDG_CACHE_HOME=/tmp/cache','-e','MPLCONFIGDIR=/tmp/matplotlib','-e',f'RAG_EPISODE={slug}',

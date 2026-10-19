@@ -11,6 +11,10 @@ GitHub上で動画のプレビューが出ない場合は、ファイルペー�
 
 ## 再生成
 
+掲載済み動画の音声記録は制作時のものです。これからの再生成では、共通の
+[話者設定](../../.agents/skills/science-explainer/voice-defaults.json)にある冥鳴ひまり・ノーマルを使います。
+音声からタイムライン・映像を再生成して、クレジットと検証記録を更新します。
+
 DockerとホストのNoto Sans CJKフォントを使用。Manim Community 0.20.1およびVOICEVOX ENGINE 0.25.2のイメージをダイジェストで固定。
 `story.json` が台本、`prepare_audio.py` が音声とタイムライン、`script.py` がアニメーション、`finalize.py` が出力と検証。
 

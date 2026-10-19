@@ -1,11 +1,17 @@
 from pathlib import Path
 import hashlib,json,re,subprocess
 ROOT=Path(__file__).resolve().parent
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    ROOT.parent.parent / '.agents/skills/science-explainer'))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import verify_render
 OUT=ROOT/'outputs'
 SOURCE=ROOT/'media/videos/script/1920p30/PageIndexShort.mp4'
 FINAL=OUT/'pageindex-short-ja.mp4'
 
 def main():
+    voice = verify_render(ROOT, SOURCE)
     cues=json.loads((ROOT/'timeline.json').read_text())
     story=json.loads((ROOT/'story.json').read_text())
     assert len(cues)==len(story)==9
@@ -52,11 +58,11 @@ def main():
     report={'file':FINAL.name,'duration_seconds':float(meta['format']['duration']),
         'width':v['width'],'height':v['height'],'fps':v['r_frame_rate'],'frames':int(v['nb_frames']),
         'audio_max_dbfs':peak,'full_decode':'passed','size_bytes':FINAL.stat().st_size,
-        'sha256':hashlib.sha256(FINAL.read_bytes()).hexdigest(),'voice':'VOICEVOX:青山龍星',
+        'sha256':hashlib.sha256(FINAL.read_bytes()).hexdigest(),'voice':voice['credit'],
+        'voice_manifest_sha256':hashlib.sha256((ROOT/'assets/voice.json').read_bytes()).hexdigest(),
         'cue_count':len(cues),'speech_within_cues':'passed',
         'story_sha256':hashlib.sha256((ROOT/'story.json').read_bytes()).hexdigest(),
         'script_sha256':hashlib.sha256((ROOT/'script.py').read_bytes()).hexdigest(),
-        'source_commit':'e7d1cc67e4dd5bfe4cac63b161b313ef41328705',
         'fallback':{'file':fallback.name,'size_bytes':fallback.stat().st_size,
             'sha256':hashlib.sha256(fallback.read_bytes()).hexdigest(),'full_decode':'passed',
             'width':fv['width'],'height':fv['height'],'profile':fv['profile'],'level':fv['level']}}

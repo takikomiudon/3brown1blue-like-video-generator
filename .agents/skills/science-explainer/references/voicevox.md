@@ -32,12 +32,29 @@ APIキーは不要。ローカルAPIへの接続は127.0.0.1を使う。
 5. WAVの実測秒数からタイムラインを作り、語句や文の位置へ動作を同期する。
 6. 専門語の発音、語頭・語尾、文間、速度と音量を確認し、必要な区間を再合成する。
 
-このリポジトリの実装例は [prepare_audio.py](../../../../shorts/pageindex/prepare_audio.py)。
+音声生成には、設定を直接読み込む共通実装 [voicevox_audio.py](../scripts/voicevox_audio.py) を使う。
+新規プロジェクトでも、スキルフォルダ全体を設置して次を実行する。
+
+```bash
+python3 /path/to/science-explainer/scripts/voicevox_audio.py /path/to/project
+python3 /path/to/science-explainer/scripts/voicevox_audio.py /path/to/project --check
+```
+
+プロジェクトに `story.json`（各項目に `id` と `say`）を用意する。
+共通実装は話者名・UUID・スタイル名を `/speakers` と照合し、現在のIDで合成する。
+選択した話者を利用できる状態でのみ生成を進める。
+既存の [prepare_audio.py](../../../../shorts/pageindex/prepare_audio.py) とRAGシリーズの `prepare.py --audio` も、この共通実装を呼ぶ。
 話速1.04、pitchScale -0.015、48kHz、前0.12秒・後0.14秒の設定を使っている。
 これらは既存作品の設定例であり、題材や台詞に応じて読みやすく調整する。
 発音用原稿と画面の通常表記はそれぞれ管理できる。
 
-原稿・話者・全合成設定・エンジン版が一致する場合だけ、既存WAVを再利用する。
+原稿・話者・全合成設定・エンジン版・WAVとクエリのSHA-256が一致する場合だけ、既存WAVを再利用する。
+生成後の `assets/voice.json` と台本・タイムライン・音声の照合を `--check` で行う。
+映像のクレジットは、この検証を通った生成記録の `credit` を使う。
+Manimの描画後は共通実装の `save_render` で入力と動画のハッシュを保存し、最終出力の前に `verify_render` で照合する。
+描画コンテナからは、スキルフォルダを読み取り専用でマウントして `SCIENCE_EXPLAINER_SKILL` に設置先を指定する。
+同梱の `run.sh` と `run_batch.py` はこのマウントを行う。
+ユーザーが別の話者を明示した場合は、その指示に合わせて `voice-defaults.json` の話者名・UUID・スタイル・クレジットを更新してから生成する。
 起動や合成の問題はログとAPI応答で診断して復旧する。
 実行が阻害されている場合は、完了した工程と阻害要因を明示する。
 音声構成の変更はユーザーの明示的な指定に従う。
@@ -66,3 +83,14 @@ ffprobeは音声形式と尺の検査に使う。VOICEVOXでの生成の確認�
 個別音声と、番号・名前を読み上げる比較音声を用意すると選びやすい。
 人気順を扱う場合は指標と出典を確認し、確認できたランキングと比較用の候補選定を区別する。
 実装例は [10話者の音声比較](../../../../audio-comparisons/voicevox-10/README.md)。
+
+## 設定の回帰確認
+
+```bash
+python3 -m unittest discover -s .agents/skills/science-explainer/scripts -p test_voicevox_audio.py
+python3 scripts/verify_knowledge.py
+```
+
+v2.0.4では、3つの制作入口による実エンジン合成と、各Manimクラスの描画処理を継承した短い検証シーンを確認した。
+話者選択、旧キャッシュの更新、入力と描画結果の照合を検査する。
+[実行結果と確認範囲](../../../../docs/voice-default-validation.json)を参照。音声の聴取と全編の再制作は別の確認工程として記録する。

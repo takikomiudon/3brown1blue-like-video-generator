@@ -2,11 +2,11 @@
 name: science-explainer
 description: 日本語の科学・技術解説を、対象そのものが動いて仕組みを説明するアニメーションとして制作する。日本語ナレーションはVOICEVOXで生成し、出典、台本、音声同期、対象の状態変化の検証、MP4の受け渡しまで行う。
 metadata:
-  version: "2.0.3"
+  version: "2.0.4"
   updated: "2026-10-19"
 ---
 
-# 日本語の解説アニメーション — v2.0.3
+# 日本語の解説アニメーション — v2.0.4
 
 `$science-explainer` による動画制作は、**説明対象の意味のある動きを必須**とする。
 ユーザーが「アニメーション」と追記しなくても適用する。
@@ -16,14 +16,15 @@ metadata:
 **日本語ナレーションはVOICEVOXで生成することを必須とする。**
 ユーザーが別の音声構成を明示した場合に限り、その指定を優先する。
 ユーザーが比較後に選んだ **冥鳴ひまり・ノーマル** を標準話者として固定する。
-設定は [voice-defaults.json](voice-defaults.json)。ユーザーの明示的な変更指示がある場合は、その指定を優先する。
+設定は [voice-defaults.json](voice-defaults.json)。合成には、この設定を読み込む [共通生成処理](scripts/voicevox_audio.py) を使う。
+ユーザーの明示的な変更指示がある場合は、その指定を設定に反映してから生成する。
 比較の依頼には同じ原稿・同じ合成条件の候補音声を提示する。
 音声のみの依頼には、音声生成・比較・検証・保存の工程を適用する。
 動く試作と映像検査の条件は、映像制作の依頼に適用する。
 
 ## 0. 読み込みと環境
 
-1. この版が **2.0.3** であることを確認し、同梱の [動作の制作・合格条件](references/motion-contract.md) と [VOICEVOXの制作条件](references/voicevox.md) を必ず読む。
+1. この版が **2.0.4** であることを確認し、同梱の [動作の制作・合格条件](references/motion-contract.md) と [VOICEVOXの制作条件](references/voicevox.md) を必ず読む。
 2. プロジェクトのAGENTS.md、既存の制作手順・ソース・完成動画を確認する。
    このリポジトリでは [索引](../../../docs/KNOWLEDGE.md) と [制作手順](../../../docs/production-workflow.md)。
 3. 新作のManim実装では、[Manim Video Lab](../manim-video/SKILL.md) と
@@ -61,6 +62,7 @@ metadata:
 ## 3. 音声と実装
 
 - 日本語ナレーションは **VOICEVOX ENGINEを使って実際に合成する**。標準話者は **冥鳴ひまり・ノーマル**（VOICEVOX ENGINE 0.25.2でstyle id 14）。
+  音声生成は `scripts/voicevox_audio.py`、または同じ `Voicevox` クラスを呼ぶ実装で行う。
   `/version` と `/speakers` でエンジンと話者を確認し、`/audio_query` → `/synthesis` で原稿ごとのWAVを生成する。
   起動・接続が失敗したらセットアップと復旧を進め、実行できた範囲と阻害要因を明示する。
   音声構成の変更は、ユーザーの明示的な指定がある場合に行う。

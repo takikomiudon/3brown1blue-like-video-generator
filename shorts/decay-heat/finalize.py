@@ -1,11 +1,17 @@
 from pathlib import Path
 import hashlib,json,re,subprocess
 ROOT=Path(__file__).resolve().parent
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    ROOT.parent.parent / '.agents/skills/science-explainer'))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import verify_render
 OUT=ROOT/'outputs'
 SOURCE=ROOT/'media/videos/script/1920p30/DecayHeatShort.mp4'
 FINAL=OUT/'decay-heat-short-ja.mp4'
 
 def main():
+    voice = verify_render(ROOT, SOURCE)
     expected=json.loads((ROOT/'timeline.json').read_text())[-1]['end']+2.5
     measure=subprocess.run(['ffmpeg','-hide_banner','-i',str(SOURCE),'-vn',
         '-af','loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json','-f','null','-'],capture_output=True,text=True,check=True)
@@ -40,7 +46,8 @@ def main():
     report={'file':FINAL.name,'duration_seconds':float(meta['format']['duration']),
         'width':v['width'],'height':v['height'],'fps':v['r_frame_rate'],'frames':int(v['nb_frames']),
         'audio_max_dbfs':peak,'full_decode':'passed','size_bytes':FINAL.stat().st_size,
-        'sha256':hashlib.sha256(FINAL.read_bytes()).hexdigest(),'voice':'VOICEVOX:青山龍星'}
+        'sha256':hashlib.sha256(FINAL.read_bytes()).hexdigest(),'voice':voice['credit'],
+        'voice_manifest_sha256':hashlib.sha256((ROOT/'assets/voice.json').read_bytes()).hexdigest()}
     (OUT/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

@@ -6,3 +6,6 @@ shorts/*/review-frames/
 shorts/*/outputs/*.log
 shorts/*/assets/speakers.json
 audio-comparisons/*/work/
+
+# Verified VOICEVOX synthesis cache metadata
+shorts/**/audio/*.cache.json

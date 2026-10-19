@@ -1,24 +1,16 @@
 """Persist per-episode editorial material and synthesize measured VOICEVOX audio."""
 from pathlib import Path
 import argparse, hashlib, json, math, re, wave
-from urllib.request import build_opener, ProxyHandler, Request
-from urllib.parse import urlencode
 
 ROOT = Path(__file__).resolve().parent
-API = 'http://127.0.0.1:50021'
-OPENER = build_opener(ProxyHandler({}))
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    (ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent / '.agents/skills/science-explainer')))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import Voicevox
 SETTINGS = dict(speedScale=1.10, pitchScale=-.015, intonationScale=1.0,
                 volumeScale=1.0, prePhonemeLength=.12, postPhonemeLength=.18,
                 outputSamplingRate=48000, outputStereo=False)
-
-def get(path):
-    return json.loads(OPENER.open(API+path, timeout=120).read())
-
-def post(path, params, data=None):
-    req = Request(API+path+'?'+urlencode(params),
-                  data=json.dumps(data).encode() if data is not None else b'',
-                  headers={'Content-Type':'application/json'}, method='POST')
-    return OPENER.open(req, timeout=300).read()
 
 def stamp(t):
     ms=round(t*1000)
@@ -29,15 +21,13 @@ def main():
     args=ap.parse_args()
     episodes=json.loads((ROOT/'episodes.json').read_text())
     if args.audio:
-        engine=get('/version');speakers=get('/speakers')
-        speaker=next(s for s in speakers if s['name']=='青山龍星')
-        style=next(s for s in speaker['styles'] if s['name']=='ノーマル')
-        policy=get('/speaker_info?'+urlencode({'speaker_uuid':speaker['speaker_uuid']}))['policy']
+        synthesizer = Voicevox(settings=SETTINGS)
+    credit = 'VOICEVOX:'+json.loads((SKILL/'voice-defaults.json').read_text())['speaker']['name']
     overview=['# RAGの現在地：10本のショート動画', '',
       '確認日：2026年10月19日。日本語の初中級エンジニア向け。',
       '2023–2024年の基礎論文と2026年の研究・実装状況を区別する。',
       '性能の順位付けや網羅的な最新論文ランキングではない。', '',
-      '音声：VOICEVOX:青山龍星。図は本シリーズで制作した模式図。', '']
+      '制作時の標準音声：'+credit+'。図は本シリーズで制作した模式図。', '']
     for ep in episodes:
         folder=ROOT/ep['slug']
         for name in ['assets','audio','outputs']:(folder/name).mkdir(parents=True,exist_ok=True)
@@ -49,27 +39,18 @@ def main():
         editorial=f'# {ep["title"]}\n\n{ep["subtitle"]}\n\n{ep["tag"]}\n\n'
         for i,item in enumerate(story):
             editorial+=f'## {i+1}. {item["heading"]}\n\n画面：{item["caption"]}\n\nナレーション：{item["say"]}\n\n'
-        editorial+='## 出典\n\n'+source_text+'\n\n音声：VOICEVOX:青山龍星\n'
+        recorded = folder/'assets/voice.json'
+        actual_credit = credit if args.audio or not recorded.exists() else json.loads(recorded.read_text())['credit']
+        editorial+='## 出典\n\n'+source_text+'\n\n音声：'+actual_credit+'\n'
         (folder/'script.md').write_text(editorial)
         overview+= [f'## {ep["title"]}', '', ep['subtitle'], '',
                     f'- [動画]({ep["slug"]}/outputs/final.mp4)',
                     f'- [台本・出典]({ep["slug"]}/script.md)', '']
         if not args.audio:continue
-        voice={'engine':'VOICEVOX ENGINE','engine_version':engine,'speaker':speaker['name'],
-               'speaker_uuid':speaker['speaker_uuid'],'style':style,'settings':SETTINGS,
-               'credit':'VOICEVOX:青山龍星'}
-        (folder/'assets/voice.json').write_text(json.dumps(voice,ensure_ascii=False,indent=2)+'\n')
-        (folder/'assets/voice-policy.md').write_text(policy)
-        timeline=[];cursor=0;subtitles=[];parts=[]
+        timeline=[];cursor=0;subtitles=[];parts=[];records=[]
         for i,item in enumerate(story):
             wav=folder/'audio'/f'{i:02}.wav'
-            key=hashlib.sha256(json.dumps([item['say'],voice],sort_keys=True,ensure_ascii=False).encode()).hexdigest()
-            keyfile=wav.with_suffix('.sha256')
-            if not wav.exists() or not keyfile.exists() or keyfile.read_text()!=key:
-                query=json.loads(post('/audio_query',{'text':item['say'],'speaker':style['id']}))
-                query.update(SETTINGS)
-                wav.with_suffix('.query.json').write_text(json.dumps(query,ensure_ascii=False,indent=2)+'\n')
-                wav.write_bytes(post('/synthesis',{'speaker':style['id']},query));keyfile.write_text(key)
+            records.append(synthesizer.synthesize(item['say'], wav))
             with wave.open(str(wav)) as f:
                 assert f.getframerate()==48000 and f.getnchannels()==1 and f.getsampwidth()==2
                 frames=f.readframes(f.getnframes());seconds=len(frames)/96000
@@ -98,6 +79,7 @@ def main():
         (folder/'timeline.json').write_text(json.dumps(timeline,ensure_ascii=False,indent=2)+'\n')
         (folder/'outputs/captions.srt').write_text('\n\n'.join(
             f'{i+1}\n{stamp(a)} --> {stamp(b)}\n{s}' for i,(a,b,s) in enumerate(subtitles))+'\n')
+        synthesizer.save_project(folder, records, extra_audio=['audio/narration.wav'])
         print('TOTAL',ep['slug'],cursor+2,flush=True)
     (ROOT/'README.md').write_text('\n'.join(overview)+'\n')
 

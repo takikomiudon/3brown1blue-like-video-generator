@@ -7,6 +7,11 @@ config.frame_height=16
 config.background_color='#080f1b'
 config.frame_rate=30
 ROOT=Path(__file__).resolve().parent
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    ROOT.parent.parent / '.agents/skills/science-explainer'))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import render_inputs, save_render, verify_project
 TIMELINE=json.loads((ROOT/'timeline.json').read_text())
 FONT='Noto Sans CJK JP'
 BG,INK,DIM='#080f1b','#f2f5fb','#91a4b9'
@@ -47,6 +52,14 @@ def status(label,value,color,x):
         text(value,26,color).move_to([0,-.16,0])).move_to([x,3.68,0]).set_z_index(40)
 
 class DecayHeatShort(Scene):
+    def render(self, preview=False):
+        inputs = render_inputs(ROOT)
+        self.voice = verify_project(ROOT)
+        result = super().render(preview=preview)
+        if not result and not config.dry_run and config.write_to_movie and not config.save_last_frame:
+            save_render(ROOT, self.renderer.file_writer.movie_file_path, inputs)
+        return result
+
     def set_header(self,s):
         new=text(s,43,max_width=7.45).move_to([CX,5.78,0])
         if hasattr(self,'header'):self.play(ReplacementTransform(self.header,new),run_time=.4)
@@ -212,6 +225,6 @@ class DecayHeatShort(Scene):
         conclusion=text('停止 ≠ 発熱ゼロ',40,ORANGE).move_to([CX,-3.15,0])
         self.play(FadeIn(conclusion,shift=UP*.12),run_time=.65);self.finish()
         self.begin(11);self.play(Circumscribe(conclusion,color=ORANGE,buff=.18),run_time=.8);self.finish()
-        self.add(text('音声：VOICEVOX:青山龍星',17,DIM).move_to([CX,-6.1,0]),
+        self.add(text('音声：'+self.voice['credit'],17,DIM).move_to([CX,-6.1,0]),
             text('参考：OpenStax University Physics Vol.3\n図は機構を説明する概念図',15,DIM).move_to([CX,-6.7,0]))
         self.wait(2.5);beads.clear_updaters();loop_clock.clear_updaters();self.clock.clear_updaters()

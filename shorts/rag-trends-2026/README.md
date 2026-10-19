@@ -32,6 +32,10 @@
 
 ## 再生成
 
+掲載済み動画の音声記録は制作時のものです。これからの再生成では、共通の
+[話者設定](../../.agents/skills/science-explainer/voice-defaults.json)にある冥鳴ひまり・ノーマルを使います。
+音声からタイムライン・映像を再生成して、クレジットと検証記録を更新します。
+
 DockerとホストのNoto Sans CJKフォントを使用。既存のdecay-heat-manim:0.20.1がない場合は同梱Dockerfileから作成します。
 初回の描画前に、pilot/review.jsonおよび各回のpilotレビューと対応する試作動画を参照してください。
 

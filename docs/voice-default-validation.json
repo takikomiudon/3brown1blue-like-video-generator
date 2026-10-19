@@ -1,0 +1,71 @@
+{
+  "skill_version": "2.0.4",
+  "verified_on": "2026-10-19",
+  "base_commit": "bf26dbb408a9226251c9f600c08f37178180a524",
+  "regression_tests": {
+    "command": "python3 -m unittest discover -s .agents/skills/science-explainer/scripts -p test_voicevox_audio.py",
+    "tests": 8,
+    "result": "passed"
+  },
+  "real_voicevox_entrypoints": [
+    {
+      "entrypoint": "shorts/pageindex/prepare_audio.py",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "style": 14,
+      "engine_version": "0.25.2",
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "wav_sha256": "59af0f3d7782e8d8af5049437c91e9b3d04c1714817a53524097cbd6f50ca41a",
+      "duration_seconds": 1.8986666666666667,
+      "decode": "passed"
+    },
+    {
+      "entrypoint": "shorts/decay-heat/prepare_audio.py",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "style": 14,
+      "engine_version": "0.25.2",
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "wav_sha256": "59af0f3d7782e8d8af5049437c91e9b3d04c1714817a53524097cbd6f50ca41a",
+      "duration_seconds": 1.8986666666666667,
+      "decode": "passed"
+    },
+    {
+      "entrypoint": "shorts/rag-trends-2026/prepare.py --audio",
+      "credit": "VOICEVOX:冥鳴ひまり",
+      "style": 14,
+      "engine_version": "0.25.2",
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "wav_sha256": "27978c598a7f8198f89e7b4f0c0469d42e321a2d9a461cedd761534553fd6230",
+      "duration_seconds": 1.952,
+      "decode": "passed"
+    }
+  ],
+  "manim_0_20_1_smoke_renders": [
+    {
+      "production_render_class": "PageIndexShort",
+      "voice": "VOICEVOX:冥鳴ひまり",
+      "video_sha256": "bd8b1acc1912559de18b854db4e4e738f5d87776d5195c3b8ca3ec9ffa41f0a5",
+      "input_receipt_verification": "passed",
+      "full_decode": "passed",
+      "scope": "Short test scene inherits the production render method; full episode construct is not exercised"
+    },
+    {
+      "production_render_class": "DecayHeatShort",
+      "voice": "VOICEVOX:冥鳴ひまり",
+      "video_sha256": "55032572860f1125589204b2ce8fd43a209c86fdab94045c60eb1fd19e2633a7",
+      "input_receipt_verification": "passed",
+      "full_decode": "passed",
+      "scope": "Short test scene inherits the production render method; full episode construct is not exercised"
+    },
+    {
+      "production_render_class": "RagShort",
+      "voice": "VOICEVOX:冥鳴ひまり",
+      "video_sha256": "1dc221871abbc1a3ad70ebdbe1976cecab1a85f67f9498ddb4a6c8ce64f460cc",
+      "input_receipt_verification": "passed",
+      "full_decode": "passed",
+      "scope": "Short test scene inherits the production render method; full episode construct is not exercised"
+    }
+  ],
+  "full_episode_regeneration": "not_performed",
+  "human_audio_listening": "not_performed",
+  "existing_published_audio_and_video_files": "preserved with their original speaker records"
+}

@@ -8,6 +8,11 @@ config.frame_height = 16
 config.frame_rate = 30
 config.background_color = '#09121f'
 ROOT = Path(__file__).resolve().parent
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    ROOT.parent.parent / '.agents/skills/science-explainer'))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import render_inputs, save_render, verify_project
 TIMELINE = json.loads((ROOT / 'timeline.json').read_text())
 FONT = 'Noto Sans CJK JP'
 BG, INK, DIM = '#09121f', '#f1f5fc', '#9aacc1'
@@ -50,6 +55,14 @@ def document():
 
 
 class PageIndexShort(Scene):
+    def render(self, preview=False):
+        inputs = render_inputs(ROOT)
+        self.voice = verify_project(ROOT)
+        result = super().render(preview=preview)
+        if not result and not config.dry_run and config.write_to_movie and not config.save_last_frame:
+            save_render(ROOT, self.renderer.file_writer.movie_file_path, inputs)
+        return result
+
     def header(self, content, color=INK):
         new = txt(content, 45, color).move_to([CX, 5.78, 0])
         if hasattr(self, 'heading'):
@@ -243,5 +256,5 @@ class PageIndexShort(Scene):
         self.play(FadeIn(brand, shift=UP * .1), run_time=.65)
         self.play(Circumscribe(VGroup(obj_answer, citation), color=GREEN, buff=.15), run_time=.9)
         self.finish()
-        self.add(txt('音声：VOICEVOX:青山龍星', 18, DIM).move_to([CX, -7.4, 0]))
+        self.add(txt('音声：'+self.voice['credit'], 18, DIM).move_to([CX, -7.4, 0]))
         self.wait(2.5)

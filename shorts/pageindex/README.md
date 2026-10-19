@@ -23,6 +23,10 @@ PageIndexは文書を章・節のツリーに整理し、AIが読む場所を選
 
 ## 再生成
 
+掲載済み動画の音声記録は制作時のものです。これからの再生成では、共通の
+[話者設定](../../.agents/skills/science-explainer/voice-defaults.json)にある冥鳴ひまり・ノーマルを使います。
+音声からタイムライン・映像を再生成して、クレジットと検証記録を更新します。
+
 リポジトリの [制作手順](../../docs/production-workflow.md) と同じ、
 Manim Community 0.20.1 / VOICEVOX ENGINE 0.25.2を使用。
 このディレクトリから実行する。Docker、ホストのNoto Sans CJK、管理環境のプロキシ・CAを使う。

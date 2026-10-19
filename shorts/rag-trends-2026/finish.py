@@ -4,7 +4,12 @@ import argparse, hashlib, json, re, subprocess
 from PIL import Image,ImageDraw,ImageFont
 
 ROOT=Path(__file__).resolve().parent
-AUDIT=ROOT.parents[1]/'.agents/skills/science-explainer/scripts/audit_motion.py'
+import os, sys
+SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
+    (ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent / '.agents/skills/science-explainer')))
+sys.path.insert(0, str(SKILL / 'scripts'))
+from voicevox_audio import verify_render
+AUDIT=SKILL/'scripts/audit_motion.py'
 SPELLINGS={
  'グラフラグ':'GraphRAG','ライトラグ':'LightRAG','ケーエージー':'KAG','ラプター':'RAPTOR',
  'セルフラグ':'Self-RAG','コレクティブ・ラグ':'Corrective RAG','シーラグ':'CRAG',
@@ -78,6 +83,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 def finish(slug):
     folder=ROOT/slug;output=folder/'outputs/final.mp4'
     raw=ROOT/'work'/slug/'videos/render/1920p24/RagShort.mp4'
+    voice = verify_render(folder, raw)
     cues=json.loads((folder/'timeline.json').read_text());duration=cues[-1]['end']+2
     count,last=make_ass(folder)
     assert last<cues[-1]['end']
@@ -92,7 +98,7 @@ def finish(slug):
     run(['ffmpeg','-v','error','-y','-threads','2','-i',str(raw),'-i',str(folder/'audio/narration.wav'),
          '-vf',f'ass={folder}/outputs/captions.ass','-af',loud,'-c:v','libx264','-threads','2',
          '-preset','fast','-crf','21','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-ar','48000',
-         '-t',str(duration),'-movflags','+faststart','-metadata','comment=音声：VOICEVOX:青山龍星',str(output)])
+         '-t',str(duration),'-movflags','+faststart','-metadata','comment=音声：'+voice['credit'],str(output)])
     info=probe(output);v=next(s for s in info['streams'] if s['codec_type']=='video')
     a=next(s for s in info['streams'] if s['codec_type']=='audio')
     assert (v['width'],v['height'])==(1080,1920) and v['pix_fmt']=='yuv420p'
@@ -105,7 +111,7 @@ def finish(slug):
       'width':v['width'],'height':v['height'],'fps':v['avg_frame_rate'],'audio_codec':a['codec_name'],
       'audio_duration_seconds':float(a['duration']),'full_decode':'PASS','subtitles':count,
       'subtitle_timing':'character-weighted estimate within measured utterances',
-      'voice_credit':'VOICEVOX:青山龍星','auditory_full_listen':'not_performed',
+      'voice_credit':voice['credit'],'voice_manifest_sha256':sha(folder/'assets/voice.json'),'auditory_full_listen':'not_performed',
       'notes':'音声の聴取評価と機械検査は区別。図は模式図で実測性能値を示していない。',
       **audio_measurement}
     (folder/'outputs/validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
