@@ -51,11 +51,15 @@ def main():
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
     custom = ROOT / '.agents/skills/science-explainer'
-    require('version: "2.0.2"' in (custom / 'SKILL.md').read_text(),
-            'Expected science-explainer v2.0.2')
+    require('version: "2.0.3"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.3')
     for name in ['audit_motion.py', 'test_audit_motion.py']:
         require((custom / 'scripts' / name).is_file(), f'Missing motion check: {name}')
     require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')
+    voice = json.loads((custom / 'voice-defaults.json').read_text())
+    require(voice['engine'] == 'VOICEVOX ENGINE', 'Expected VOICEVOX voice defaults')
+    require(voice['selected_by'] == 'user', 'Voice default must record the user selection')
+    require(voice['credit'] == 'VOICEVOX:' + voice['speaker']['name'], 'Voice credit mismatch')
     for name in skills:
         path = ROOT / '.agents/skills' / name / 'SKILL.md'
         require(path.is_file(), f'Missing skill: {name}')

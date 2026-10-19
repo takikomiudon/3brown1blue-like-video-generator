@@ -28,7 +28,7 @@ python3 scripts/verify_knowledge.py
 `story.json` の `say` は全文の読み上げ、`caption` は画面上の短い要約。
 専門語、英字、数値の読みを確認。改行や字幕の省略で科学的な条件を落とさない。
 
-日本語ナレーションはVOICEVOXで合成する。話者は制作物ごとに選定し、ユーザーの指定や比較結果を優先する。
+日本語ナレーションはVOICEVOXで合成する。標準話者は、ユーザーが比較後に選択した冥鳴ひまり・ノーマル。
 ユーザーが別の音声構成を指定した場合はその指定を優先する。
 詳細は [VOICEVOXの制作条件](../.agents/skills/science-explainer/references/voicevox.md)。
 

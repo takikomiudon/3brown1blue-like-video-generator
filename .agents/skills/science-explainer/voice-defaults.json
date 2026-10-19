@@ -1,0 +1,15 @@
+{
+  "engine": "VOICEVOX ENGINE",
+  "verified_engine_version": "0.25.2",
+  "speaker": {
+    "name": "冥鳴ひまり",
+    "style": "ノーマル",
+    "style_id": 14,
+    "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8"
+  },
+  "credit": "VOICEVOX:冥鳴ひまり",
+  "selected_by": "user",
+  "selected_on": "2026-10-19",
+  "selection_basis": "Confirmed after ten-speaker audio comparison",
+  "override": "Explicit user instructions take precedence"
+}

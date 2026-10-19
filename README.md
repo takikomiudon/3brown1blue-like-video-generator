@@ -14,8 +14,8 @@
 $science-explainer を使って、〇〇の仕組みを日本語ショート動画にして。
 ```
 
-[science-explainer v2.0.2](.agents/skills/science-explainer/SKILL.md) は、説明対象の状態変化を通して理解できるアニメーションを制作します。
-日本語ナレーションはVOICEVOXで制作し、話者はユーザーの指定や比較結果に沿って選びます。
+[science-explainer v2.0.3](.agents/skills/science-explainer/SKILL.md) は、説明対象の状態変化を通して理解できるアニメーションを制作します。
+日本語ナレーションはVOICEVOXで制作し、ユーザーが選択した **冥鳴ひまり・ノーマル** を標準話者として使います。
 動く試作、最終映像の主図の検査、対象の変化と意味のレビューを必須としています。
 別の環境へ導入するときは、フォルダ全体と必要な兄弟スキルを取得してください。
 以前コピーした版や以前のコミットへのリンクは自動更新されないので、読み込むSKILL.mdの `metadata.version` を確認します。
