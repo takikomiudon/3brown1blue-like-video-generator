@@ -11,7 +11,8 @@
   "bootstrap_tests": {
     "stale_checkout_with_existing_docs": "passed",
     "repeat_run": "passed",
-    "local_changes_preserved": "passed"
+    "local_changes_preserved": "passed",
+    "clean_clone_current_delivery_verification": "passed"
   },
   "full_pageindex": {
     "voice": "VOICEVOX:冥鳴ひまり",

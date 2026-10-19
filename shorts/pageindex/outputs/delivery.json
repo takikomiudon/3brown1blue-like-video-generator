@@ -1,29 +1,23 @@
 {
-  "checked_at": "2026-10-18T14:42:01.776970+00:00",
-  "video_commit": "86c1faafef2ccf78f50e0c9c8c5a233ecdf414d8",
+  "checked_at": "2026-10-19T10:38:07.481831+00:00",
+  "video_commit": "0abba3def825fac8d0248b2b4d4075701d6f97b4",
+  "voice": "VOICEVOX:冥鳴ひまり",
   "downloads": [
     {
-      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/86c1faafef2ccf78f50e0c9c8c5a233ecdf414d8/shorts/pageindex/outputs/pageindex-short-ja.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/0abba3def825fac8d0248b2b4d4075701d6f97b4/shorts/pageindex/outputs/pageindex-short-ja.mp4",
       "http_status": 200,
       "content_type": "application/octet-stream",
-      "size_bytes": 6931785,
-      "sha256": "5cde9bc44d130a4392a9c57ec3a115894e33bd7158c7bce609504427ca8bc212",
+      "size_bytes": 6949790,
+      "sha256": "4c2577279c24034c1a0b65a0f666a7e3e5466a040941ec6c866ee414312688a1",
       "hash_matches": "passed"
     },
     {
-      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/86c1faafef2ccf78f50e0c9c8c5a233ecdf414d8/shorts/pageindex/outputs/pageindex-short-ja-720p.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/0abba3def825fac8d0248b2b4d4075701d6f97b4/shorts/pageindex/outputs/pageindex-short-ja-720p.mp4",
       "http_status": 200,
       "content_type": "application/octet-stream",
-      "size_bytes": 2613558,
-      "sha256": "958ad5ded73d674ed35633ff32dde24af4146d70365218e23b9209d3fb21e464",
+      "size_bytes": 2627295,
+      "sha256": "fdc5306d7fb9c76d6c89adae93b00d390a5a03eb7a8e5172cd3b3a34f74f9a20",
       "hash_matches": "passed"
     }
-  ],
-  "user_device_playback": "not_observed",
-  "fresh_clone": {
-    "commit": "86c1faafef2ccf78f50e0c9c8c5a233ecdf414d8",
-    "clean_checkout": true,
-    "knowledge_verification": "passed",
-    "video_and_source_hashes": "passed"
-  }
+  ]
 }
