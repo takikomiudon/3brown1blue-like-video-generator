@@ -6,7 +6,8 @@
 復元の根拠と範囲は [復元記録](docs/restoration.md) を参照してください。
 
 成果・ノウハウ・スキルは `main` に統合済みです。新しい環境でも `main` を使ってください。
-取得後は `python3 scripts/verify_knowledge.py` で整合性を確認できます。
+起動時は [クラウド起動手順](docs/cloud-start.md) に従い、mainと保存された話者設定を読み込みます。
+`python3 scripts/verify_knowledge.py` で整合性を確認できます。
 
 ## 制作スキルの呼び出し
 
@@ -14,7 +15,7 @@
 $science-explainer を使って、〇〇の仕組みを日本語ショート動画にして。
 ```
 
-[science-explainer v2.0.4](.agents/skills/science-explainer/SKILL.md) は、説明対象の状態変化を通して理解できるアニメーションを制作します。
+[science-explainer v2.0.5](.agents/skills/science-explainer/SKILL.md) は、説明対象の状態変化を通して理解できるアニメーションを制作します。
 日本語ナレーションはVOICEVOXで制作し、ユーザーが選択した **冥鳴ひまり・ノーマル** を標準話者として使います。
 動く試作、最終映像の主図の検査、対象の変化と意味のレビューを必須としています。
 別の環境へ導入するときは、フォルダ全体と必要な兄弟スキルを取得してください。
@@ -37,7 +38,7 @@ GraphRAG、LightRAG、KAGを含む、日本語ナレーション・字幕付き�
 
 ## PageIndex：目次をたどって、根拠に届く
 
-日本語ナレーション・字幕付きの約65秒の縦型動画。
+冥鳴ひまり・ノーマルで再生成した約66秒の縦型動画。日本語ナレーション・字幕付き。
 
 - [完成動画（1080p）](shorts/pageindex/outputs/pageindex-short-ja.mp4)
 - [軽量版（720p）](shorts/pageindex/outputs/pageindex-short-ja-720p.mp4)
@@ -51,5 +52,6 @@ GraphRAG、LightRAG、KAGを含む、日本語ナレーション・字幕付き�
 - [軽量版（720p）](shorts/decay-heat/outputs/decay-heat-short-ja-720p.mp4)
 - [原稿・再生成手順・クレジット](shorts/decay-heat/README.md)
 
+原子炉の掲載版の音声：VOICEVOX:青山龍星。
+
 GitHubの動画ファイルページで **Download raw file** を選ぶとダウンロードできます。
-音声：VOICEVOX:青山龍星。

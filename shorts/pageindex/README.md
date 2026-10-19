@@ -1,13 +1,14 @@
 # PageIndex：目次をたどって、根拠に届く
 
-約65秒、日本語ナレーション・字幕付き、9:16のショート動画。
+約66秒、日本語ナレーション・字幕付き、9:16のショート動画。
 PageIndexの公式資料を確認し、架空の決算資料で検索の仕組みを新規作図した。
 
 - [完成動画（1080p）](outputs/pageindex-short-ja.mp4)
 - [軽量版（720p）](outputs/pageindex-short-ja-720p.mp4)
 - [全文字幕](outputs/pageindex-ja.srt)
 - [台本](story.json) / [演出計画](plan.md) / [出典と主張の範囲](sources.md)
-- [機械的な検証結果](outputs/validation.json)
+- [機械的な検証結果](outputs/validation.json) / [収録音声の波形照合](outputs/voice-track-audit.json)
+- [動作検査](outputs/motion-audit.json) / [意味のレビュー](motion-review.json)
 - [画面・発音・形式の確認記録](review.md)
 - [ダウンロードと再取得の検証記録](outputs/delivery.json)
 
@@ -23,7 +24,7 @@ PageIndexは文書を章・節のツリーに整理し、AIが読む場所を選
 
 ## 再生成
 
-掲載済み動画の音声記録は制作時のものです。これからの再生成では、共通の
+2026年10月19日に全編を冥鳴ひまりで再生成しました。共通の
 [話者設定](../../.agents/skills/science-explainer/voice-defaults.json)にある冥鳴ひまり・ノーマルを使います。
 音声からタイムライン・映像を再生成して、クレジットと検証記録を更新します。
 
@@ -42,7 +43,7 @@ docker run -d --name pageindex-voicevox \
 python3 prepare_audio.py
 docker stop pageindex-voicevox
 docker rm pageindex-voicevox
-bash run.sh manim -ql -r 540,960 --fps 30 --disable_caching script.py PageIndexShort
+bash run.sh manim -ql -r 360,640 --fps 30 --disable_caching --media_dir media/pilot pilot.py PageIndexPilot
 # 試写・図の確認後に完成版を出力。
 bash run.sh manim -qh -r 1080,1920 --fps 30 --disable_caching script.py PageIndexShort
 bash run.sh python finalize.py
@@ -53,6 +54,6 @@ bash run.sh python finalize.py
 WAVと描画キャッシュは再生成可能な中間ファイルとしてGit管理から除外している。
 `story.json` の `say` は発音用。章・節を「しょう・せつ」、RAGを「ラグ」と指定して誤読を防ぐ。
 
-**音声：VOICEVOX:青山龍星**。公開時は投稿文にも記載する。
+**音声：VOICEVOX:冥鳴ひまり**。公開時は投稿文にも記載する。
 取得した話者の利用条件は [voice-policy.md](assets/voice-policy.md)。
 図・文章は本プロジェクトの新規制作で、PageIndexの公式動画ではない。

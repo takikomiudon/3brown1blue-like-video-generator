@@ -51,6 +51,9 @@ python3 /path/to/science-explainer/scripts/voicevox_audio.py /path/to/project --
 原稿・話者・全合成設定・エンジン版・WAVとクエリのSHA-256が一致する場合だけ、既存WAVを再利用する。
 生成後の `assets/voice.json` と台本・タイムライン・音声の照合を `--check` で行う。
 映像のクレジットは、この検証を通った生成記録の `credit` を使う。
+受け渡し前は `--check-delivery /path/to/final.mp4` で最終MP4と検証記録・音声生成記録・現在の話者設定を照合する。
+生成記録は設定のSHA-256と、各合成に渡したspeaker id・UUIDを保持する。
+この照合はWAVキャッシュのない新しいcloneでも実行できる。
 Manimの描画後は共通実装の `save_render` で入力と動画のハッシュを保存し、最終出力の前に `verify_render` で照合する。
 描画コンテナからは、スキルフォルダを読み取り専用でマウントして `SCIENCE_EXPLAINER_SKILL` に設置先を指定する。
 同梱の `run.sh` と `run_batch.py` はこのマウントを行う。
@@ -94,3 +97,20 @@ python3 scripts/verify_knowledge.py
 v2.0.4では、3つの制作入口による実エンジン合成と、各Manimクラスの描画処理を継承した短い検証シーンを確認した。
 話者選択、旧キャッシュの更新、入力と描画結果の照合を検査する。
 [実行結果と確認範囲](../../../../docs/voice-default-validation.json)を参照。音声の聴取と全編の再制作は別の確認工程として記録する。
+
+## 収録音声と合成WAVの対応
+
+最終MP4は同梱の `verify_voice_track.py` で各発話のWAVと照合する。
+Python標準ライブラリとffmpegを使い、音量調整・AAC変換後の音声をPCMへ復号して正規化相関を測る。
+各区間の照合は0.85以上を必要とし、時刻のずれは前後120ミリ秒の範囲で扱う。
+検証記録にMP4・生成記録・参照WAVのSHA-256と各区間の相関を残し、最終のvalidation.jsonへ記録のハッシュを保存する。
+これは聴取レビューと区別する。
+
+```bash
+python3 /path/to/science-explainer/scripts/verify_voice_track.py \
+  /path/to/project /path/to/project/outputs/final.mp4 \
+  --output /path/to/project/outputs/voice-track-audit.json
+```
+
+`finalize.py` とRAGシリーズの `finish.py` はこの照合を実行する。
+受け渡しの `--check-delivery` は、照合結果のハッシュと現在の話者指定まで検査する。

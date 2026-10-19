@@ -1,10 +1,13 @@
 """Assemble the ten verified videos with scripts, sources, captions, and reproduction files."""
 from pathlib import Path
-import hashlib,json,zipfile,os
+import hashlib,json,zipfile,os,sys
 
 ROOT=Path(__file__).resolve().parent
 SKILL=Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
     ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent/'.agents/skills/science-explainer'))
+sys.path.insert(0,str(SKILL/'scripts'))
+from voicevox_audio import verify_delivery
+
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     eps=json.loads((ROOT/'episodes.json').read_text());entries=[];credits=[]
@@ -18,6 +21,7 @@ def main():
         d=ROOT/ep['slug'];v=d/'outputs/final.mp4'
         audit=json.loads((d/'outputs/motion-audit.json').read_text())
         valid=json.loads((d/'outputs/validation.json').read_text())
+        verify_delivery(d, v)
         assert audit['status']=='PASS' and valid['full_decode']=='PASS'
         assert audit['video_sha256']==valid['video_sha256']==sha(v)
         credit=valid['voice_credit'];credits.append(credit)
@@ -64,7 +68,7 @@ def main():
         include.extend((d/'audio').glob('*.query.json'))
     with zipfile.ZipFile(ROOT/'rag-trends-10-videos.zip','w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in sorted(include):z.write(p,str(p.relative_to(ROOT)))
-        for name in ['voice-defaults.json','scripts/voicevox_audio.py']:
+        for name in ['voice-defaults.json','scripts/voicevox_audio.py','scripts/verify_voice_track.py']:
             z.write(SKILL/name,'science-explainer/'+name)
     archive=ROOT/'rag-trends-10-videos.zip'
     (ROOT/'archive.sha256').write_text(sha(archive)+'  '+archive.name+'\n')

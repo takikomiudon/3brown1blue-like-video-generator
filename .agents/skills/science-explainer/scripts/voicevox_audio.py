@@ -91,28 +91,41 @@ class Voicevox:
                 raise ValueError('Expected 48 kHz mono PCM16')
             duration = stream.getnframes()/stream.getframerate()
         return dict(text=text, audio=wav.name, query=queryfile.name,
-                    speech_duration=duration, **cached)
+                    speech_duration=duration, speaker_id=self.voice['style'],
+                    speaker_uuid=self.voice['speaker_uuid'], **cached)
 
     def save_project(self, root, records, extra_audio=()):
         root = Path(root)
         (root/'assets').mkdir(exist_ok=True)
         (root/'assets/voice-policy.md').write_text(self.policy)
         write_json(root/'assets/voice.json', {**self.voice, 'records': records,
+                   'defaults_sha256': sha(DEFAULTS),
                    'story_sha256': sha(root/'story.json'),
                    'timeline_sha256': sha(root/'timeline.json'),
                    'extra_audio': [{'audio': p, 'audio_sha256': sha(root/p)} for p in extra_audio]})
 
 
-def verify_project(root):
-    """Reject old/mismatched voice assets before a new render or finalization."""
-    root = Path(root)
-    voice = json.loads((root/'assets/voice.json').read_text())
+def verify_voice(voice):
+    """Check the saved generation identity against the current user selection."""
     selected = choice()
     if (voice.get('name'), voice.get('speaker_uuid'), voice.get('style_name')) != (
             selected['name'], selected['speaker_uuid'], selected['style']):
         raise ValueError('Narrator differs from voice-defaults.json; run audio preparation again')
     if voice['credit'] != 'VOICEVOX:'+voice['name']:
         raise ValueError('Voice credit mismatch')
+    if voice.get('defaults_sha256') != sha(DEFAULTS):
+        raise ValueError('Voice defaults changed; prepare audio again')
+    if not voice.get('records') or any(
+            r.get('speaker_id') != voice['style'] or r.get('speaker_uuid') != voice['speaker_uuid']
+            for r in voice['records']):
+        raise ValueError('Missing or inconsistent synthesis speaker record')
+    return voice
+
+
+def verify_project(root):
+    """Reject old/mismatched voice assets before a new render or finalization."""
+    root = Path(root)
+    voice = verify_voice(json.loads((root/'assets/voice.json').read_text()))
     for name in ('story', 'timeline'):
         if voice.get(name+'_sha256') != sha(root/(name+'.json')):
             raise ValueError(name+' changed; run audio preparation again')
@@ -156,6 +169,31 @@ def verify_render(root, video):
     return verify_project(root)
 
 
+def verify_delivery(root, video):
+    """Bind the delivered file and its credit to the current narration manifest.
+
+    Published files can be checked after a fresh clone, without ignored WAV caches.
+    Decoding/listening remain separate checks; this verifies identity and hashes.
+    """
+    root, video = Path(root), Path(video)
+    voice = verify_voice(json.loads((root/'assets/voice.json').read_text()))
+    report = json.loads((video.parent/'validation.json').read_text())
+    file_sha = report.get('sha256') or report.get('video_sha256')
+    credit = report.get('voice') or report.get('voice_credit')
+    if (file_sha != sha(video) or credit != voice['credit']
+            or report.get('voice_manifest_sha256') != sha(root/'assets/voice.json')):
+        raise ValueError('Delivery does not match current narration; regenerate and finalize again')
+    audit_path = video.parent/'voice-track-audit.json'
+    if not audit_path.exists() or report.get('voice_track_audit_sha256') != sha(audit_path):
+        raise ValueError('Missing or changed embedded voice verification')
+    audit = json.loads(audit_path.read_text())
+    if (audit.get('status') != 'PASS' or audit.get('video_sha256') != file_sha
+            or audit.get('voice_manifest_sha256') != report['voice_manifest_sha256']
+            or audit.get('credit') != voice['credit']):
+        raise ValueError('Embedded voice verification differs from this delivery')
+    return voice
+
+
 def prepare_story(root, subtitle=lambda cue: cue['say'], api='http://127.0.0.1:50021'):
     root = Path(root)
     engine = Voicevox(api=api)
@@ -188,6 +226,10 @@ if __name__ == '__main__':
     parser.add_argument('project', type=Path)
     parser.add_argument('--api', default='http://127.0.0.1:50021')
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--check-delivery', type=Path)
     args = parser.parse_args()
-    result = verify_project(args.project) if args.check else prepare_story(args.project, api=args.api)
+    if args.check_delivery:
+        result = verify_delivery(args.project, args.check_delivery)
+    else:
+        result = verify_project(args.project) if args.check else prepare_story(args.project, api=args.api)
     print(result['credit'], '/ style', result['style'])

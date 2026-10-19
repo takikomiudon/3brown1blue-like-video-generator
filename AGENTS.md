@@ -2,10 +2,11 @@
 
 ## 最初に読むもの
 
-1. [README.md](README.md)
-2. [ノウハウの索引](docs/KNOWLEDGE.md)
-3. 制作なら [.agents/skills/science-explainer/SKILL.md](.agents/skills/science-explainer/SKILL.md)
-4. 縦型動画なら [shorts/decay-heat/README.md](shorts/decay-heat/README.md) と [演出計画](shorts/decay-heat/plan.md)
+1. [クラウド起動手順](docs/cloud-start.md) を実行し、現在のHEADとmainを照合する
+2. [README.md](README.md)
+3. [ノウハウの索引](docs/KNOWLEDGE.md)
+4. 制作なら [.agents/skills/science-explainer/SKILL.md](.agents/skills/science-explainer/SKILL.md)
+5. 縦型動画なら [shorts/decay-heat/README.md](shorts/decay-heat/README.md) と [演出計画](shorts/decay-heat/plan.md)
 
 ## 利用者の指示から確定した方針
 
@@ -27,12 +28,12 @@
 
 ## 実装・検証
 
-- 新作は `science-explainer` v2.0.4の制作条件を適用する。説明対象の状態変化と、その変化が伝える意味を設計し、5〜10秒の試作が合格してから全編へ進む。
+- 新作は `science-explainer` v2.0.5の制作条件を適用する。説明対象の状態変化と、その変化が伝える意味を設計し、5〜10秒の試作が合格してから全編へ進む。
 - 日本語ナレーションはVOICEVOXで生成する。ユーザーが選択した冥鳴ひまり・ノーマルを標準話者として使う。設定は `.agents/skills/science-explainer/voice-defaults.json`。合成には同スキルの `scripts/voicevox_audio.py` を使い、設定を実際のAPI呼び出しへ反映する。合成設定・クエリ・実測尺・クレジットを保存し、完成MP4の音声を確認する。音声構成の変更はユーザーの明示的な指定に従う。
 - 完成判定には、最終MP4の主図に対する `audit_motion.py` の検査と、同じSHA-256に結びつく意味のレビューの両方を必須とする。コマンドと書式は [.agents/skills/science-explainer/references/motion-contract.md](.agents/skills/science-explainer/references/motion-contract.md)。
 - 現行ショートはManim Community、VOICEVOX。RemotionとManimGLのAPIを混在させない。
 - 台本の編集元は各動画の `story.json`。音声の尺を測ってタイムラインを作る。
-- 既存成果物を渡すだけなら再レンダーは不要。リポジトリ内のMP4と検証記録を先に使う。
+- 既存成果物を求められた場合は制作時点の話者を説明する。新作・再生成は現在の話者設定で作り、共通処理の `--check-delivery` で最終MP4と生成記録を照合してから渡す。
 - 文書・スキルを変更したら `python3 scripts/verify_knowledge.py`。動画の生成手順と検証は [制作手順](docs/production-workflow.md)。
 - ベンダー化したスキルを直接修正しない。調整はプロジェクト固有スキルで行い、上流のコミット・ライセンス・SHA-256を保持する。
 - ネットワークやDockerは管理環境のプロキシ・CAを使い、TLS・署名・チェックサムを無効化しない。

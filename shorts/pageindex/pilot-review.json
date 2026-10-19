@@ -1,0 +1,9 @@
+{
+  "method": "frame_sequence",
+  "evidence_times": [0.5, 2.8, 5.7],
+  "duration_seconds": 8.5,
+  "voice": "VOICEVOX:冥鳴ひまり",
+  "observed_change": "選択点が決算資料から業績、費用の分析へ移動し、選択経路が強調され、別の枝が薄くなる",
+  "meaning": "章の説明を手がかりに読む場所を段階的に選択する",
+  "explains_mechanism": true
+}

@@ -162,6 +162,34 @@ class VoiceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Combined narration'):
             audio.verify_project(self.root)
 
+    def test_delivery_requires_matching_final_file_and_voice_manifest(self):
+        voice = self.prepare()
+        video = self.root/'outputs/final.mp4'
+        video.write_bytes(b'final file identity fixture')
+        report = dict(sha256=audio.sha(video), voice=voice['credit'],
+                      voice_manifest_sha256=audio.sha(self.root/'assets/voice.json'))
+        audit = dict(status='PASS', video_sha256=audio.sha(video),
+                     voice_manifest_sha256=report['voice_manifest_sha256'], credit=voice['credit'])
+        audio.write_json(video.parent/'voice-track-audit.json', audit)
+        report['voice_track_audit_sha256'] = audio.sha(video.parent/'voice-track-audit.json')
+        audio.write_json(video.parent/'validation.json', report)
+        # A fresh clone does not contain the ignored WAV cache.
+        (self.root/'audio/00-intro.wav').unlink()
+        self.assertEqual(audio.verify_delivery(self.root, video), voice)
+        video.write_bytes(b'previous delivery')
+        with self.assertRaisesRegex(ValueError, 'Delivery does not match'):
+            audio.verify_delivery(self.root, video)
+
+    def test_delivery_rejects_stale_defaults_or_speaker_request(self):
+        voice = self.prepare()
+        path = self.root/'assets/voice.json'
+        audio.write_json(path, {**voice, 'defaults_sha256': 'old settings'})
+        with self.assertRaisesRegex(ValueError, 'Voice defaults changed'):
+            audio.verify_voice(json.loads(path.read_text()))
+        voice['records'][0]['speaker_id'] = 13
+        with self.assertRaisesRegex(ValueError, 'synthesis speaker'):
+            audio.verify_voice(voice)
+
 
 if __name__ == '__main__':
     unittest.main()

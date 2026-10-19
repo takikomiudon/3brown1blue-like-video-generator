@@ -24,7 +24,7 @@ def digest(path):
 def main():
     required_docs = (
         'KNOWLEDGE research fact-check credits production-workflow storyboard '
-        'validation quality-upgrade quality-upgrade-pilot quality-upgrade-source-links '
+        'cloud-start validation quality-upgrade quality-upgrade-pilot quality-upgrade-source-links '
         'shorts-topic-research platform-duration-notes troubleshooting '
         'preservation-and-delivery restoration animation-contract-v2'
     ).split()
@@ -52,9 +52,9 @@ def main():
     skills = ['science-explainer', 'manim-video', 'manim-composer',
               'manimce-best-practices', 'remotion-best-practices']
     custom = ROOT / '.agents/skills/science-explainer'
-    require('version: "2.0.4"' in (custom / 'SKILL.md').read_text(),
-            'Expected science-explainer v2.0.4')
-    for name in ['audit_motion.py', 'test_audit_motion.py', 'voicevox_audio.py', 'test_voicevox_audio.py']:
+    require('version: "2.0.5"' in (custom / 'SKILL.md').read_text(),
+            'Expected science-explainer v2.0.5')
+    for name in ['audit_motion.py', 'test_audit_motion.py', 'voicevox_audio.py', 'test_voicevox_audio.py', 'verify_voice_track.py']:
         require((custom / 'scripts' / name).is_file(), f'Missing skill script: {name}')
     require((custom / 'templates/motion-plan.example.json').is_file(), 'Missing motion plan template')
     voice = json.loads((custom / 'voice-defaults.json').read_text())
@@ -123,6 +123,9 @@ def main():
     fallback = outputs / 'decay-heat-short-ja-720p.mp4'
     require(fallback.is_file() and fallback.stat().st_size == 2482581,
             'Missing or changed 720p delivery')
+    sys.path.insert(0, str(custom/'scripts'))
+    from voicevox_audio import verify_delivery
+    verify_delivery(ROOT/'shorts/pageindex', ROOT/'shorts/pageindex/outputs/pageindex-short-ja.mp4')
     if errors:
         for error in errors:
             print('FAIL:', error, file=sys.stderr)

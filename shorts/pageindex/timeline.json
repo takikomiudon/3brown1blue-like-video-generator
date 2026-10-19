@@ -6,9 +6,9 @@
     "index": 0,
     "audio": "audio/00-problem.wav",
     "start": 0,
-    "speech_duration": 6.570666666666667,
-    "duration": 7.433333333333334,
-    "end": 7.433333333333334
+    "speech_duration": 6.528,
+    "duration": 7.4,
+    "end": 7.4
   },
   {
     "id": "chunks",
@@ -16,10 +16,10 @@
     "caption": "よくあるRAG：\n意味が近い断片を探す",
     "index": 1,
     "audio": "audio/01-chunks.wav",
-    "start": 7.433333333333334,
-    "speech_duration": 5.141333333333334,
-    "duration": 6.0,
-    "end": 13.433333333333334
+    "start": 7.4,
+    "speech_duration": 5.322666666666667,
+    "duration": 6.2,
+    "end": 13.600000000000001
   },
   {
     "id": "mismatch",
@@ -27,10 +27,10 @@
     "caption": "「利益を増やす目標」では\n「減った理由」は分からない",
     "index": 2,
     "audio": "audio/02-mismatch.wav",
-    "start": 13.433333333333334,
-    "speech_duration": 6.165333333333334,
-    "duration": 7.033333333333333,
-    "end": 20.46666666666667
+    "start": 13.600000000000001,
+    "speech_duration": 6.496,
+    "duration": 7.366666666666666,
+    "end": 20.96666666666667
   },
   {
     "id": "structure",
@@ -38,10 +38,10 @@
     "caption": "PageIndex：\n資料の構造をツリーにする",
     "index": 3,
     "audio": "audio/03-structure.wav",
-    "start": 20.46666666666667,
-    "speech_duration": 3.6693333333333333,
-    "duration": 4.533333333333333,
-    "end": 25.0
+    "start": 20.96666666666667,
+    "speech_duration": 3.7226666666666666,
+    "duration": 4.6,
+    "end": 25.56666666666667
   },
   {
     "id": "traverse",
@@ -49,10 +49,10 @@
     "caption": "章の説明を手がかりに\nAIが読む場所を選ぶ",
     "index": 4,
     "audio": "audio/04-traverse.wav",
-    "start": 25.0,
-    "speech_duration": 7.584,
-    "duration": 8.466666666666667,
-    "end": 33.46666666666667
+    "start": 25.56666666666667,
+    "speech_duration": 7.648,
+    "duration": 8.5,
+    "end": 34.06666666666667
   },
   {
     "id": "evidence",
@@ -60,10 +60,10 @@
     "caption": "本文を読む\n根拠ページとともに答える",
     "index": 5,
     "audio": "audio/05-evidence.wav",
-    "start": 33.46666666666667,
-    "speech_duration": 6.368,
-    "duration": 7.233333333333333,
-    "end": 40.7
+    "start": 34.06666666666667,
+    "speech_duration": 6.474666666666667,
+    "duration": 7.333333333333333,
+    "end": 41.400000000000006
   },
   {
     "id": "principle",
@@ -71,10 +71,10 @@
     "caption": "構造をたどる検索\nベクトルDBを使わない",
     "index": 6,
     "audio": "audio/06-principle.wav",
-    "start": 40.7,
-    "speech_duration": 6.698666666666667,
-    "duration": 7.566666666666666,
-    "end": 48.266666666666666
+    "start": 41.400000000000006,
+    "speech_duration": 7.168,
+    "duration": 8.033333333333333,
+    "end": 49.43333333333334
   },
   {
     "id": "limits",
@@ -82,10 +82,10 @@
     "caption": "精度・待ち時間・AIの費用\n使う資料で検証が必要",
     "index": 7,
     "audio": "audio/07-limits.wav",
-    "start": 48.266666666666666,
-    "speech_duration": 7.872,
-    "duration": 8.733333333333333,
-    "end": 57.0
+    "start": 49.43333333333334,
+    "speech_duration": 7.68,
+    "duration": 8.533333333333333,
+    "end": 57.96666666666667
   },
   {
     "id": "payoff",
@@ -93,9 +93,9 @@
     "caption": "目次をたどって、根拠に届く。",
     "index": 8,
     "audio": "audio/08-payoff.wav",
-    "start": 57.0,
-    "speech_duration": 4.2026666666666666,
-    "duration": 5.066666666666666,
-    "end": 62.06666666666666
+    "start": 57.96666666666667,
+    "speech_duration": 4.224,
+    "duration": 5.1,
+    "end": 63.06666666666667
   }
 ]

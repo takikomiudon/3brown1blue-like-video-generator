@@ -1,0 +1,78 @@
+{
+  "video_sha256": "4c2577279c24034c1a0b65a0f666a7e3e5466a040941ec6c866ee414312688a1",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "chunks",
+      "observed_object": "資料と三つの断片カード",
+      "observed_change": "上の資料から三つのカードが展開され、目標の断片が選ばれて囲まれた",
+      "meaning": "質問と意味が近い文章断片を候補にする",
+      "evidence_times": [
+        8.05,
+        9.65,
+        13.3
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "mismatch",
+      "observed_object": "目標の断片・左右の候補・質問との接続",
+      "observed_change": "目標のカードが中央へ拡大し、他候補が左右へ退き、質問への破線と×が現れた",
+      "meaning": "目標が見つかっても利益減少の理由にはならない",
+      "evidence_times": [
+        14.250000000000002,
+        15.850000000000001,
+        20.666666666666668
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "structure",
+      "observed_object": "資料・章のノード・節のノード・接続線",
+      "observed_change": "断片が章ノードに置き換わり、売上と費用の分析の葉が追加され、枝が接続された",
+      "meaning": "文書の章・節をツリーとして整理する",
+      "evidence_times": [
+        21.616666666666667,
+        23.21666666666667,
+        25.26666666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "traverse",
+      "observed_object": "シアンの選択点・業績と費用の枝・本文カード",
+      "observed_change": "点がルートから業績・費用へ進み、経路がシアンになり、選んだ本文のカードが下へ展開された",
+      "meaning": "章の説明を手がかりに読む本文を選択する",
+      "evidence_times": [
+        26.21666666666667,
+        27.81666666666667,
+        33.76666666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "evidence",
+      "observed_object": "選択した葉・本文・回答・p.42の引用",
+      "observed_change": "選択した葉から本文が広がり、本文の記述から右側へ回答が生成され、p.42の引用が付いた",
+      "meaning": "本文の記述とページを根拠として回答する",
+      "evidence_times": [
+        34.71666666666667,
+        36.31666666666667,
+        41.10000000000001
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "principle",
+      "observed_object": "ルート・業績・費用の分析・経路",
+      "observed_change": "ルートがシアンで強調され、次に業績と費用の経路が強調され、構造をたどった関係が残った",
+      "meaning": "文書構造をたどって本文に到達する検索である",
+      "evidence_times": [
+        42.1,
+        44.1,
+        46.1
+      ],
+      "explains_mechanism": true
+    }
+  ]
+}

@@ -1,6 +1,125 @@
 {
-  "name": "青山龍星",
-  "style": 13,
-  "credit": "VOICEVOX:青山龍星",
-  "engine_version": "0.25.2"
+  "engine": "VOICEVOX ENGINE",
+  "engine_version": "0.25.2",
+  "name": "冥鳴ひまり",
+  "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+  "style": 14,
+  "style_name": "ノーマル",
+  "settings": {
+    "speedScale": 1.04,
+    "pitchScale": -0.015,
+    "intonationScale": 1.0,
+    "volumeScale": 1.0,
+    "prePhonemeLength": 0.12,
+    "postPhonemeLength": 0.14,
+    "outputSamplingRate": 48000,
+    "outputStereo": false
+  },
+  "credit": "VOICEVOX:冥鳴ひまり",
+  "selection": "voice-defaults.json",
+  "records": [
+    {
+      "text": "AIが資料から、見当違いの答えを拾う。探し方を変えるのが、ページインデックス。",
+      "audio": "00-problem.wav",
+      "query": "00-problem.query.json",
+      "speech_duration": 6.528,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "725393641aa6cb07fe34482e6a5d33af001192ebd9e7dc97f211c36a75b1e7e7",
+      "audio_sha256": "fc6c7dff37f89844ba7e39aea7281ea209c3ee9abf533c2fe37d7d469cd06645",
+      "query_sha256": "4d729f83538f05b127d7638b8156e4827c77ab6e24e8b52e9a28f7536e00ea5d"
+    },
+    {
+      "text": "よくあるラグは、文章を分けて、質問と意味が近い断片を探します。",
+      "audio": "01-chunks.wav",
+      "query": "01-chunks.query.json",
+      "speech_duration": 5.322666666666667,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "40a20ada8c7fcb183fc1ec5811c2d8186835c0e1e0b63ad1a9a2c857be181f84",
+      "audio_sha256": "7c34899a2c59a6bfca7d9263999a9622053fea6dbb78f3963e78487fb84bc63e",
+      "query_sha256": "8ea3ae61cffaff2301be4310fe5553b59d6c21086cc4ffcd40693a90174fc690"
+    },
+    {
+      "text": "でも、利益が減った理由を聞いて、利益を増やす目標が出ても、答えにはなりません。",
+      "audio": "02-mismatch.wav",
+      "query": "02-mismatch.query.json",
+      "speech_duration": 6.496,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "e0937001d7ec3538c4cc5ff0020d81d8f6c466a7fdea2833370feb59b2447b23",
+      "audio_sha256": "47884c4cb95ab6b73b9285f6da9d2e198d2399c62a9d6d622df5cdae9fe507da",
+      "query_sha256": "22612695b28d8848f8cacbee657ccb1e718f7bb34a1d30d0aaa59482da013cdb"
+    },
+    {
+      "text": "ページインデックスは、資料をしょうやせつのツリーに整理。",
+      "audio": "03-structure.wav",
+      "query": "03-structure.query.json",
+      "speech_duration": 3.7226666666666666,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "f778b5278c326fc7db8540c03ff58affe6b23dbd22139f63e1bebc1c84c990c2",
+      "audio_sha256": "98a4f5f14e7bb8c06f2caccc5cf47624d3b335d6c4cf13a66114aa7287d25a36",
+      "query_sha256": "68dc9f293c2408a1159c5d4067ff8beb06c4d079f4025180873b25ea7c6b7cc9"
+    },
+    {
+      "text": "決算資料から、業績、費用の分析へ。しょうの説明を手がかりに、AIが読む場所を選びます。",
+      "audio": "04-traverse.wav",
+      "query": "04-traverse.query.json",
+      "speech_duration": 7.648,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "e4cb90fdd556321a3f0212093009ae2d693a3a310c91709d3a1ed3ebb5b4148c",
+      "audio_sha256": "b9cc74729dc9d58fb160159d3723ba0d81a3c0fce9cc937c679a9cd05aeeb332",
+      "query_sha256": "39b71af4a4204d9e99d7bec7c7a33d83af181b3b524312b6180cdf34ee2f9d08"
+    },
+    {
+      "text": "本文に、物流費の増加で利益が減った、とあれば、そのページを根拠に回答します。",
+      "audio": "05-evidence.wav",
+      "query": "05-evidence.query.json",
+      "speech_duration": 6.474666666666667,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "e2991a3a3f63a1fafa35a623e2910dc200c158812cef966d1c9a6cda005a825c",
+      "audio_sha256": "0eb6dc5a6dfa37716a5086fa3def01ebd99dcc89915b66420ef11b28025dfecc",
+      "query_sha256": "3781caf648fc1a6df892f5104d856a7f33ecc23c2a259be7a2a755c6d3872e05"
+    },
+    {
+      "text": "似た文章を探すだけでなく、構造をたどって探す。ベクトルデータベースを使わないのが特徴です。",
+      "audio": "06-principle.wav",
+      "query": "06-principle.query.json",
+      "speech_duration": 7.168,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "1f9e7a7b5a885653a44b8bd6c5bea1836178b140b47d56f34c2d59e9ffd60cb6",
+      "audio_sha256": "4d151534aa156267c759ad41685e9989908e9c35239f491872835d961febc4a6",
+      "query_sha256": "9f9519104e112928475594f90653d66b70229f07704717896b1d85d97ac0d70d"
+    },
+    {
+      "text": "ただし、万能ではありません。精度も、待ち時間も、AIの利用コストも、検証が必要です。",
+      "audio": "07-limits.wav",
+      "query": "07-limits.query.json",
+      "speech_duration": 7.68,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "723fce1d107813533c1cd16abb2181c949b054fdf6076a43b68597ab7cec2fc0",
+      "audio_sha256": "ef6e196ed46f04f8c83806e0504d1a4c79434eb8d3573e470a7c873f8b7a8a5c",
+      "query_sha256": "a25ab1d3dc1271bc908e04796415c787b40ff68a7d46040044dea464d5014bf0"
+    },
+    {
+      "text": "長い資料を、目次から読み解く。ページインデックスです。",
+      "audio": "08-payoff.wav",
+      "query": "08-payoff.query.json",
+      "speech_duration": 4.224,
+      "speaker_id": 14,
+      "speaker_uuid": "8eaad775-3119-417e-8cf4-2a10bfd592c8",
+      "key": "a2efe7e23c0ef337bb7c33fb20a3faa6a899c2989b07336deab48d6053fbfad3",
+      "audio_sha256": "46a504970a339cedaefcc70fc89a4b6b2ed797ee7aedb977d09a867273623ddb",
+      "query_sha256": "d47d904adf141c6ac78f2b31a86c3f95d680bfd596c50f928d7a797999edfc60"
+    }
+  ],
+  "defaults_sha256": "18f1681c2b6dd2088c905c370a847940ae95d5143445ae0c74b3a7e76676ee1d",
+  "story_sha256": "7a328f77aaea8062425fbef411c490c33d1369a98fe880bc91e9a0b947a2894b",
+  "timeline_sha256": "8d0df656b0cd036f4a015454b0004e646ef3d06495a953a2b095327ac263b2ad",
+  "extra_audio": []
 }

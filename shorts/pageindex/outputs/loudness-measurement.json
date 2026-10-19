@@ -1,12 +1,12 @@
 {
-  "input_i": "-24.68",
-  "input_tp": "-8.38",
-  "input_lra": "3.30",
-  "input_thresh": "-35.26",
-  "output_i": "-16.30",
-  "output_tp": "-1.50",
-  "output_lra": "3.00",
-  "output_thresh": "-26.92",
+  "input_i": "-25.47",
+  "input_tp": "-12.97",
+  "input_lra": "2.80",
+  "input_thresh": "-35.82",
+  "output_i": "-16.01",
+  "output_tp": "-3.67",
+  "output_lra": "2.70",
+  "output_thresh": "-26.38",
   "normalization_type": "dynamic",
-  "target_offset": "0.30"
+  "target_offset": "0.01"
 }

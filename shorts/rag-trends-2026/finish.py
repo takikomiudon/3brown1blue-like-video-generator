@@ -8,7 +8,8 @@ import os, sys
 SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
     (ROOT/'science-explainer' if (ROOT/'science-explainer').exists() else ROOT.parent.parent / '.agents/skills/science-explainer')))
 sys.path.insert(0, str(SKILL / 'scripts'))
-from voicevox_audio import verify_render
+from voicevox_audio import verify_render, verify_delivery
+from verify_voice_track import save_audit
 AUDIT=SKILL/'scripts/audit_motion.py'
 SPELLINGS={
  'グラフラグ':'GraphRAG','ライトラグ':'LightRAG','ケーエージー':'KAG','ラプター':'RAPTOR',
@@ -114,8 +115,10 @@ def finish(slug):
       'voice_credit':voice['credit'],'voice_manifest_sha256':sha(folder/'assets/voice.json'),'auditory_full_listen':'not_performed',
       'notes':'音声の聴取評価と機械検査は区別。図は模式図で実測性能値を示していない。',
       **audio_measurement}
+    validation['voice_track_audit_sha256'] = save_audit(folder, output)
     (folder/'outputs/validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n')
     run(['ffmpeg','-v','error','-y','-ss','3','-i',str(output),'-frames:v','1',str(folder/'outputs/poster.jpg')])
+    verify_delivery(folder, output)
     print(slug,'FINISHED',round(duration,2),flush=True)
     return validation
 

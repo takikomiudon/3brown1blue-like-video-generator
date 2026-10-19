@@ -5,7 +5,8 @@ import os, sys
 SKILL = Path(os.environ.get('SCIENCE_EXPLAINER_SKILL',
     ROOT.parent.parent / '.agents/skills/science-explainer'))
 sys.path.insert(0, str(SKILL / 'scripts'))
-from voicevox_audio import verify_render
+from voicevox_audio import verify_render, verify_delivery
+from verify_voice_track import save_audit
 OUT=ROOT/'outputs'
 SOURCE=ROOT/'media/videos/script/1920p30/DecayHeatShort.mp4'
 FINAL=OUT/'decay-heat-short-ja.mp4'
@@ -48,6 +49,8 @@ def main():
         'audio_max_dbfs':peak,'full_decode':'passed','size_bytes':FINAL.stat().st_size,
         'sha256':hashlib.sha256(FINAL.read_bytes()).hexdigest(),'voice':voice['credit'],
         'voice_manifest_sha256':hashlib.sha256((ROOT/'assets/voice.json').read_bytes()).hexdigest()}
+    report['voice_track_audit_sha256'] = save_audit(ROOT, FINAL)
     (OUT/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+    verify_delivery(ROOT, FINAL)
     print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

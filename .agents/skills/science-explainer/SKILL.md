@@ -2,11 +2,11 @@
 name: science-explainer
 description: 日本語の科学・技術解説を、対象そのものが動いて仕組みを説明するアニメーションとして制作する。日本語ナレーションはVOICEVOXで生成し、出典、台本、音声同期、対象の状態変化の検証、MP4の受け渡しまで行う。
 metadata:
-  version: "2.0.4"
+  version: "2.0.5"
   updated: "2026-10-19"
 ---
 
-# 日本語の解説アニメーション — v2.0.4
+# 日本語の解説アニメーション — v2.0.5
 
 `$science-explainer` による動画制作は、**説明対象の意味のある動きを必須**とする。
 ユーザーが「アニメーション」と追記しなくても適用する。
@@ -24,8 +24,9 @@ metadata:
 
 ## 0. 読み込みと環境
 
-1. この版が **2.0.4** であることを確認し、同梱の [動作の制作・合格条件](references/motion-contract.md) と [VOICEVOXの制作条件](references/voicevox.md) を必ず読む。
-2. プロジェクトのAGENTS.md、既存の制作手順・ソース・完成動画を確認する。
+1. この版が **2.0.5** であることを確認し、同梱の [動作の制作・合格条件](references/motion-contract.md) と [VOICEVOXの制作条件](references/voicevox.md) を必ず読む。
+2. クラウド環境では保存済みの起動設定とチェックアウトのHEAD・mainを照合し、現在の話者設定を読み込む。
+   プロジェクトのAGENTS.md、既存の制作手順・ソース・完成動画を確認する。
    このリポジトリでは [索引](../../../docs/KNOWLEDGE.md) と [制作手順](../../../docs/production-workflow.md)。
 3. 新作のManim実装では、[Manim Video Lab](../manim-video/SKILL.md) と
    [Manim CE](../manimce-best-practices/SKILL.md) を読み、アルゴリズムなら
@@ -110,6 +111,15 @@ python3 /path/to/science-explainer/scripts/audit_motion.py \
 
 ## 5. 保存と受け渡し
 
+最終MP4の受け渡し前に、共通処理で現在の話者指定と成果物を照合する。
+
+```bash
+python3 /path/to/science-explainer/scripts/voicevox_audio.py \
+  /path/to/project --check-delivery /path/to/project/outputs/final.mp4
+```
+
+収録音声は `scripts/verify_voice_track.py` で合成WAVと照合し、結果のSHA-256も検証記録に保存する。
+検証記録には最終MP4と音声生成記録のSHA-256、および実際の話者を保存する。
 台本、出典、plan、動作計画・レビュー、音声の生成記録、コード、検証結果、必要な完成ファイルをmainにコミットしてpushする。
 GitHubの確定URLからMP4を再取得してハッシュを照合し、ダウンロード用HTTPSリンクを渡す。
 クラウドの `/workspace/...` だけを受け渡しリンクにしない。既存の変更を消さず、明示的依頼なしにworktreeを作らない。

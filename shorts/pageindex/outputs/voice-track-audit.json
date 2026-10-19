@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "video_sha256": "4c2577279c24034c1a0b65a0f666a7e3e5466a040941ec6c866ee414312688a1",
+  "voice_manifest_sha256": "0cca3442ada7cf3ce5d8f0aec0d8fb2548120b319e3a0b163e753e5c65d6717b",
+  "credit": "VOICEVOX:冥鳴ひまり",
+  "speaker_id": 14,
+  "method": "Normalized PCM correlation against each source utterance",
+  "minimum_correlation": 0.85,
+  "checks": [
+    {
+      "id": "problem",
+      "reference_sha256": "fc6c7dff37f89844ba7e39aea7281ea209c3ee9abf533c2fe37d7d469cd06645",
+      "correlation": 0.992083,
+      "offset_seconds": 0.021375,
+      "status": "PASS"
+    },
+    {
+      "id": "chunks",
+      "reference_sha256": "7c34899a2c59a6bfca7d9263999a9622053fea6dbb78f3963e78487fb84bc63e",
+      "correlation": 0.992927,
+      "offset_seconds": 0.020375,
+      "status": "PASS"
+    },
+    {
+      "id": "mismatch",
+      "reference_sha256": "47884c4cb95ab6b73b9285f6da9d2e198d2399c62a9d6d622df5cdae9fe507da",
+      "correlation": 0.994369,
+      "offset_seconds": 0.020375,
+      "status": "PASS"
+    },
+    {
+      "id": "structure",
+      "reference_sha256": "98a4f5f14e7bb8c06f2caccc5cf47624d3b335d6c4cf13a66114aa7287d25a36",
+      "correlation": 0.994223,
+      "offset_seconds": -0.01225,
+      "status": "PASS"
+    },
+    {
+      "id": "traverse",
+      "reference_sha256": "b9cc74729dc9d58fb160159d3723ba0d81a3c0fce9cc937c679a9cd05aeeb332",
+      "correlation": 0.993472,
+      "offset_seconds": -0.01225,
+      "status": "PASS"
+    },
+    {
+      "id": "evidence",
+      "reference_sha256": "0eb6dc5a6dfa37716a5086fa3def01ebd99dcc89915b66420ef11b28025dfecc",
+      "correlation": 0.994224,
+      "offset_seconds": -0.01225,
+      "status": "PASS"
+    },
+    {
+      "id": "principle",
+      "reference_sha256": "4d151534aa156267c759ad41685e9989908e9c35239f491872835d961febc4a6",
+      "correlation": 0.991936,
+      "offset_seconds": -0.012625,
+      "status": "PASS"
+    },
+    {
+      "id": "limits",
+      "reference_sha256": "ef6e196ed46f04f8c83806e0504d1a4c79434eb8d3573e470a7c873f8b7a8a5c",
+      "correlation": 0.993654,
+      "offset_seconds": 0.021,
+      "status": "PASS"
+    },
+    {
+      "id": "payoff",
+      "reference_sha256": "46a504970a339cedaefcc70fc89a4b6b2ed797ee7aedb977d09a867273623ddb",
+      "correlation": 0.993367,
+      "offset_seconds": 0.02075,
+      "status": "PASS"
+    }
+  ],
+  "human_listening": "not_performed"
+}

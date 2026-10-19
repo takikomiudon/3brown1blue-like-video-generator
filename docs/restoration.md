@@ -51,3 +51,11 @@ GitHubにpushしたファイルは、環境の公開に依存せず再取得で�
 [KNOWLEDGE.md](KNOWLEDGE.md) から読む。
 ファイルがない場合は [保存・受け渡し手順](preservation-and-delivery.md) に従い、
 まずリモートとブランチを確認する。
+
+## 起動設定の更新（2026-10-19）
+
+環境設定の下書きには、以前の作業ブランチを指すinstall_scriptとstart_skillが残っていた。
+リポジトリのmain更新と、環境設定の公開は別工程だった。
+起動処理をmainの取得・fast-forward・知識検査へ変更し、文書が存在する古いチェックアウトも更新する。
+古いHEADからの更新、2回目の実行、ローカル変更の保持を別のcloneで確認した。
+現在の入口は [cloud-start.md](cloud-start.md)。設定保存後も、環境ツールが要求する公開の完了を確認する。

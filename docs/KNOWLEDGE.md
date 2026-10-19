@@ -48,3 +48,6 @@ python3 scripts/verify_knowledge.py
 
 索引のリンク、必要な文書、スキルの原本とのハッシュ、完成動画のハッシュ等を確認する。
 この検証は、動画を新規レンダリングしたり全編を人が視聴したりするものではない。
+
+クラウドの起動・mainの更新・話者設定の適用は [cloud-start.md](cloud-start.md)。
+話者設定と環境起動の修正、および全編の確認結果は [voice-recovery-validation.json](voice-recovery-validation.json)。
