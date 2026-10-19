@@ -1,0 +1,104 @@
+{
+  "artifact_commit": "857796ac96c023266f0fbc490c25f7f446c0d59a",
+  "checked_date": "2026-10-19",
+  "method": "HTTP GET of immutable commit URLs and SHA-256 comparison",
+  "files": [
+    {
+      "file": "01_graphrag/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/01_graphrag/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 3358366,
+      "sha256": "67fb7f018a542bea0c844bf36648c275398f89789ff810d2aa32e615e9bb5d0d",
+      "matches_local": true
+    },
+    {
+      "file": "02_lightrag/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/02_lightrag/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 3042342,
+      "sha256": "834dd0ecd580d27d21685baec2800533411103c1c61526f2a13f5d32c56a29ac",
+      "matches_local": true
+    },
+    {
+      "file": "03_kag/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/03_kag/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2921654,
+      "sha256": "0bf5ef0a54eaa8bfb7a9e7ee7c37172c6a3e860c0cb1d2ea509e5c70df102ae1",
+      "matches_local": true
+    },
+    {
+      "file": "04_raptor/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/04_raptor/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2959801,
+      "sha256": "646e1ba6c1f7585750468464849e15fc96c453029b067135e767d6646c8b3984",
+      "matches_local": true
+    },
+    {
+      "file": "05_selfrag_crag/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/05_selfrag_crag/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2833871,
+      "sha256": "7dcc6ff73ef020411d2465d57993bccb73678030f691479481e3a41d72f22fa5",
+      "matches_local": true
+    },
+    {
+      "file": "06_hybrid_rerank/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/06_hybrid_rerank/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2896028,
+      "sha256": "2eaef340c6b1cf88751c7625fd991df9e51a297d95845bb71de59a0b00ccc37a",
+      "matches_local": true
+    },
+    {
+      "file": "07_multimodal/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/07_multimodal/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2774459,
+      "sha256": "7064d85ee524fbd903657a5b173a7632bbd10ae42026b153acf10bae90385340",
+      "matches_local": true
+    },
+    {
+      "file": "08_agentic_r/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/08_agentic_r/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2845836,
+      "sha256": "abdc15c59569e215a6a1216cb1b7c02fff5eb3b1dcc8b04708a23f7f71a5c554",
+      "matches_local": true
+    },
+    {
+      "file": "09_mtrag_ragas/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/09_mtrag_ragas/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 3012309,
+      "sha256": "49e355152f3cfd336c052728bb7c6bf503fd3bf8e4085c9b7be6de94829e75be",
+      "matches_local": true
+    },
+    {
+      "file": "10_libraries/outputs/final.mp4",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/10_libraries/outputs/final.mp4",
+      "http_status": 200,
+      "bytes": 2533293,
+      "sha256": "6166171aec6b535cd1998fb630f43fbd45d68b476bc961c5ac1d273fdfde5525",
+      "matches_local": true
+    },
+    {
+      "file": "rag-trends-10-videos.zip",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/rag-trends-10-videos.zip",
+      "http_status": 200,
+      "bytes": 31834750,
+      "sha256": "d1c2b7d8248649c9edc4c2e4528406eaacc62817246d1c2ed4ba233503009e48",
+      "matches_local": true
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/takikomiudon/3brown1blue-like-video-generator/857796ac96c023266f0fbc490c25f7f446c0d59a/shorts/rag-trends-2026/README.md",
+      "http_status": 200,
+      "bytes": 3510,
+      "sha256": "bc5eb46149550091da953bdd4e3253828195f44e75f7e82c4215dfb308e7247d",
+      "matches_local": true
+    }
+  ],
+  "status": "PASS"
+}
