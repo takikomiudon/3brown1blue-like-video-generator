@@ -1,0 +1,14 @@
+{
+  "video_sha256": "a9d15fa629525279794b85ea022f807a6f561cb79bada432a2faf50d6a552eb8",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "4つの原文チャンクから中間要約2つが生成され、それらから上位要約へ矢印が集まる。",
+  "meaning": "要約をまとめ、さらに要約",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

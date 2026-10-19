@@ -1,0 +1,67 @@
+{
+  "video_sha256": "67fb7f018a542bea0c844bf36648c275398f89789ff810d2aa32e615e9bb5d0d",
+  "method": "frame_sequence",
+  "scope": "主図15点と全体レイアウト5点。全編の音声聴取ではない。",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "全体への質問と4つの議事録カード",
+      "observed_change": "上位2件へ矢印が伸び、取得した断片が作られる一方、残り2件が赤で示される",
+      "meaning": "近い断片の取得と資料群全体の把握の違い",
+      "evidence_times": [
+        1.7116666666666667,
+        6.056666666666667,
+        11.059999999999999
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "文書、実体4個、関係、集団、要約",
+      "observed_change": "文書から実体が生まれ、矢印で関係が接続され、囲いが付き、要約へ移る",
+      "meaning": "実体・関係・集団の要約へと索引を構造化する",
+      "evidence_times": [
+        14.634583333333332,
+        18.360833333333332,
+        22.651666666666664
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "4つの原文カードと2つの集約、上位要約",
+      "observed_change": "原文から2つの集約が生成し、上位の要約へ矢印が集まる",
+      "meaning": "資料群の要約を複数の粒度で統合する",
+      "evidence_times": [
+        25.82875,
+        29.307499999999997,
+        33.31333333333333
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "文書と抽出・グラフ構築・要約の工程",
+      "observed_change": "文書から抽出へ矢印ができ、次の工程へ情報が移り、費用のカードへまとめられる",
+      "meaning": "索引作成には複数の処理工程が必要",
+      "evidence_times": [
+        36.63041666666667,
+        40.76916666666666,
+        45.535
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "同じ入力からの通常検索とグラフ検索の経路",
+      "observed_change": "質問が2つの経路へ分かれ、白い点が各経路を進み、出力へ集まる",
+      "meaning": "同じ条件で異なる根拠の拾い方を比較する",
+      "evidence_times": [
+        49.00958333333333,
+        52.73583333333333,
+        57.026666666666664
+      ],
+      "explains_mechanism": true
+    }
+  ]
+}

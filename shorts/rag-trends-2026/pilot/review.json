@@ -1,0 +1,20 @@
+{
+  "method": "frame_sequence",
+  "video": "videos/render/960p24/RagShort.mp4",
+  "evidence_times": [
+    0.3,
+    1.2,
+    2.4,
+    3.4,
+    4.4,
+    5.4,
+    6.4,
+    7.6
+  ],
+  "observed_object": "文書カード、4つの実体、関係の矢印、2つの集団、要約カード",
+  "observed_change": "原文から実体が生成され、関係が接続され、左右の集団が囲まれ、集団から要約へ情報が移る。",
+  "meaning": "GraphRAGの索引が、単なる断片の一覧から関係と集団の要約へ構造化されることが追える。",
+  "status": "PASS",
+  "scope": "8秒の映像試作。全編の音声聴取ではない。",
+  "video_sha256": "56f994f7d4281e702cfcf00a905a2af7d41ec592e6cf00f68d2d0bf98b9a33fd"
+}

@@ -1,0 +1,14 @@
+{
+  "video_sha256": "00c0921ce462e4b2ff1a246fe4f4f3e22a546151d237ffcd6fc271714ed68d0d",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "PDFの表を強調し、ページから複数のベクトルが生成され、質問と接続して根拠のページが選択される。",
+  "meaning": "画像を複数のベクトルへ",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

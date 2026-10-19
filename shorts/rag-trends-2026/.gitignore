@@ -1,0 +1,12 @@
+work/
+pilot/texts/
+pilot/videos/**/partial_movie_files/
+pilot/**/texts/
+pilot/**/partial_movie_files/
+pilot/*.log
+pilot/tmp*.png
+**/review-frames/
+**/outputs/*.log
+**/audio/*.sha256
+**/audio/*.wav
+**/__pycache__/

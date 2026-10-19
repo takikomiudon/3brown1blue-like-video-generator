@@ -1,0 +1,67 @@
+{
+  "video_sha256": "6166171aec6b535cd1998fb630f43fbd45d68b476bc961c5ac1d273fdfde5525",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "入力、処理部品3個、緑の点と出力",
+      "observed_change": "入力から順に矢印が伸び、緑の点が各部品間を進み、最後の出力と確認へ移る",
+      "meaning": "必要な役割から選ぶ",
+      "evidence_times": [
+        1.51125,
+        5.3475,
+        9.764999999999999
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "入力、処理部品3個、緑の点と出力",
+      "observed_change": "入力から順に矢印が伸び、緑の点が各部品間を進み、最後の出力と確認へ移る",
+      "meaning": "自分のデータと検索をつなぐ",
+      "evidence_times": [
+        12.925,
+        16.225,
+        20.025
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "入力、処理部品3個、緑の点と出力",
+      "observed_change": "入力から順に矢印が伸び、緑の点が各部品間を進み、最後の出力と確認へ移る",
+      "meaning": "部品をパイプラインに組み込む",
+      "evidence_times": [
+        22.952083333333334,
+        26.320833333333333,
+        30.200000000000003
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "処理の3段階と白い点、次の状態",
+      "observed_change": "段階間の矢印が生成され、白い点が順に各段階を進み、状態が次の処理へ渡る",
+      "meaning": "繰り返しのある処理を制御",
+      "evidence_times": [
+        33.30125,
+        37.0275,
+        41.318333333333335
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "共通の入力、2つの構成、白い点と出力",
+      "observed_change": "矢印が2つの構成へ分岐し、白い点がそれぞれの経路を進み、共通の出力へ到達する",
+      "meaning": "根拠・変更のしやすさ・運用費用",
+      "evidence_times": [
+        44.685,
+        48.645,
+        53.205
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

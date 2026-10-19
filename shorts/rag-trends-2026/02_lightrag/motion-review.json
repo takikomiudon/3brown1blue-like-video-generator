@@ -1,0 +1,67 @@
+{
+  "video_sha256": "834dd0ecd580d27d21685baec2800533411103c1c61526f2a13f5d32c56a29ac",
+  "method": "frame_sequence",
+  "scope": "主図15点と全体レイアウト5点。全編の音声聴取ではない。",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "製品資料、4つの実体、関係と検索表現",
+      "observed_change": "実体が抽出され、関係が接続され、実体と関係の表現から索引へ移る",
+      "meaning": "LightRAGのグラフと検索用表現の関係",
+      "evidence_times": [
+        1.235,
+        4.37,
+        7.9799999999999995
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "具体的な実体と広いテーマの2経路",
+      "observed_change": "質問が分岐し、点が2つの経路を進み、根拠の出力へ合流する",
+      "meaning": "低レベルと高レベルの知識を集める",
+      "evidence_times": [
+        10.957083333333333,
+        14.655833333333334,
+        18.915
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "既存の知識グラフと新しい障害のカード",
+      "observed_change": "新しい障害が文書から生成され、既存の障害・対策に矢印が接続される",
+      "meaning": "新しい知識を既存索引へ追加する",
+      "evidence_times": [
+        22.273750000000003,
+        26.247500000000002,
+        30.823333333333334
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "PDFの図表、ベクトル、質問、根拠ページ",
+      "observed_change": "表が強調され、ページから索引表現が作られ、質問が接続し、ページが緑で選ばれる",
+      "meaning": "図表を含む資料を取り込み、検索の対象にする",
+      "evidence_times": [
+        34.23416666666667,
+        38.001666666666665,
+        42.34
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "同じ条件からの通常検索とLightRAG",
+      "observed_change": "白い点が別々の経路を進み、両経路の出力に到達する",
+      "meaning": "自分の資料で根拠・費用・更新の違いを比較する",
+      "evidence_times": [
+        45.807916666666664,
+        49.97416666666666,
+        54.77166666666666
+      ],
+      "explains_mechanism": true
+    }
+  ]
+}

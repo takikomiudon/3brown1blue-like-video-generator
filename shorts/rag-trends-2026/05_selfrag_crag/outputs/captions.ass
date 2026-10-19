@@ -1,0 +1,27 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK JP,44,&H00F2F6FF,&H00F2F6FF,&H0008111F,&H9008111F,0,0,0,0,100,100,0,0,1,3,0,8,100,160,1515,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:02.77,Default,,0,0,0,,検索したから正しい、とは限りません。
+Dialogue: 0,0:00:02.77,0:00:04.53,Default,,0,0,0,,検索の失敗をどう扱うか。
+Dialogue: 0,0:00:04.53,0:00:07.18,Default,,0,0,0,,その考え方を学ぶなら、Self-RAGと、
+Dialogue: 0,0:00:07.18,0:00:10.85,Default,,0,0,0,,Corrective RAGをセットで読むのがおす\Nすめです。
+Dialogue: 0,0:00:11.62,0:00:14.23,Default,,0,0,0,,Self-RAGは、必要に応じて検索し、
+Dialogue: 0,0:00:14.23,0:00:18.69,Default,,0,0,0,,取り出した文章と生成した回答を評価す\Nる仕組みを学習します。
+Dialogue: 0,0:00:18.69,0:00:21.92,Default,,0,0,0,,原論文では、専用の反省トークンを使い\Nます。
+Dialogue: 0,0:00:22.70,0:00:25.55,Default,,0,0,0,,CRAGは、検索結果の品質を評価し、
+Dialogue: 0,0:00:25.55,0:00:29.35,Default,,0,0,0,,必要に応じてウェブ検索などへ切り替え\Nる設計です。
+Dialogue: 0,0:00:29.35,0:00:32.52,Default,,0,0,0,,回答の前に、使う知識の質を立て直しま\Nす。
+Dialogue: 0,0:00:33.29,0:00:35.55,Default,,0,0,0,,二つの論文は、仕組みが異なります。
+Dialogue: 0,0:00:35.55,0:00:38.20,Default,,0,0,0,,単にプロンプトで見直しを指示すること\Nと、
+Dialogue: 0,0:00:38.20,0:00:41.66,Default,,0,0,0,,Self-RAGの学習方法を再現することは区\N別しましょう。
+Dialogue: 0,0:00:42.41,0:00:48.28,Default,,0,0,0,,実務に持ち帰る視点は、どこで失敗を検\N知し、どう再検索し、いつ止めるかです\N。
+Dialogue: 0,0:00:48.28,0:00:53.51,Default,,0,0,0,,正解率だけでなく、余分な検索回数と待\Nち時間も一緒に比べてください。

@@ -1,0 +1,17 @@
+{
+  "video_sha256": "abdc15c59569e215a6a1216cb1b7c02fff5eb3b1dcc8b04708a23f7f71a5c554",
+  "duration_seconds": 60.083333,
+  "width": 1080,
+  "height": 1920,
+  "fps": "24/1",
+  "audio_codec": "aac",
+  "audio_duration_seconds": 60.083,
+  "full_decode": "PASS",
+  "subtitles": 13,
+  "subtitle_timing": "character-weighted estimate within measured utterances",
+  "voice_credit": "VOICEVOX:青山龍星",
+  "auditory_full_listen": "not_performed",
+  "notes": "音声の聴取評価と機械検査は区別。図は模式図で実測性能値を示していない。",
+  "integrated_lufs": -16.2,
+  "true_peak_dbtp": -1.35
+}

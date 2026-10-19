@@ -26,6 +26,15 @@ $science-explainer を使って、〇〇の仕組みを日本語ショート動�
 - [個別音声をまとめて取得（ZIP）](audio-comparisons/voicevox-10/outputs/voicevox-10-audio.zip)
 - [話者一覧・共通原稿・条件](audio-comparisons/voicevox-10/README.md)
 
+## RAGの現在地：10本のショート動画
+
+GraphRAG、LightRAG、KAGを含む、日本語ナレーション・字幕付きの縦型動画10本。各回約53〜61秒。
+
+- [10本の動画・台本・一次資料の一覧](shorts/rag-trends-2026/README.md)
+- [10本をまとめてダウンロード](shorts/rag-trends-2026/rag-trends-10-videos.zip)
+
+2026年10月19日時点の一次資料を確認し、基礎論文と2026年の研究・実装状況を分けて解説。音声：VOICEVOX:青山龍星。
+
 ## PageIndex：目次をたどって、根拠に届く
 
 日本語ナレーション・字幕付きの約65秒の縦型動画。

@@ -1,0 +1,8 @@
+Agentic-R：検索器も、最終回答から学ぶ
+
+論文: https://arxiv.org/abs/2601.11888
+ACL 2026掲載: https://aclanthology.org/2026.findings-acl.785/
+LangGraph公式ドキュメント: https://docs.langchain.com/oss/python/langgraph/overview
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

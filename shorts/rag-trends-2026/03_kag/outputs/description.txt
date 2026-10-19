@@ -1,0 +1,7 @@
+KAG：似ている文章から、条件を満たす知識へ
+
+論文: https://arxiv.org/abs/2409.13731
+公式実装: https://github.com/OpenSPG/KAG
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

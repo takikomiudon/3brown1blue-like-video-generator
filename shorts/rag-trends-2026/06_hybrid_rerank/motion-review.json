@@ -1,0 +1,67 @@
+{
+  "video_sha256": "2eaef340c6b1cf88751c7625fd991df9e51a297d95845bb71de59a0b00ccc37a",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "同じ入力から分かれる2経路と出力",
+      "observed_change": "矢印が2経路に分かれ、白い点がそれぞれを進み、両方の経路から出力へ到達する",
+      "meaning": "異なる検索の候補を集める",
+      "evidence_times": [
+        1.4516666666666667,
+        5.136666666666667,
+        9.379999999999999
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "共通の入力と3つの表現・方式",
+      "observed_change": "3つの表現への矢印が順に伸び、用途に合わせた選択・統合の出力に情報が移る",
+      "meaning": "3方式の表現を扱う",
+      "evidence_times": [
+        12.55875,
+        16.0925,
+        20.16166666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "3つの検索候補と緑で示された根拠C",
+      "observed_change": "候補の再評価を示した後、根拠Cが下位から上位へ移動し、上位の情報から回答に使う根拠が作られる",
+      "meaning": "質問と候補を再評価して並べ替え",
+      "evidence_times": [
+        23.261666666666667,
+        26.781666666666666,
+        30.835
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "入力、処理部品3個、緑の点、出力",
+      "observed_change": "入力から順に矢印が伸び、緑の点が各部品間を進み、最後の出力と確認へ移る",
+      "meaning": "検索と並べ替えは役割が違う",
+      "evidence_times": [
+        33.87416666666667,
+        37.25666666666666,
+        41.151666666666664
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "3つの検索候補と緑で示された根拠C",
+      "observed_change": "候補の再評価を示した後、根拠Cが下位から上位へ移動し、上位の情報から回答に使う根拠が作られる",
+      "meaning": "候補への包含と順位を分けて検証",
+      "evidence_times": [
+        44.24875,
+        47.9475,
+        52.20666666666666
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

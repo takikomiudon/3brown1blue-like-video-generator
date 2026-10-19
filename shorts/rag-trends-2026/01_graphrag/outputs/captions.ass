@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK JP,44,&H00F2F6FF,&H00F2F6FF,&H0008111F,&H9008111F,0,0,0,0,100,100,0,0,1,3,0,8,100,160,1515,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:05.32,Default,,0,0,0,,GraphRAGは、文書全体の傾向を聞くと\Nきに読んでおきたい基礎研究です。
+Dialogue: 0,0:00:05.32,0:00:08.53,Default,,0,0,0,,例えば、千件の議事録に共通する課題は\N何か。
+Dialogue: 0,0:00:08.53,0:00:12.50,Default,,0,0,0,,近い文章を数件探すだけでは、全体像を\N取りこぼします。
+Dialogue: 0,0:00:13.29,0:00:17.83,Default,,0,0,0,,論文では、文章から実体と関係を抽出し\N、知識グラフを構築。
+Dialogue: 0,0:00:17.83,0:00:23.82,Default,,0,0,0,,つながりの強い集団ごとに要約を作り、\Nそれらを使って全体への質問に答えます\N。
+Dialogue: 0,0:00:24.58,0:00:30.48,Default,,0,0,0,,局所的な事実の検索と、資料群を横断す\Nる要約では、必要な検索の設計が違いま\Nす。
+Dialogue: 0,0:00:30.48,0:00:34.37,Default,,0,0,0,,まずは、自分の質問がどちらに近いかを\N見てください。
+Dialogue: 0,0:00:35.12,0:00:37.88,Default,,0,0,0,,注意点は、索引作成のコストです。
+Dialogue: 0,0:00:37.88,0:00:42.72,Default,,0,0,0,,さらに公式実装は、現在、保守中心の方\N針を明記しています。
+Dialogue: 0,0:00:42.72,0:00:46.87,Default,,0,0,0,,採用前に、更新方針と必要な機能を確認\Nしましょう。
+Dialogue: 0,0:00:47.66,0:00:51.17,Default,,0,0,0,,読むのは、From Local to Global。
+Dialogue: 0,0:00:51.17,0:00:56.14,Default,,0,0,0,,少量の文書で、通常の検索と、全体を問\Nう質問を比べるのがおすすめです。
+Dialogue: 0,0:00:56.14,0:00:58.19,Default,,0,0,0,,出典は付属資料から開けます。

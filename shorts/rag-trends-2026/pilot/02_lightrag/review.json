@@ -1,0 +1,14 @@
+{
+  "video_sha256": "d6b664ef88baed4dd9d7e22db5ba16921b464402a2e7103301c170db2f9a1dbe",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "同じ質問が具体的な実体と広いテーマへ分岐し、点が両経路を進んで根拠の出力へ到達する。",
+  "meaning": "2段階の知識を集める",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

@@ -1,0 +1,211 @@
+[
+  {
+    "url": "https://arxiv.org/abs/2404.16130",
+    "label": "論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "01_graphrag"
+    ]
+  },
+  {
+    "url": "https://github.com/microsoft/graphrag",
+    "label": "公式実装・保守方針",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "01_graphrag"
+    ]
+  },
+  {
+    "url": "https://microsoft.github.io/graphrag/",
+    "label": "公式ドキュメント",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "01_graphrag"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2410.05779",
+    "label": "論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "02_lightrag"
+    ]
+  },
+  {
+    "url": "https://github.com/HKUDS/LightRAG",
+    "label": "公式実装・更新情報",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "02_lightrag"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2409.13731",
+    "label": "論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "03_kag"
+    ]
+  },
+  {
+    "url": "https://github.com/OpenSPG/KAG",
+    "label": "公式実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "03_kag"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2401.18059",
+    "label": "論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "04_raptor"
+    ]
+  },
+  {
+    "url": "https://github.com/parthsarthi03/raptor",
+    "label": "著者実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "04_raptor"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2310.11511",
+    "label": "Self-RAG論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "05_selfrag_crag"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2401.15884",
+    "label": "CRAG論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "05_selfrag_crag"
+    ]
+  },
+  {
+    "url": "https://github.com/AkariAsai/self-rag",
+    "label": "Self-RAG著者実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "05_selfrag_crag"
+    ]
+  },
+  {
+    "url": "https://github.com/HuskyInSalt/CRAG",
+    "label": "CRAG著者実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "05_selfrag_crag"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2402.03216",
+    "label": "M3-Embedding論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "06_hybrid_rerank"
+    ]
+  },
+  {
+    "url": "https://github.com/FlagOpen/FlagEmbedding",
+    "label": "FlagEmbedding公式実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "06_hybrid_rerank"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2407.01449",
+    "label": "ColPali論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "07_multimodal"
+    ]
+  },
+  {
+    "url": "https://github.com/illuin-tech/colpali",
+    "label": "ColPali公式実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "07_multimodal"
+    ]
+  },
+  {
+    "url": "https://github.com/docling-project/docling",
+    "label": "Docling公式実装",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "07_multimodal"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2601.11888",
+    "label": "論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "08_agentic_r"
+    ]
+  },
+  {
+    "url": "https://aclanthology.org/2026.findings-acl.785/",
+    "label": "ACL 2026掲載",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "08_agentic_r"
+    ]
+  },
+  {
+    "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+    "label": "LangGraph公式ドキュメント",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "08_agentic_r",
+      "10_libraries"
+    ]
+  },
+  {
+    "url": "https://arxiv.org/abs/2602.23184",
+    "label": "MTRAG-UN論文",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "09_mtrag_ragas"
+    ]
+  },
+  {
+    "url": "https://github.com/IBM/mt-rag-benchmark",
+    "label": "公式ベンチマーク",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "09_mtrag_ragas"
+    ]
+  },
+  {
+    "url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/",
+    "label": "Ragas公式メトリクス",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "09_mtrag_ragas"
+    ]
+  },
+  {
+    "url": "https://developers.llamaindex.ai/python/framework/",
+    "label": "LlamaIndex公式ドキュメント",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "10_libraries"
+    ]
+  },
+  {
+    "url": "https://docs.haystack.deepset.ai/docs/intro",
+    "label": "Haystack公式ドキュメント",
+    "checked_date": "2026-10-19",
+    "used_by": [
+      "10_libraries"
+    ]
+  }
+]

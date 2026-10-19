@@ -1,0 +1,7 @@
+LightRAG：具体と全体、2段階で取り出す
+
+論文: https://arxiv.org/abs/2410.05779
+公式実装・更新情報: https://github.com/HKUDS/LightRAG
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

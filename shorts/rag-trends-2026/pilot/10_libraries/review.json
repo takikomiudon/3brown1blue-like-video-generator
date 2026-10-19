@@ -1,0 +1,14 @@
+{
+  "video_sha256": "7a3f5e30f83bd2598b43a77a96774e9da6795564ab968401042cb85f7e14333d",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "取り込みから索引、問い合わせへ処理の点が移動し、出力の確認へつながる。",
+  "meaning": "自分のデータと検索をつなぐ",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

@@ -1,0 +1,7 @@
+検索 × Rerank：BGE-M3とFlagEmbeddingを押さえる
+
+M3-Embedding論文: https://arxiv.org/abs/2402.03216
+FlagEmbedding公式実装: https://github.com/FlagOpen/FlagEmbedding
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

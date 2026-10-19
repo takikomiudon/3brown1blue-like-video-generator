@@ -1,0 +1,67 @@
+{
+  "video_sha256": "abdc15c59569e215a6a1216cb1b7c02fff5eb3b1dcc8b04708a23f7f71a5c554",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "処理の3段階、白い点、次の状態",
+      "observed_change": "段階間の矢印が生成され、白い点が各段階を進み、次の状態が作られ、最初の段階に戻る",
+      "meaning": "最終回答に役立つ情報は？",
+      "evidence_times": [
+        1.5870833333333334,
+        5.615833333333334,
+        10.255
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "有用性の評価、局所の関連性と回答の正しさ、検索器の学習信号",
+      "observed_change": "有用性の評価が2つの信号へ分かれ、点が両経路を進み、検索器を学習する信号へ集まる",
+      "meaning": "両方の信号で検索器を学習",
+      "evidence_times": [
+        13.844166666666668,
+        17.99666666666667,
+        22.778333333333336
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "処理の3段階、白い点、次の状態",
+      "observed_change": "段階間の矢印が生成され、白い点が各段階を進み、次の状態が作られ、最初の段階に戻る",
+      "meaning": "両者を反復的に改善",
+      "evidence_times": [
+        26.124166666666667,
+        29.506666666666668,
+        33.40166666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "処理の3段階、白い点、次の状態",
+      "observed_change": "段階間の矢印が生成され、白い点が各段階を進み、次の状態が作られ、最初の段階に戻る",
+      "meaning": "処理の制御を実装する",
+      "evidence_times": [
+        36.53125000000001,
+        40.31250000000001,
+        44.66666666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "質問、2つの検査、結果と追加確認",
+      "observed_change": "質問から2つの検査へ矢印が伸び、適合の結果と不足の結果へ分岐し、不足の経路から確認へ情報が移る",
+      "meaning": "停止の条件を設計する",
+      "evidence_times": [
+        48.00583333333334,
+        51.82833333333334,
+        56.230000000000004
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

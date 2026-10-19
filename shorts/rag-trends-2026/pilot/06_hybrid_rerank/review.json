@@ -1,0 +1,14 @@
+{
+  "video_sha256": "767243b20fea6ca2e6494f0ef80ba08190599894a4c8d6f7499297cfae191ba2",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "BGE-M3からDense、Sparse、Multi-vectorへの矢印が順に形成され、用途に応じた選択・統合へ情報が移る。",
+  "meaning": "3方式の表現を扱う",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

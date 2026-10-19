@@ -1,0 +1,14 @@
+{
+  "video_sha256": "853fcbfdefaa14cbcf2951a9bbf27133518ec5709edd340d4072d150af4ca221",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "元の文章から実体が生成され、知識の関係が接続し、元の文章との双方向の矢印と原文チャンクへの索引が形成される。",
+  "meaning": "整理した知識と原文を対応付け",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

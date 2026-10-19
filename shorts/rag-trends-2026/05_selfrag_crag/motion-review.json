@@ -1,0 +1,67 @@
+{
+  "video_sha256": "7dcc6ff73ef020411d2465d57993bccb73678030f691479481e3a41d72f22fa5",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "3件の検索候補と根拠・追加情報",
+      "observed_change": "質問から候補へ矢印が伸び、不適切な中間候補が赤で示され縮小・減光し、確認した根拠と追加情報が作られる",
+      "meaning": "検索結果にも失敗がある",
+      "evidence_times": [
+        1.495,
+        5.29,
+        9.66
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "処理の3段階と点、次の状態",
+      "observed_change": "段階間の矢印が順に生成され、白い点が検索・推論・評価の流れを進み、最初の段階に戻る",
+      "meaning": "Self-RAG：学習した自己評価",
+      "evidence_times": [
+        12.940833333333334,
+        16.598333333333333,
+        20.810000000000002
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "取得文書、品質評価、抽出・Web検索、補正した根拠",
+      "observed_change": "取得文書から品質評価へ矢印が伸び、評価が赤で示され、原文からの抽出と追加のWeb検索へ分岐し、両方の情報が根拠へまとまる",
+      "meaning": "必要なら追加の根拠を取得",
+      "evidence_times": [
+        23.95916666666667,
+        27.451666666666668,
+        31.473333333333336
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "同じ入力から分かれる2経路と出力",
+      "observed_change": "矢印が2経路に分かれ、白い点がそれぞれを進み、両方の経路から出力へ到達する",
+      "meaning": "学習方法と補正方法を区別",
+      "evidence_times": [
+        34.35291666666667,
+        37.36416666666667,
+        40.83166666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "処理の3段階と点、次の状態",
+      "observed_change": "段階間の矢印が順に生成され、白い点が検索・推論・評価の流れを進み、最初の段階に戻る",
+      "meaning": "回数・待ち時間も評価する",
+      "evidence_times": [
+        43.835416666666674,
+        47.75416666666667,
+        52.26666666666667
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

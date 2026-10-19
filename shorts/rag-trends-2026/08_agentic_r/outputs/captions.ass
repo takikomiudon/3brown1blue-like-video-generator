@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK JP,44,&H00F2F6FF,&H00F2F6FF,&H0008111F,&H9008111F,0,0,0,0,100,100,0,0,1,3,0,8,100,160,1515,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:03.53,Default,,0,0,0,,二〇二六年の論文、Agentic-R。
+Dialogue: 0,0:00:03.53,0:00:07.98,Default,,0,0,0,,注目点は、エージェントだけでなく、検\N索器も改善することです。
+Dialogue: 0,0:00:07.98,0:00:11.54,Default,,0,0,0,,似ている文章が、最終回答に役立つとは\N限りません。
+Dialogue: 0,0:00:12.33,0:00:17.34,Default,,0,0,0,,この研究は、各検索での関連性と、最終\N回答の正しさを使い、
+Dialogue: 0,0:00:17.34,0:00:19.66,Default,,0,0,0,,文章の有用性を評価します。
+Dialogue: 0,0:00:19.66,0:00:24.14,Default,,0,0,0,,複数回の検索を前提に、検索器の学習を\N考え直します。
+Dialogue: 0,0:00:24.91,0:00:30.17,Default,,0,0,0,,エージェントが作る質問が変化するのに\N合わせ、検索器も反復的に学習します。
+Dialogue: 0,0:00:30.17,0:00:34.40,Default,,0,0,0,,一回だけの質問と答えで学ぶ検索との違\Nいが、読みどころです。
+Dialogue: 0,0:00:35.16,0:00:38.09,Default,,0,0,0,,関連する実装ライブラリは、LangGraph\N。
+Dialogue: 0,0:00:38.09,0:00:40.43,Default,,0,0,0,,状態や分岐を持つ処理を組めます。
+Dialogue: 0,0:00:40.43,0:00:45.85,Default,,0,0,0,,ただし、これを使うだけで、論文の検索\N器学習が再現できるわけではありません\N。
+Dialogue: 0,0:00:46.62,0:00:51.54,Default,,0,0,0,,読むときは、最終回答からの評価が検索\N器へどう届くかに注目を。
+Dialogue: 0,0:00:51.54,0:00:57.44,Default,,0,0,0,,実装では、検索の回数、停止条件、全体\Nの費用も含めて、効果を比べましょう。

@@ -1,0 +1,82 @@
+[
+  {
+    "number": 1,
+    "title": "GraphRAG",
+    "file": "01_graphrag/outputs/final.mp4",
+    "duration_seconds": 60.833333,
+    "bytes": 3358366,
+    "sha256": "67fb7f018a542bea0c844bf36648c275398f89789ff810d2aa32e615e9bb5d0d"
+  },
+  {
+    "number": 2,
+    "title": "LightRAG",
+    "file": "02_lightrag/outputs/final.mp4",
+    "duration_seconds": 58.791667,
+    "bytes": 3042342,
+    "sha256": "834dd0ecd580d27d21685baec2800533411103c1c61526f2a13f5d32c56a29ac"
+  },
+  {
+    "number": 3,
+    "title": "KAG",
+    "file": "03_kag/outputs/final.mp4",
+    "duration_seconds": 55.916667,
+    "bytes": 2921654,
+    "sha256": "0bf5ef0a54eaa8bfb7a9e7ee7c37172c6a3e860c0cb1d2ea509e5c70df102ae1"
+  },
+  {
+    "number": 4,
+    "title": "RAPTOR",
+    "file": "04_raptor/outputs/final.mp4",
+    "duration_seconds": 55.75,
+    "bytes": 2959801,
+    "sha256": "646e1ba6c1f7585750468464849e15fc96c453029b067135e767d6646c8b3984"
+  },
+  {
+    "number": 5,
+    "title": "Self-RAG × CRAG",
+    "file": "05_selfrag_crag/outputs/final.mp4",
+    "duration_seconds": 56.166667,
+    "bytes": 2833871,
+    "sha256": "7dcc6ff73ef020411d2465d57993bccb73678030f691479481e3a41d72f22fa5"
+  },
+  {
+    "number": 6,
+    "title": "検索 × Rerank",
+    "file": "06_hybrid_rerank/outputs/final.mp4",
+    "duration_seconds": 56.0,
+    "bytes": 2896028,
+    "sha256": "2eaef340c6b1cf88751c7625fd991df9e51a297d95845bb71de59a0b00ccc37a"
+  },
+  {
+    "number": 7,
+    "title": "ColPali × Docling",
+    "file": "07_multimodal/outputs/final.mp4",
+    "duration_seconds": 53.166667,
+    "bytes": 2774459,
+    "sha256": "7064d85ee524fbd903657a5b173a7632bbd10ae42026b153acf10bae90385340"
+  },
+  {
+    "number": 8,
+    "title": "Agentic-R",
+    "file": "08_agentic_r/outputs/final.mp4",
+    "duration_seconds": 60.083333,
+    "bytes": 2845836,
+    "sha256": "abdc15c59569e215a6a1216cb1b7c02fff5eb3b1dcc8b04708a23f7f71a5c554"
+  },
+  {
+    "number": 9,
+    "title": "MTRAG-UN × Ragas",
+    "file": "09_mtrag_ragas/outputs/final.mp4",
+    "duration_seconds": 58.666667,
+    "bytes": 3012309,
+    "sha256": "49e355152f3cfd336c052728bb7c6bf503fd3bf8e4085c9b7be6de94829e75be"
+  },
+  {
+    "number": 10,
+    "title": "RAG実装の選び方",
+    "file": "10_libraries/outputs/final.mp4",
+    "duration_seconds": 57.125,
+    "bytes": 2533293,
+    "sha256": "6166171aec6b535cd1998fb630f43fbd45d68b476bc961c5ac1d273fdfde5525"
+  }
+]

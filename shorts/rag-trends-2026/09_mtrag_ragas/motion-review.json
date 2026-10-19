@@ -1,0 +1,67 @@
+{
+  "video_sha256": "49e355152f3cfd336c052728bb7c6bf503fd3bf8e4085c9b7be6de94829e75be",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "処理の3段階と白い点、次の状態",
+      "observed_change": "段階間の矢印が生成され、白い点が順に各段階を進み、状態が次の処理へ渡る",
+      "meaning": "会話では文脈が必要",
+      "evidence_times": [
+        1.4245833333333335,
+        5.0408333333333335,
+        9.205
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "4種類の質問カードとそれぞれに対応する行動",
+      "observed_change": "回答可能・回答不能・曖昧・文脈依存の順に、対応する回答・保留・聞き返し・文脈参照のカードが横に生成され、別々の矢印で結ばれる",
+      "meaning": "答えられない・曖昧な会話を評価",
+      "evidence_times": [
+        12.415416666666667,
+        16.11416666666667,
+        20.373333333333335
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "質問、2つの検査、適合と不足の結果、追加確認",
+      "observed_change": "質問から2つの検査へ矢印が伸び、条件の照合が緑で示され、適合と不足へ分岐し、確認へ情報が移る",
+      "meaning": "不足なら聞き返す・保留する",
+      "evidence_times": [
+        23.445,
+        26.69,
+        30.42666666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "入力、処理部品3個、緑の点と出力",
+      "observed_change": "入力から順に矢印が伸び、緑の点が各部品間を進み、最後の出力と確認へ移る",
+      "meaning": "自動採点と人の確認を合わせる",
+      "evidence_times": [
+        33.473333333333336,
+        37.21333333333333,
+        41.519999999999996
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "4種類の質問カードとそれぞれに対応する行動",
+      "observed_change": "回答可能・回答不能・曖昧・文脈依存の順に、対応する回答・保留・聞き返し・文脈参照のカードが横に生成され、別々の矢印で結ばれる",
+      "meaning": "4種類を分けて記録する",
+      "evidence_times": [
+        45.06666666666667,
+        49.46666666666667,
+        54.53333333333333
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

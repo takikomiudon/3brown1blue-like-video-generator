@@ -1,0 +1,9 @@
+Self-RAG × CRAG：検索結果を、そのまま信じない
+
+Self-RAG論文: https://arxiv.org/abs/2310.11511
+CRAG論文: https://arxiv.org/abs/2401.15884
+Self-RAG著者実装: https://github.com/AkariAsai/self-rag
+CRAG著者実装: https://github.com/HuskyInSalt/CRAG
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

@@ -1,0 +1,14 @@
+{
+  "video_sha256": "36bea2a4bef40ed4bfdea13d4308fc92571285a580812e18ecb21ef5d78e1b35",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "取得文書の有用性が局所の関連性と回答の正しさの2信号に分かれ、点が検索器を学習する信号へ集まる。",
+  "meaning": "両方の信号で検索器を学習",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

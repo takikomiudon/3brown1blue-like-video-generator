@@ -1,0 +1,26 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK JP,44,&H00F2F6FF,&H00F2F6FF,&H0008111F,&H9008111F,0,0,0,0,100,100,0,0,1,3,0,8,100,160,1515,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:04.35,Default,,0,0,0,,LightRAGは、グラフ構造とベクトル表現\Nを組み合わせるRAGです。
+Dialogue: 0,0:00:04.35,0:00:08.84,Default,,0,0,0,,名前だけで軽さを判断せず、何を取り出\Nす設計なのかに注目しましょう。
+Dialogue: 0,0:00:09.62,0:00:13.31,Default,,0,0,0,,論文の核は、具体的な実体を探す低レベ\Nル検索と、
+Dialogue: 0,0:00:13.31,0:00:16.51,Default,,0,0,0,,広いテーマや関係を見る高レベル検索で\Nす。
+Dialogue: 0,0:00:16.51,0:00:20.04,Default,,0,0,0,,細部と全体の両方から、回答の材料を集\Nめます。
+Dialogue: 0,0:00:20.83,0:00:24.10,Default,,0,0,0,,文書の追加に対応する増分更新も特徴で\Nす。
+Dialogue: 0,0:00:24.10,0:00:30.15,Default,,0,0,0,,例えば、製品名から仕様を調べつつ、関\N連する障害や対策まで横断したい場面を\N、
+Dialogue: 0,0:00:30.15,0:00:32.11,Default,,0,0,0,,検証用の質問にできます。
+Dialogue: 0,0:00:32.87,0:00:37.54,Default,,0,0,0,,公式の更新情報では、二〇二六年五月に\NRAG-Anythingの統合を掲載。
+Dialogue: 0,0:00:37.54,0:00:40.32,Default,,0,0,0,,図や表を含む取り込みも広がっています\N。
+Dialogue: 0,0:00:40.32,0:00:43.54,Default,,0,0,0,,論文時点と現在の実装は区別して読みま\Nしょう。
+Dialogue: 0,0:00:44.29,0:00:48.35,Default,,0,0,0,,まずは公式のHKUDS、LightRAGへ。
+Dialogue: 0,0:00:48.35,0:00:53.97,Default,,0,0,0,,通常の検索と比べ、回答の根拠、索引の\N費用、更新時間まで確認してください。
+Dialogue: 0,0:00:53.97,0:00:56.16,Default,,0,0,0,,万能な高速化とは限りません。

@@ -1,0 +1,8 @@
+MTRAG-UN × Ragas：「答えない・聞き返す」も評価する
+
+MTRAG-UN論文: https://arxiv.org/abs/2602.23184
+公式ベンチマーク: https://github.com/IBM/mt-rag-benchmark
+Ragas公式メトリクス: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

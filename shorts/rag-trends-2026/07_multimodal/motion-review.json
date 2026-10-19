@@ -1,0 +1,67 @@
+{
+  "video_sha256": "7064d85ee524fbd903657a5b173a7632bbd10ae42026b153acf10bae90385340",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "PDFの表、複数のベクトル、質問、選ばれたページ",
+      "observed_change": "表が強調され、ページの情報から複数のベクトルが生成し、質問の接続からページの選択と根拠ページの出力へ進む",
+      "meaning": "文字以外も根拠になる",
+      "evidence_times": [
+        1.21875,
+        4.3125,
+        7.875
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "PDFの表、複数のベクトル、質問、選ばれたページ",
+      "observed_change": "表が強調され、ページの情報から複数のベクトルが生成し、質問の接続からページの選択と根拠ページの出力へ進む",
+      "meaning": "画像を複数のベクトルへ",
+      "evidence_times": [
+        10.74,
+        14.205,
+        18.195
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "文書、処理部品3個、緑の点と出力",
+      "observed_change": "段階の間に矢印が伸び、緑の点が各段階を進み、出力を確認するカードへ移る",
+      "meaning": "取り込み用の構造化を担う",
+      "evidence_times": [
+        21.153333333333332,
+        24.398333333333333,
+        28.134999999999998
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "質問、2つの検査、結果と追加確認",
+      "observed_change": "質問から2つの検査へ矢印が伸び、適合の結果と不足の結果へ分岐し、不足の経路から確認へ情報が移る",
+      "meaning": "検索成功と回答成功を分ける",
+      "evidence_times": [
+        31.024583333333336,
+        34.365833333333335,
+        38.21333333333334
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "共通の入力と3方式の選択肢",
+      "observed_change": "入力から3つの方式への矢印が順に伸び、選択・統合を表す出力へ情報が移る",
+      "meaning": "品質・容量・処理費用を比べる",
+      "evidence_times": [
+        41.30666666666667,
+        45.04666666666667,
+        49.35333333333334
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

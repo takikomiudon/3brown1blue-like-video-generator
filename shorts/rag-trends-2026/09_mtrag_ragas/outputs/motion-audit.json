@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "video_sha256": "49e355152f3cfd336c052728bb7c6bf503fd3bf8e4085c9b7be6de94829e75be",
+  "duration_seconds": 58.666667,
+  "roi": [
+    0.065,
+    0.275,
+    0.835,
+    0.43
+  ],
+  "mechanical_check": "passed",
+  "semantic_review": "passed",
+  "thresholds": {
+    "sample_fps": 10,
+    "pixel_change_threshold": 16,
+    "min_changed_area": 0.0005,
+    "min_active_share": 0.12,
+    "min_continuous_change_seconds": 0.3,
+    "max_undeclared_hold_seconds": 4.0
+  },
+  "beats": [
+    {
+      "id": "beat-0",
+      "kind": "mechanism",
+      "evaluated_transitions": 80,
+      "active_share": 0.75,
+      "longest_continuous_change_seconds": 2.0,
+      "longest_undeclared_hold_seconds": 0.7,
+      "failures": []
+    },
+    {
+      "id": "beat-1",
+      "kind": "mechanism",
+      "evaluated_transitions": 81,
+      "active_share": 1.0,
+      "longest_continuous_change_seconds": 2.1,
+      "longest_undeclared_hold_seconds": 0.0,
+      "failures": []
+    },
+    {
+      "id": "beat-2",
+      "kind": "mechanism",
+      "evaluated_transitions": 70,
+      "active_share": 0.6143,
+      "longest_continuous_change_seconds": 1.8,
+      "longest_undeclared_hold_seconds": 0.6,
+      "failures": []
+    },
+    {
+      "id": "beat-3",
+      "kind": "mechanism",
+      "evaluated_transitions": 81,
+      "active_share": 0.6049,
+      "longest_continuous_change_seconds": 2.0,
+      "longest_undeclared_hold_seconds": 0.7,
+      "failures": []
+    },
+    {
+      "id": "beat-4",
+      "kind": "mechanism",
+      "evaluated_transitions": 96,
+      "active_share": 0.9896,
+      "longest_continuous_change_seconds": 2.4,
+      "longest_undeclared_hold_seconds": 0.1,
+      "failures": []
+    }
+  ],
+  "failures": [],
+  "limitation": "Measurements show temporal pixel changes; semantic evidence requires actual review."
+}

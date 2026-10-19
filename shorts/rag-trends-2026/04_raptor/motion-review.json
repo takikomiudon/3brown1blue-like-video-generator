@@ -1,0 +1,67 @@
+{
+  "video_sha256": "646e1ba6c1f7585750468464849e15fc96c453029b067135e767d6646c8b3984",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "質問、4つの原文カード、取得した断片",
+      "observed_change": "上位2件が選択され、質問から矢印が伸び、断片へ集まる一方、残る原文が赤で示される",
+      "meaning": "細部だけでは文脈が欠ける",
+      "evidence_times": [
+        1.47875,
+        5.2325,
+        9.555
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "4つの原文、中間の集約2つ、上位要約",
+      "observed_change": "原文が集まり、中間の要約へ移り、さらに上位の要約へ矢印が集まる",
+      "meaning": "要約をまとめ、さらに要約",
+      "evidence_times": [
+        12.685833333333333,
+        16.013333333333335,
+        19.845
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "上位要約、中間要約、原文4つと選択を示す緑の点",
+      "observed_change": "上位から中間、原文へ緑の点が進み、選択された原文から原文と要約の出力へ情報が移る",
+      "meaning": "複数の抽象度から検索",
+      "evidence_times": [
+        22.644583333333337,
+        25.655833333333334,
+        29.123333333333335
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "候補3件と根拠・追加情報の出力",
+      "observed_change": "候補へ矢印が伸び、中間の候補が不適切として赤になり、縮小・減光して除かれ、原文や追加情報が出力へ移る",
+      "meaning": "要約から原文へ戻れるように",
+      "evidence_times": [
+        32.062083333333334,
+        35.81583333333334,
+        40.138333333333335
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "同じ入力から分かれる2つの経路と出力",
+      "observed_change": "矢印が2経路に分かれ、白い点がそれぞれを進み、両方の経路から出力へ到達する",
+      "meaning": "事実の質問と統合の質問を分ける",
+      "evidence_times": [
+        43.49125,
+        47.3825,
+        51.86333333333334
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}

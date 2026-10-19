@@ -16,6 +16,7 @@
 |尺と収益化についての回答の範囲|[platform-duration-notes.md](platform-duration-notes.md)|
 |実際に制作した65秒ショート|[README](../shorts/decay-heat/README.md)、[演出計画](../shorts/decay-heat/plan.md)|
 |PageIndexのショート：ツリーによる資料探索|[README](../shorts/pageindex/README.md)、[演出計画](../shorts/pageindex/plan.md)、[出典](../shorts/pageindex/sources.md)|
+|RAG動向の日本語ショート10本：論文と実装|[動画・台本一覧](../shorts/rag-trends-2026/README.md)、[制作計画](../shorts/rag-trends-2026/plan.md)、[出典と確認事項](../shorts/rag-trends-2026/research-notes.md)|
 |Docker、音声、文字、尺、リンク切れの対処|[troubleshooting.md](troubleshooting.md)|
 |説明対象の動作を設計し、完成映像で確認する|[動作契約](../.agents/skills/science-explainer/references/motion-contract.md)|
 |VOICEVOXで日本語音声を生成・同期・検証する|[音声の制作条件](../.agents/skills/science-explainer/references/voicevox.md)|

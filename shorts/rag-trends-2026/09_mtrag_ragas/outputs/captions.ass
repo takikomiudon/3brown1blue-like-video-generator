@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans CJK JP,44,&H00F2F6FF,&H00F2F6FF,&H0008111F,&H9008111F,0,0,0,0,100,100,0,0,1,3,0,8,100,160,1515,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:02.99,Default,,0,0,0,,二〇二六年のMTRAG-UNは、
+Dialogue: 0,0:00:02.99,0:00:06.01,Default,,0,0,0,,会話型RAGの評価で読んでおきたい論文\Nです。
+Dialogue: 0,0:00:06.01,0:00:10.32,Default,,0,0,0,,一問一答で正しくても、前の発言を受け\Nた質問では失敗し得ます。
+Dialogue: 0,0:00:11.08,0:00:15.66,Default,,0,0,0,,このベンチマークは、六つの分野、六百\N六十六のタスクを収録。
+Dialogue: 0,0:00:15.66,0:00:21.51,Default,,0,0,0,,答えられない質問や、情報の足りない質\N問、文脈に依存する質問などを扱います\N。
+Dialogue: 0,0:00:22.29,0:00:25.12,Default,,0,0,0,,実務でも、根拠がないときに答えを作ら\Nず、
+Dialogue: 0,0:00:25.12,0:00:28.09,Default,,0,0,0,,情報が足りなければ聞き返せるかが重要\Nです。
+Dialogue: 0,0:00:28.09,0:00:31.35,Default,,0,0,0,,こうしたケースを、評価用の質問に含め\Nましょう。
+Dialogue: 0,0:00:32.12,0:00:34.21,Default,,0,0,0,,評価ライブラリとしてはRagas。
+Dialogue: 0,0:00:34.21,0:00:37.13,Default,,0,0,0,,根拠との整合性や検索の品質などを測れ\Nます。
+Dialogue: 0,0:00:37.13,0:00:42.70,Default,,0,0,0,,ただし、LLMによる採点には揺れがある\Nので、人の確認とも合わせて使います。
+Dialogue: 0,0:00:43.45,0:00:49.22,Default,,0,0,0,,まず、回答可能、回答不能、曖昧、文脈\N依存の四種類を用意してください。
+Dialogue: 0,0:00:49.22,0:00:56.01,Default,,0,0,0,,通常の正解率に加え、適切な聞き返しや\N回答の保留も、別に記録するのがおすす\Nめです。

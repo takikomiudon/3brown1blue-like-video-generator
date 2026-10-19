@@ -1,0 +1,7 @@
+RAPTOR：長い文書を、要約の木で探す
+
+論文: https://arxiv.org/abs/2401.18059
+著者実装: https://github.com/parthsarthi03/raptor
+
+2026年10月19日時点で一次資料を確認。
+音声：VOICEVOX:青山龍星

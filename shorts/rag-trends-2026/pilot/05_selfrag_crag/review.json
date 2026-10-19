@@ -1,0 +1,14 @@
+{
+  "video_sha256": "bd1183ea6273384acb2a3f2c44e63ce213261bac1af5189fcf42feb5874ddefb",
+  "method": "frame_sequence",
+  "evidence_times": [
+    0.9,
+    3.1,
+    5.1,
+    7.5
+  ],
+  "observed_change": "検索の要否から検索・生成、自己評価へ点が移り、評価結果から最初の段階へ戻る。",
+  "meaning": "Self-RAG：学習した自己評価",
+  "status": "PASS",
+  "scope": "中心となる仕組みの8秒試作。音声聴取は含まない。"
+}

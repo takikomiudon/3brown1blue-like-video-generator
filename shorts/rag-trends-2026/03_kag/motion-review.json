@@ -1,0 +1,67 @@
+{
+  "video_sha256": "0bf5ef0a54eaa8bfb7a9e7ee7c37172c6a3e860c0cb1d2ea509e5c70df102ae1",
+  "method": "frame_sequence",
+  "checks": [
+    {
+      "beat_id": "beat-0",
+      "observed_object": "質問と2つの条件、結果の分岐",
+      "observed_change": "質問から条件へ矢印が伸び、条件の照合が緑で示され、結果が適合・不足へ分岐し、追加確認へ情報が移る",
+      "meaning": "似た文章だけでは判断できない",
+      "evidence_times": [
+        1.4516666666666667,
+        5.136666666666667,
+        9.379999999999999
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-1",
+      "observed_object": "原文、実体4個、知識の関係、原文への索引",
+      "observed_change": "原文から実体が生まれ、関係が接続され、原文との双方向の矢印が描かれ、原文チャンクへの索引が作られる",
+      "meaning": "整理した知識と原文を対応付け",
+      "evidence_times": [
+        12.36375,
+        15.4025,
+        18.901666666666667
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-2",
+      "observed_object": "質問と2つの条件、結果の分岐",
+      "observed_change": "質問から条件へ矢印が伸び、条件の照合が緑で示され、結果が適合・不足へ分岐し、追加確認へ情報が移る",
+      "meaning": "検索と計算を組み合わせる",
+      "evidence_times": [
+        21.7725,
+        25.32,
+        29.405
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-3",
+      "observed_object": "候補3件と根拠・追加情報の出力",
+      "observed_change": "候補へ矢印が伸び、中間の候補が不適切として赤になり、縮小・減光して除かれ、原文や追加情報が出力へ移る",
+      "meaning": "誤った抽出は修正が必要",
+      "evidence_times": [
+        32.625416666666666,
+        36.43416666666667,
+        40.82
+      ],
+      "explains_mechanism": true
+    },
+    {
+      "beat_id": "beat-4",
+      "observed_object": "質問と2つの条件、結果の分岐",
+      "observed_change": "質問から条件へ矢印が伸び、条件の照合が緑で示され、結果が適合・不足へ分岐し、追加確認へ情報が移る",
+      "meaning": "業務ルールを表現できるか検証",
+      "evidence_times": [
+        44.12916666666666,
+        47.84166666666666,
+        52.11666666666666
+      ],
+      "explains_mechanism": true
+    }
+  ],
+  "scope": "主図15点、全体レイアウト5点を実際に確認。全編の音声聴取ではない。"
+}
